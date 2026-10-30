@@ -101,3 +101,7 @@ A passing build verifies this implementation and its documented discrepancies;
 it does not certify agreement with every published result. Study 2 wage responses
 and questionnaire scoring are independently checked; recruitment, delivery, and
 the final Dataverse export code remain incompletely documented.
+
+<!-- adjacent:start -->
+
+<!-- adjacent:end -->
