@@ -104,4 +104,14 @@ the final Dataverse export code remain incompletely documented.
 
 <!-- adjacent:start -->
 
+## 🔗 Adjacent Repositories
+
+- [finite-sample/know_serious](https://github.com/finite-sample/know_serious) — Replication and audit of Prior, Sood, and Khanna \(2015\), You Cannot Be Serious: accuracy incentives and partisan bias
+- [finite-sample/know_casablanca](https://github.com/finite-sample/know_casablanca) — The Waters of Casablanca: On Political Misinformation \(Luskin and Sood\). Data, code, and manuscript.
+- [finite-sample/total_error](https://github.com/finite-sample/total_error) — total error
+- [finite-sample/know_hidden](https://github.com/finite-sample/know_hidden) — Mis-measuring Political Knowledge? Do People Know More—or Even Less—about Politics than Commonly Thought?
+- [finite-sample/know_misinfo_misinfo](https://github.com/finite-sample/know_misinfo_misinfo) — Misinformation about Misinformation? Of Headlines and Survey Design \(Luskin, Sood, Park, Blank\)
+
+_Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
+
 <!-- adjacent:end -->
