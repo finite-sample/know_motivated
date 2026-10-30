@@ -1,0 +1,21 @@
+sample,position_label,incentive,n,n_congenial,response_odds
+pooled_1_2,Carry opponents,0,244,140,1.3461538461538463
+pooled_1_2,Carry opponents,1,211,101,0.9181818181818182
+pooled_1_2,Carry supporters,0,422,236,1.2688172043010753
+pooled_1_2,Carry supporters,1,412,235,1.3276836158192091
+study_2_high,Carry opponents,0,111,61,1.22
+study_2_high,Carry opponents,1,114,52,0.8387096774193549
+study_2_high,Carry supporters,0,194,105,1.1797752808988764
+study_2_high,Carry supporters,1,186,106,1.325
+study_2_low,Carry opponents,0,36,20,1.25
+study_2_low,Carry opponents,1,33,17,1.0625
+study_2_low,Carry supporters,0,71,36,1.0285714285714285
+study_2_low,Carry supporters,1,79,41,1.0789473684210527
+study_3_high,Carry opponents,0,76,51,2.04
+study_3_high,Carry opponents,1,83,52,1.6774193548387097
+study_3_high,Carry supporters,0,124,86,2.263157894736842
+study_3_high,Carry supporters,1,137,91,1.9782608695652173
+study_3_low,Carry opponents,0,131,103,3.6785714285714284
+study_3_low,Carry opponents,1,126,89,2.4054054054054053
+study_3_low,Carry supporters,0,194,125,1.8115942028985508
+study_3_low,Carry supporters,1,184,123,2.0163934426229506

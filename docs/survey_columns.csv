@@ -1,0 +1,1103 @@
+file,source_name,column,label,action,reason
+data/extracted/surveys/study_3.csv,V1,v1,ResponseID,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_3.csv,V2,v2,ResponseSet,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,V3,v3,StartDate,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,V4,v4,EndDate,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,V5,v5,Finished,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC0_0,sc0_0,Numeracy-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC0_1,sc0_1,Numeracy-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC0_2,sc0_2,Numeracy-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC1_0,sc1_0,CVD Dem-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC1_1,sc1_1,CVD Dem-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC1_2,sc1_2,CVD Dem-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC2_0,sc2_0,CVD Rep-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC2_1,sc2_1,CVD Rep-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC2_2,sc2_2,CVD Rep-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC3_0,sc3_0,Attention-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC3_1,sc3_1,Attention-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,SC3_2,sc3_2,Attention-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,Condition,condition,Condition,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,psid,psid,psid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_3.csv,rid,rid,rid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_3.csv,RISN,risn,RISN,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_3.csv,custom1,custom1,custom1,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_3.csv,gc,gc,gc,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,quota,quota,quota,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,term,term,term,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvddem,cvddem,cvddem,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvdrep,cvdrep,cvdrep,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,consent,consent,You are being asked to participate in a survey that will take approximately 5 minutes.  The surve...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,browser_1_TEXT,browser_1_text,Browser Meta Info-Browser,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,browser_2_TEXT,browser_2_text,Browser Meta Info-Version,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,browser_3_TEXT,browser_3_text,Browser Meta Info-Operating System,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,browser_4_TEXT,browser_4_text,Browser Meta Info-Screen Resolution,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,browser_5_TEXT,browser_5_text,Browser Meta Info-Flash Version,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,browser_6_TEXT,browser_6_text,Browser Meta Info-Java Support,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,browser_7_TEXT,browser_7_text,Browser Meta Info-User Agent,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,pid,pid,"Do you usually think of yourself as a Republican, a Democrat, an Independent, or what?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,pid_TEXT,pid_text,"Do you usually think of yourself as a Republican, a Democrat, an Independent, or what?-TEXT",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,pidstr,pidstr,Would you call yourself a strong ${q://QID1/ChoiceGroup/SelectedChoices} or not very strong ...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,pidlean,pidlean,Do you think of yourself as closer to the Republican Party or closer to the Democratic Party?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,num1,num1,"Now we would like to ask you some word problems. /    /  /    / If we roll a fair, six-sided die 1,000 ti...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,num2,num2,"There is a 1% chance of winning a $10 prize in the Megabucks /  Lottery. On average, how many peopl...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,num3,num3,"If there is a 10% chance of winning a concert ticket, how /  many people out of 1,000 would be expe...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,num4,num4,"If the chance of getting a disease is 20 out of 100, this would be / the same as having a ____% cha...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,num5,num5,"In the PCH Sweepstakes, the chances of winning a car are 1 in a / 1,000. What percent of PCH Sweeps...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,politics,politics,Now we would like to ask you some questions about politics.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,ban,ban,Do you favor or oppose a law banning people other than law enforcement officers carrying conceale...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,banimp,banimp,How important is the issue to you?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,gunown,gunown,Do you or someone else in your household own a gun?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,wage,wage,The federal minimum wage is currently $7.25 per hour. Do you favor or oppose raising the federal...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,wageimp,wageimp,How important is the issue to you?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,ideo,ideo,"When it comes to politics, do you usually think of yourself as liberal, moderate, or conservative?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,ideolib,ideolib,Do you consider yourself to be very liberal or somewhat liberal?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,ideocon,ideocon,Do you consider yourself to be very conservative or somewhat conservative?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,Q91,q91,"Do you tend to lean toward the liberal side, conservative side, or toward neither?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,,unnamed_55,Now we would like to ask you some demographic information.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,yob,yob,In what year were you born?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,sex,sex,Are you ...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,edu,edu,What is the highest level of education you have achieved?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,hisp,hisp,Are you Hispanic or Latino?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_1,race_1,What race(s) do you consider yourself to be?-White,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_2,race_2,What race(s) do you consider yourself to be?-Black or African-American,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_3,race_3,What race(s) do you consider yourself to be?-American Indian or Alaska Native,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_4,race_4,What race(s) do you consider yourself to be?-Asian,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_5,race_5,What race(s) do you consider yourself to be?-Native Hawaiian or Pacific Islander,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_6,race_6,What race(s) do you consider yourself to be?-Other (please specify),retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,race_6_TEXT,race_6_text,What race(s) do you consider yourself to be?-Other (please specify)-TEXT,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,attention,attention,"We just want to make sure you are still paying attention. Please enter the number ""6"" in the box...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro2,intro2,Please answer the following question. /  /    / A city government is trying to decide whether to pass a...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr2,instr2,"Once you have your answer, please proceed to the next page.The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2a_1,time2a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2a_2,time2a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2a_3,time2a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2a_4,time2a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd2,cvd2,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2b_1,time2b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2b_2,time2b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2b_3,time2b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2b_4,time2b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf2,conf2,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2c_1,time2c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2c_2,time2c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2c_3,time2c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time2c_4,time2c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro4,intro4,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr4,instr4,"Once you are ready to indicate your answer, please proceed to the next page. / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4a_1,time4a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4a_2,time4a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4a_3,time4a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4a_4,time4a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd4,cvd4,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4b_1,time4b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4b_2,time4b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4b_3,time4b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4b_4,time4b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf4,conf4,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4c_1,time4c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4c_2,time4c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4c_3,time4c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time4c_4,time4c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro1,intro1,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr1,instr1,"Once you have your answer, please proceed to the next page. / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1a_1,time1a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1a_2,time1a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1a_3,time1a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1a_4,time1a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd1,cvd1,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1b_1,time1b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1b_2,time1b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1b_3,time1b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1b_4,time1b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf1,conf1,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1c_1,time1c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1c_2,time1c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1c_3,time1c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time1c_4,time1c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro3,intro3,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr3,instr3,"Once you have your answer, please proceed to the next page. /  / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3a_1,time3a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3a_2,time3a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3a_3,time3a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3a_4,time3a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd3,cvd3,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3b_1,time3b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3b_2,time3b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3b_3,time3b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3b_4,time3b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf3,conf3,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3c_1,time3c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3c_2,time3c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3c_3,time3c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time3c_4,time3c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,ratewell_1,ratewell_1,"Just a few more questions about the concealed carry study.   On a scale of 0 to 10, where 0 is ""v...-Very poorly done:Very well done",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,rateconv_1,rateconv_1,"On a scale of 0 to 10, where 0 is ""completely unconvincing"" and 10 / is ""completely convincing"", ho...-Completely unconvincing:Completely convincing",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,bias,bias,Do you think the researchers who conducted the study favored or / opposed a ban on concealed handgu...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,Q75,q75,You're almost done! Last two questions!,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro5,intro5,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr5,instr5,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5a_1,time5a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5a_2,time5a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5a_3,time5a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5a_4,time5a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd5,cvd5,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5b_1,time5b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5b_2,time5b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5b_3,time5b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5b_4,time5b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf5,conf5,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5c_1,time5c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5c_2,time5c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5c_3,time5c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time5c_4,time5c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro6,intro6,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr6,instr6,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6a_1,time6a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6a_2,time6a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6a_3,time6a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6a_4,time6a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd6,cvd6,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6b_1,time6b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6b_2,time6b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6b_3,time6b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6b_4,time6b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf6,conf6,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6c_1,time6c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6c_2,time6c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6c_3,time6c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time6c_4,time6c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro7,intro7,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr7,instr7,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7a_1,time7a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7a_2,time7a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7a_3,time7a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7a_4,time7a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd7,cvd7,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7b_1,time7b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7b_2,time7b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7b_3,time7b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7b_4,time7b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf7,conf7,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7c_1,time7c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7c_2,time7c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7c_3,time7c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time7c_4,time7c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,intro8,intro8,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,instr8,instr8,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8a_1,time8a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8a_2,time8a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8a_3,time8a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8a_4,time8a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,cvd8,cvd8,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8b_1,time8b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8b_2,time8b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8b_3,time8b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8b_4,time8b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,conf8,conf8,How confident are you of your answer to this question?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8c_1,time8c_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8c_2,time8c_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8c_3,time8c_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,time8c_4,time8c_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,debrief,debrief,Debriefing That concludes the survey. Thank you for your time!  The results of the studies we pre...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_3.csv,comments,comments,"If you have any comments about the survey, feel free to submit them in the text box below.",remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_3.csv,NA,interview_year,Calendar year of survey start,derive,Year extracted from source timestamp; exact timestamp removed
+data/extracted/surveys/study_3.csv,NA,worker_attempt,Eligible gun-task participation order within worker,derive,Chronological eligible attempts in Study 1 survey export; other exports use 1 and do not identify repeat participation
+data/extracted/coding/study_1.csv,,unnamed_1,,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,v1,v1,v1,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_1.csv,v2,v2,v2,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,v3,v3,v3,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,v4,v4,v4,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,v5,v5,v5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc0_0,sc0_0,sc0_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc0_1,sc0_1,sc0_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc0_2,sc0_2,sc0_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc1_0,sc1_0,sc1_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc1_1,sc1_1,sc1_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc1_2,sc1_2,sc1_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc2_0,sc2_0,sc2_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc2_1,sc2_1,sc2_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sc2_2,sc2_2,sc2_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,condition,condition,condition,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,workerid,workerid,workerid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_1.csv,assignmentid,assignmentid,assignmentid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_1.csv,numeracy,numeracy,numeracy,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvddem,cvddem,cvddem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvdrep,cvdrep,cvdrep,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,pid,pid,pid,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,pid_text,pid_text,pid_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,pidstr,pidstr,pidstr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,pidlean,pidlean,pidlean,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num1,num1,num1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num2,num2,num2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num3,num3,num3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num4,num4,num4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num5,num5,num5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,congrats,congrats,congrats,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,consent,consent,consent,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,browser_1_text,browser_1_text,browser_1_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,browser_2_text,browser_2_text,browser_2_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,browser_3_text,browser_3_text,browser_3_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,browser_4_text,browser_4_text,browser_4_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,browser_5_text,browser_5_text,browser_5_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,browser_6_text,browser_6_text,browser_6_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,browser_7_text,browser_7_text,browser_7_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,politics,politics,politics,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ban,ban,ban,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,banimp,banimp,banimp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,gunown,gunown,gunown,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ideo,ideo,ideo,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ideolib,ideolib,ideolib,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ideocon,ideocon,ideocon,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,x,x,x,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,yob,yob,yob,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sex,sex,sex,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,edu,edu,edu,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,hisp,hisp,hisp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_1,race_1,race_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_2,race_2,race_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_3,race_3,race_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_4,race_4,race_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_5,race_5,race_5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_6,race_6,race_6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,race_6_text,race_6_text,race_6_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,intro1,intro1,intro1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,instr1,instr1,instr1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1a_1,time1a_1,time1a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1a_2,time1a_2,time1a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1a_3,time1a_3,time1a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1a_4,time1a_4,time1a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvd1,cvd1,cvd1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1b_1,time1b_1,time1b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1b_2,time1b_2,time1b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1b_3,time1b_3,time1b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time1b_4,time1b_4,time1b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,intro2,intro2,intro2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,instr2,instr2,instr2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2a_1,time2a_1,time2a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2a_2,time2a_2,time2a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2a_3,time2a_3,time2a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2a_4,time2a_4,time2a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvd2,cvd2,cvd2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2b_1,time2b_1,time2b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2b_2,time2b_2,time2b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2b_3,time2b_3,time2b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time2b_4,time2b_4,time2b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,intro3,intro3,intro3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,instr3,instr3,instr3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3a_1,time3a_1,time3a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3a_2,time3a_2,time3a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3a_3,time3a_3,time3a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3a_4,time3a_4,time3a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvd3,cvd3,cvd3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3b_1,time3b_1,time3b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3b_2,time3b_2,time3b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3b_3,time3b_3,time3b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time3b_4,time3b_4,time3b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,intro4,intro4,intro4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,instr4,instr4,instr4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4a_1,time4a_1,time4a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4a_2,time4a_2,time4a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4a_3,time4a_3,time4a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4a_4,time4a_4,time4a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvd4,cvd4,cvd4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4b_1,time4b_1,time4b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4b_2,time4b_2,time4b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4b_3,time4b_3,time4b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time4b_4,time4b_4,time4b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,explain,explain,explain,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ratewell_1,ratewell_1,ratewell_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,rateconv_1,rateconv_1,rateconv_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,bias,bias,bias,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recalldem_1_text,recalldem_1_text,recalldem_1_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recalldem_2_text,recalldem_2_text,recalldem_2_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recalldem_3_text,recalldem_3_text,recalldem_3_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recalldem_4_text,recalldem_4_text,recalldem_4_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time5_1,time5_1,time5_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time5_2,time5_2,time5_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time5_3,time5_3,time5_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time5_4,time5_4,time5_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recallcon_1_text,recallcon_1_text,recallcon_1_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recallcon_2_text,recallcon_2_text,recallcon_2_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recallcon_3_text,recallcon_3_text,recallcon_3_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recallcon_4_text,recallcon_4_text,recallcon_4_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time6_1,time6_1,time6_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time6_2,time6_2,time6_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time6_3,time6_3,time6_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,time6_4,time6_4,time6_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,debrief,debrief,debrief,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,comments,comments,comments,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,x.1,x.1,x.1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,date,date,date,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_1.csv,pid7,pid7,pid7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,pid3,pid3,pid3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,dem,dem,dem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,dem2,dem2,dem2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ideo5,ideo5,ideo5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,ideo3,ideo3,ideo3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num1r,num1r,num1r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num2r,num2r,num2r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num3r,num3r,num3r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num4r,num4r,num4r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,num5r,num5r,num5r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,fem,fem,fem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,age,age,age,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,edu4,edu4,edu4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,hispr,hispr,hispr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,whi,whi,whi,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,bla,bla,bla,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,aian,aian,aian,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,asi,asi,asi,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,hpi,hpi,hpi,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,oth,oth,oth,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,banr,banr,banr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,banimpr,banimpr,banimpr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,owngun,owngun,owngun,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cond,cond,cond,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,demcong,demcong,demcong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,acc,acc,acc,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,guncong,guncong,guncong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,cvd,cvd,cvd,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,well,well,well,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,conv,conv,conv,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,rating,rating,rating,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,rec_a,rec_a,rec_a,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,rec_b,rec_b,rec_b,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,rec_c,rec_c,rec_c,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,rec_d,rec_d,rec_d,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,dev_a,dev_a,dev_a,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,dev_b,dev_b,dev_b,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,dev_c,dev_c,dev_c,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,dev_d,dev_d,dev_d,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recrat1,recrat1,recrat1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,recrat2,recrat2,recrat2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sct1,sct1,sct1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,sct2,sct2,sct2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_1.csv,NA,interview_year,Calendar year of survey start,derive,Year extracted from source timestamp; exact timestamp removed
+data/extracted/coding/study_1.csv,NA,worker_attempt,Eligible gun-task participation order within worker,derive,Chronological eligible attempts in Study 1 survey export; other exports use 1 and do not identify repeat participation
+data/extracted/coding/study_2.csv,,unnamed_1,,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,responseid,responseid,responseid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_2.csv,responseset,responseset,responseset,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,startdate,startdate,startdate,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,enddate,enddate,enddate,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,finished,finished,finished,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc0_0,sc0_0,sc0_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc0_1,sc0_1,sc0_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc0_2,sc0_2,sc0_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc1_0,sc1_0,sc1_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc1_1,sc1_1,sc1_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc1_2,sc1_2,sc1_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc2_0,sc2_0,sc2_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc2_1,sc2_1,sc2_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sc2_2,sc2_2,sc2_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,condition,condition,condition,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,workerid,workerid,workerid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_2.csv,assignmentid,assignmentid,assignmentid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_2.csv,cvddem,cvddem,cvddem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvdrep,cvdrep,cvdrep,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,consent,consent,consent,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,browser_1_text,browser_1_text,browser_1_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,browser_2_text,browser_2_text,browser_2_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,browser_3_text,browser_3_text,browser_3_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,browser_4_text,browser_4_text,browser_4_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,browser_5_text,browser_5_text,browser_5_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,browser_6_text,browser_6_text,browser_6_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,browser_7_text,browser_7_text,browser_7_text,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,pid,pid,pid,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,pid_text,pid_text,pid_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,pidstr,pidstr,pidstr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,pidlean,pidlean,pidlean,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num1,num1,num1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num2,num2,num2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num3,num3,num3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num4,num4,num4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num5,num5,num5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,politics,politics,politics,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ban,ban,ban,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,banimp,banimp,banimp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,gunown,gunown,gunown,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,wage,wage,wage,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,wageimp,wageimp,wageimp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ideo,ideo,ideo,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ideolib,ideolib,ideolib,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ideocon,ideocon,ideocon,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,x,x,x,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,yob,yob,yob,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sex,sex,sex,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,edu,edu,edu,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,hisp,hisp,hisp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_1,race_1,race_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_2,race_2,race_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_3,race_3,race_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_4,race_4,race_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_5,race_5,race_5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_6,race_6,race_6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,race_6_text,race_6_text,race_6_text,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro1,intro1,intro1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr1,instr1,instr1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1a_1,time1a_1,time1a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1a_2,time1a_2,time1a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1a_3,time1a_3,time1a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1a_4,time1a_4,time1a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd1,cvd1,cvd1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1b_1,time1b_1,time1b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1b_2,time1b_2,time1b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1b_3,time1b_3,time1b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time1b_4,time1b_4,time1b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro2,intro2,intro2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr2,instr2,instr2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2a_1,time2a_1,time2a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2a_2,time2a_2,time2a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2a_3,time2a_3,time2a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2a_4,time2a_4,time2a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd2,cvd2,cvd2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2b_1,time2b_1,time2b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2b_2,time2b_2,time2b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2b_3,time2b_3,time2b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time2b_4,time2b_4,time2b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro3,intro3,intro3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr3,instr3,instr3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3a_1,time3a_1,time3a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3a_2,time3a_2,time3a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3a_3,time3a_3,time3a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3a_4,time3a_4,time3a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd3,cvd3,cvd3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3b_1,time3b_1,time3b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3b_2,time3b_2,time3b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3b_3,time3b_3,time3b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time3b_4,time3b_4,time3b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro4,intro4,intro4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr4,instr4,instr4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4a_1,time4a_1,time4a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4a_2,time4a_2,time4a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4a_3,time4a_3,time4a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4a_4,time4a_4,time4a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd4,cvd4,cvd4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4b_1,time4b_1,time4b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4b_2,time4b_2,time4b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4b_3,time4b_3,time4b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time4b_4,time4b_4,time4b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ratewell_1,ratewell_1,ratewell_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,rateconv_1,rateconv_1,rateconv_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,bias,bias,bias,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,q75,q75,q75,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro5,intro5,intro5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr5,instr5,instr5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5a_1,time5a_1,time5a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5a_2,time5a_2,time5a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5a_3,time5a_3,time5a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5a_4,time5a_4,time5a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd5,cvd5,cvd5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5b_1,time5b_1,time5b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5b_2,time5b_2,time5b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5b_3,time5b_3,time5b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time5b_4,time5b_4,time5b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro6,intro6,intro6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr6,instr6,instr6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6a_1,time6a_1,time6a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6a_2,time6a_2,time6a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6a_3,time6a_3,time6a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6a_4,time6a_4,time6a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd6,cvd6,cvd6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6b_1,time6b_1,time6b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6b_2,time6b_2,time6b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6b_3,time6b_3,time6b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time6b_4,time6b_4,time6b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro7,intro7,intro7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr7,instr7,instr7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7a_1,time7a_1,time7a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7a_2,time7a_2,time7a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7a_3,time7a_3,time7a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7a_4,time7a_4,time7a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd7,cvd7,cvd7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7b_1,time7b_1,time7b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7b_2,time7b_2,time7b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7b_3,time7b_3,time7b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time7b_4,time7b_4,time7b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,intro8,intro8,intro8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,instr8,instr8,instr8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8a_1,time8a_1,time8a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8a_2,time8a_2,time8a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8a_3,time8a_3,time8a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8a_4,time8a_4,time8a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd8,cvd8,cvd8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8b_1,time8b_1,time8b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8b_2,time8b_2,time8b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8b_3,time8b_3,time8b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,time8b_4,time8b_4,time8b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,debrief,debrief,debrief,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,comments,comments,comments,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,x.1,x.1,x.1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,date,date,date,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_2.csv,pid7,pid7,pid7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,pid3,pid3,pid3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,dem,dem,dem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,dem2,dem2,dem2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ideo5,ideo5,ideo5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,ideo3,ideo3,ideo3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num1r,num1r,num1r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num2r,num2r,num2r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num3r,num3r,num3r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num4r,num4r,num4r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,num5r,num5r,num5r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,numeracy,numeracy,numeracy,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,fem,fem,fem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,age,age,age,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,edu4,edu4,edu4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,hispr,hispr,hispr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,whi,whi,whi,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,bla,bla,bla,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,aian,aian,aian,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,asi,asi,asi,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,hpi,hpi,hpi,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,oth,oth,oth,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,banr,banr,banr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,banimpr,banimpr,banimpr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,owngun,owngun,owngun,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,wager,wager,wager,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,wageimpr,wageimpr,wageimpr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cond,cond,cond,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,demcong,demcong,demcong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,acc,acc,acc,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,guncong,guncong,guncong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cond2,cond2,cond2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,demcong2,demcong2,demcong2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,acc2,acc2,acc2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,wagecong,wagecong,wagecong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvd,cvd,cvd,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,cvdwage,cvdwage,cvdwage,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,well,well,well,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,conv,conv,conv,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,rating,rating,rating,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,rec_a,rec_a,rec_a,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,rec_b,rec_b,rec_b,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,rec_c,rec_c,rec_c,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,rec_d,rec_d,rec_d,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,dev_a,dev_a,dev_a,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,dev_b,dev_b,dev_b,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,dev_c,dev_c,dev_c,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,dev_d,dev_d,dev_d,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,recrat1,recrat1,recrat1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,recrat2,recrat2,recrat2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sct1,sct1,sct1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,sct2,sct2,sct2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_2.csv,NA,interview_year,Calendar year of survey start,derive,Year extracted from source timestamp; exact timestamp removed
+data/extracted/coding/study_2.csv,NA,worker_attempt,Eligible gun-task participation order within worker,derive,Chronological eligible attempts in Study 1 survey export; other exports use 1 and do not identify repeat participation
+data/extracted/surveys/study_1.csv,V1,v1,ResponseID,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_1.csv,V2,v2,ResponseSet,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,V3,v3,StartDate,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,V4,v4,EndDate,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,V5,v5,Finished,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC0_0,sc0_0,Numeracy-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC0_1,sc0_1,Numeracy-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC0_2,sc0_2,Numeracy-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC1_0,sc1_0,CVD Dem-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC1_1,sc1_1,CVD Dem-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC1_2,sc1_2,CVD Dem-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC2_0,sc2_0,CVD Rep-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC2_1,sc2_1,CVD Rep-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,SC2_2,sc2_2,CVD Rep-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,Condition,condition,Condition,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,workerId,workerid,workerId,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_1.csv,assignmentId,assignmentid,assignmentId,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_1.csv,Numeracy,numeracy,Numeracy,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,cvddem,cvddem,cvddem,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,cvdrep,cvdrep,cvdrep,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,pid,pid,"Do you usually think of yourself a Republican, a Democrat, an Independent, or what?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,pid_TEXT,pid_text,"Do you usually think of yourself a Republican, a Democrat, an Independent, or what?-TEXT",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,pidstr,pidstr,Would you call yourself a strong ${q://QID1/ChoiceGroup/SelectedChoices} or not very strong ${q://QID1/ChoiceGroup/SelectedChoices}?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,pidlean,pidlean,Do you think of yourself as closer to the Republican Party or closer to the Democratic Party?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,num1,num1,"Now we would like to ask you some word problems.   /  /   / If we roll a fair, six-sided die 1,000 times, on average, how many times would the die come up as an even number?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,num2,num2,"There is a 1% chance of winning a $10 prize in the Megabucks Lottery. On average, how many people would win the $10 prize if 1,000 people each bought a single ticket?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,num3,num3,"If the chance of getting a disease is 20 out of 100, this would be the same as having a ____% chance of getting the disease.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,num4,num4,"If there is a 10% chance of winning a concert ticket, how many people out of 1,000 would be expected to win the ticket?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,num5,num5,"In the PCH Sweepstakes, the chances of winning a car are 1 in a 1,000. What percent of PCH Sweepstakes tickets win a car?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,congrats,congrats,"Congratulations! You have qualified for the second part of the survey.You will make at least another $0.40 for this second part, in addition to the $0.15 you have made for your work so for. You may...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,consent,consent,You are being asked to participate in a survey that will take approximately 10 minutes.  /  / The survey is being conducted by researchers at Stanford University. The researchers are interested in stud...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,browser_1_TEXT,browser_1_text,Browser Meta Info-Browser,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,browser_2_TEXT,browser_2_text,Browser Meta Info-Version,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,browser_3_TEXT,browser_3_text,Browser Meta Info-Operating System,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,browser_4_TEXT,browser_4_text,Browser Meta Info-Screen Resolution,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,browser_5_TEXT,browser_5_text,Browser Meta Info-Flash Version,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,browser_6_TEXT,browser_6_text,Browser Meta Info-Java Support,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,browser_7_TEXT,browser_7_text,Browser Meta Info-User Agent,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,politics,politics,Now we would like to ask you some questions about politics.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,ban,ban,Do you favor or oppose a federal law requiring a nationwide ban on people other than law enforcement officers carrying concealed weapons?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,banimp,banimp,How important is the issue to you?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,gunown,gunown,Do you or someone else in your household own a gun?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,ideo,ideo,"When it comes to politics, do you usually think of yourself as liberal, moderate, or conservative?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,ideolib,ideolib,Do you consider yourself to be very liberal or somewhat liberal?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,ideocon,ideocon,Do you consider yourself to be very conservative or somewhat conservative?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,,unnamed_46,Now we would like to ask you about some demographic information.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,yob,yob,In what year were you born?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,sex,sex,Are you ...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,edu,edu,What is the highest level of education you have achieved?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,hisp,hisp,Are you Hispanic or Latino?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_1,race_1,What race(s) do you consider yourself to be?-White,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_2,race_2,What race(s) do you consider yourself to be?-Black or African-American,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_3,race_3,What race(s) do you consider yourself to be?-American Indian or Alaska Native,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_4,race_4,What race(s) do you consider yourself to be?-Asian,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_5,race_5,What race(s) do you consider yourself to be?-Native Hawaiian or Pacific Islander,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_6,race_6,What race(s) do you consider yourself to be?-Other (please specify),retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,race_6_TEXT,race_6_text,What race(s) do you consider yourself to be?-Other (please specify)-TEXT,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,intro1,intro1,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,instr1,instr1,"Once you have your answer, please proceed to the next page. / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1a_1,time1a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1a_2,time1a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1a_3,time1a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1a_4,time1a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,cvd1,cvd1,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1b_1,time1b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1b_2,time1b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1b_3,time1b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time1b_4,time1b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,intro2,intro2,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,instr2,instr2,"Once you have your answer, please proceed to the next page.The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2a_1,time2a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2a_2,time2a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2a_3,time2a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2a_4,time2a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,cvd2,cvd2,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2b_1,time2b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2b_2,time2b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2b_3,time2b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time2b_4,time2b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,intro3,intro3,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,instr3,instr3,"Once you have your answer, please proceed to the next page. /  / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3a_1,time3a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3a_2,time3a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3a_3,time3a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3a_4,time3a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,cvd3,cvd3,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3b_1,time3b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3b_2,time3b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3b_3,time3b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time3b_4,time3b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,intro4,intro4,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,instr4,instr4,"Once you are ready to indicate your answer, please proceed to the next page. / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4a_1,time4a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4a_2,time4a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4a_3,time4a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4a_4,time4a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,cvd4,cvd4,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4b_1,time4b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4b_2,time4b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4b_3,time4b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time4b_4,time4b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,explain,explain,Please explain how you arrived at your answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,ratewell_1,ratewell_1,"A few questions about the study.On a scale of 0 to 10, where 0 is ""very poorly done"" and 10 is ""very well done"", how well do you think the study on concealed handguns was done?-Very poorly done:Very well done",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,rateconv_1,rateconv_1,"On a scale of 0 to 10, where 0 is ""completely unconvincing"" and 10 is ""completely convincing"", how convincing is this study as evidence of the effect of banning concealed handguns on crime?-Completely unconvincing:Completely convincing",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,bias,bias,Do you think the researchers who conducted the study favored or opposed a ban on concealed handguns prior to the study?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recalldem_1_TEXT,recalldem_1_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell A,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recalldem_2_TEXT,recalldem_2_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell B,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recalldem_3_TEXT,recalldem_3_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell C,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recalldem_4_TEXT,recalldem_4_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell D,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time5_1,time5_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time5_2,time5_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time5_3,time5_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time5_4,time5_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recallcon_1_TEXT,recallcon_1_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell A,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recallcon_2_TEXT,recallcon_2_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell B,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recallcon_3_TEXT,recallcon_3_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell C,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,recallcon_4_TEXT,recallcon_4_text,How many cities were in each of the four cells in the table of results? Please fill out the table below to the best of your ability. You will earn an additional $0.05 for each cell you fill out cor...-Cell D,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time6_1,time6_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time6_2,time6_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time6_3,time6_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,time6_4,time6_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,debrief,debrief,Debriefing /  / That concludes the survey. Thank you for your time! The results of the study we presented were purely hypothetical. No study on impact of concealed handguns on crime was actually conduc...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,comments,comments,"If you have any comments about the survey, feel free to submit them to the text box below. Please click the ""next"" button to receive your confirmation code for MTurk.",remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_1.csv,,unnamed_124,NA,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_1.csv,NA,interview_year,Calendar year of survey start,derive,Year extracted from source timestamp; exact timestamp removed
+data/extracted/surveys/study_1.csv,NA,worker_attempt,Eligible gun-task participation order within worker,derive,Chronological eligible attempts in Study 1 survey export; other exports use 1 and do not identify repeat participation
+data/extracted/surveys/study_2.csv,V1,v1,ResponseID,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_2.csv,V2,v2,ResponseSet,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,V3,v3,StartDate,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,V4,v4,EndDate,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,V5,v5,Finished,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC0_0,sc0_0,Numeracy-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC0_1,sc0_1,Numeracy-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC0_2,sc0_2,Numeracy-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC1_0,sc1_0,CVD Dem-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC1_1,sc1_1,CVD Dem-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC1_2,sc1_2,CVD Dem-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC2_0,sc2_0,CVD Rep-sum,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC2_1,sc2_1,CVD Rep-weightedAvg,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,SC2_2,sc2_2,CVD Rep-weightedStdDev,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,Condition,condition,Condition,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,workerId,workerid,workerId,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_2.csv,assignmentId,assignmentid,assignmentId,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/surveys/study_2.csv,cvddem,cvddem,cvddem,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvdrep,cvdrep,cvdrep,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,consent,consent,You are being asked to participate in a survey that will take /  approximately 10 minutes.  /  /   /  The...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,browser_1_TEXT,browser_1_text,Browser Meta Info-Browser,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,browser_2_TEXT,browser_2_text,Browser Meta Info-Version,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,browser_3_TEXT,browser_3_text,Browser Meta Info-Operating System,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,browser_4_TEXT,browser_4_text,Browser Meta Info-Screen Resolution,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,browser_5_TEXT,browser_5_text,Browser Meta Info-Flash Version,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,browser_6_TEXT,browser_6_text,Browser Meta Info-Java Support,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,browser_7_TEXT,browser_7_text,Browser Meta Info-User Agent,remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,pid,pid,"Do you usually think of yourself a Republican, a Democrat, an Independent, or what?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,pid_TEXT,pid_text,"Do you usually think of yourself a Republican, a Democrat, an Independent, or what?-TEXT",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,pidstr,pidstr,Would you call yourself a strong ${q://QID1/ChoiceGroup/SelectedChoices} or not very strong ${q://QID1/ChoiceGroup/SelectedChoices}?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,pidlean,pidlean,Do you think of yourself as closer to the Republican Party or closer to the Democratic Party?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,num1,num1,"Now we would like to ask you some word problems. /    /  /    / If we roll a fair, six-sided die 1,000 ti...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,num2,num2,"There is a 1% chance of winning a $10 prize in the Megabucks /  Lottery. On average, how many peopl...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,num3,num3,"If there is a 10% chance of winning a concert ticket, how /  many people out of 1,000 would be expe...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,num4,num4,"If the chance of getting a disease is 20 out of 100, this would be / the same as having a ____% cha...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,num5,num5,"In the PCH Sweepstakes, the chances of winning a car are 1 in a / 1,000. What percent of PCH Sweeps...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,politics,politics,Now we would like to ask you some questions about politics.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,ban,ban,Do you favor or oppose a federal law requiring a nationwide ban on / people other than law enforcem...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,banimp,banimp,How important is the issue to you?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,gunown,gunown,Do you or someone else in your household own a gun?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,wage,wage,The federal minimum wage is currently $7.25 per hour. Do you favor / or oppose raising the federal...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,wageimp,wageimp,How important is the issue to you?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,ideo,ideo,"When it comes to politics, do you usually think of yourself as liberal, moderate, or conservative?",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,ideolib,ideolib,Do you consider yourself to be very liberal or somewhat liberal?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,ideocon,ideocon,Do you consider yourself to be very conservative or somewhat conservative?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,,unnamed_46,Now we would like to ask you about some demographic information.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,yob,yob,In what year were you born?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,sex,sex,Are you ...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,edu,edu,What is the highest level of education you have achieved?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,hisp,hisp,Are you Hispanic or Latino?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_1,race_1,What race(s) do you consider yourself to be?-White,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_2,race_2,What race(s) do you consider yourself to be?-Black or African-American,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_3,race_3,What race(s) do you consider yourself to be?-American Indian or Alaska Native,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_4,race_4,What race(s) do you consider yourself to be?-Asian,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_5,race_5,What race(s) do you consider yourself to be?-Native Hawaiian or Pacific Islander,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_6,race_6,What race(s) do you consider yourself to be?-Other (please specify),retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,race_6_TEXT,race_6_text,What race(s) do you consider yourself to be?-Other (please specify)-TEXT,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro1,intro1,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr1,instr1,"Once you have your answer, please proceed to the next page. / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1a_1,time1a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1a_2,time1a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1a_3,time1a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1a_4,time1a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd1,cvd1,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1b_1,time1b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1b_2,time1b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1b_3,time1b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time1b_4,time1b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro2,intro2,Please answer the following question. /  /    / A city government is trying to decide whether to pass a...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr2,instr2,"Once you have your answer, please proceed to the next page.The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2a_1,time2a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2a_2,time2a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2a_3,time2a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2a_4,time2a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd2,cvd2,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2b_1,time2b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2b_2,time2b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2b_3,time2b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time2b_4,time2b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro3,intro3,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr3,instr3,"Once you have your answer, please proceed to the next page. /  / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3a_1,time3a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3a_2,time3a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3a_3,time3a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3a_4,time3a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd3,cvd3,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3b_1,time3b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3b_2,time3b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3b_3,time3b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time3b_4,time3b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro4,intro4,Please answer the following question. /  /   / A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were u...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr4,instr4,"Once you are ready to indicate your answer, please proceed to the next page. / The next page does not contain the study description or table above.",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4a_1,time4a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4a_2,time4a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4a_3,time4a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4a_4,time4a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd4,cvd4,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4b_1,time4b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4b_2,time4b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4b_3,time4b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time4b_4,time4b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,ratewell_1,ratewell_1,"A few questions about the study. /  /  On a scale of 0 to 10, where 0 is ""very poorly done"" and 10 is...-Very poorly done:Very well done",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,rateconv_1,rateconv_1,"On a scale of 0 to 10, where 0 is ""completely unconvincing"" and 10 / is ""completely convincing"", ho...-Completely unconvincing:Completely convincing",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,bias,bias,Do you think the researchers who conducted the study favored or / opposed a ban on concealed handgu...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,Q75,q75,Please answer one final question.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro5,intro5,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr5,instr5,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5a_1,time5a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5a_2,time5a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5a_3,time5a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5a_4,time5a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd5,cvd5,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5b_1,time5b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5b_2,time5b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5b_3,time5b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time5b_4,time5b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro6,intro6,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr6,instr6,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6a_1,time6a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6a_2,time6a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6a_3,time6a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6a_4,time6a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd6,cvd6,What result does the study support?,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6b_1,time6b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6b_2,time6b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6b_3,time6b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time6b_4,time6b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro7,intro7,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr7,instr7,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7a_1,time7a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7a_2,time7a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7a_3,time7a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7a_4,time7a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd7,cvd7,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7b_1,time7b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7b_2,time7b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7b_3,time7b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time7b_4,time7b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,intro8,intro8,The federal government is trying to decide whether to pass a law /  increasing the minimum wage. Go...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,instr8,instr8,"Once you have your answer, please proceed to the next / page. / The next page does not contain the st...",retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8a_1,time8a_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8a_2,time8a_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8a_3,time8a_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8a_4,time8a_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,cvd8,cvd8,What result does the study support? We will give you a bonus of $0.10 for the correct answer.,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8b_1,time8b_1,Timing-First Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8b_2,time8b_2,Timing-Last Click,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8b_3,time8b_3,Timing-Page Submit,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,time8b_4,time8b_4,Timing-Click Count,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,debrief,debrief,Debriefing /  / That concludes the survey. Thank you for your time!  /   /  The results of the studies we...,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,comments,comments,"If you have any comments about the survey, feel free to submit them to the text box below. Please click the ""next"" button to receive your confirmation code for MTurk.",remove,Direct identifier or administrative metadata
+data/extracted/surveys/study_2.csv,,unnamed_152,NA,retain,Research response or non-identifying survey metadata
+data/extracted/surveys/study_2.csv,NA,interview_year,Calendar year of survey start,derive,Year extracted from source timestamp; exact timestamp removed
+data/extracted/surveys/study_2.csv,NA,worker_attempt,Eligible gun-task participation order within worker,derive,Chronological eligible attempts in Study 1 survey export; other exports use 1 and do not identify repeat participation
+data/extracted/coding/study_3.csv,,unnamed_1,,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,responseid,responseid,responseid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_3.csv,responseset,responseset,responseset,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,startdate,startdate,startdate,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,enddate,enddate,enddate,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,finished,finished,finished,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC0_0,sc0_0,SC0_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC0_1,sc0_1,SC0_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC0_2,sc0_2,SC0_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC1_0,sc1_0,SC1_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC1_1,sc1_1,SC1_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC1_2,sc1_2,SC1_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC2_0,sc2_0,SC2_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC2_1,sc2_1,SC2_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC2_2,sc2_2,SC2_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC3_0,sc3_0,SC3_0,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC3_1,sc3_1,SC3_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,SC3_2,sc3_2,SC3_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,Condition,condition,Condition,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,psid,psid,psid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_3.csv,rid,rid,rid,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_3.csv,RISN,risn,RISN,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_3.csv,custom1,custom1,custom1,pseudonymize,Consistent anonymous identifier across research exports
+data/extracted/coding/study_3.csv,gc,gc,gc,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,quota,quota,quota,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,term,term,term,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvddem,cvddem,cvddem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvdrep,cvdrep,cvdrep,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,consent,consent,consent,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,browser_1_TEXT,browser_1_text,browser_1_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,browser_2_TEXT,browser_2_text,browser_2_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,browser_3_TEXT,browser_3_text,browser_3_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,browser_4_TEXT,browser_4_text,browser_4_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,browser_5_TEXT,browser_5_text,browser_5_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,browser_6_TEXT,browser_6_text,browser_6_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,browser_7_TEXT,browser_7_text,browser_7_TEXT,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,pid,pid,pid,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,pid_TEXT,pid_text,pid_TEXT,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,pidstr,pidstr,pidstr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,pidlean,pidlean,pidlean,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num1,num1,num1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num2,num2,num2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num3,num3,num3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num4,num4,num4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num5,num5,num5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,politics,politics,politics,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ban,ban,ban,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,banimp,banimp,banimp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,gunown,gunown,gunown,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,wage,wage,wage,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,wageimp,wageimp,wageimp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ideo,ideo,ideo,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ideolib,ideolib,ideolib,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ideocon,ideocon,ideocon,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,Q91,q91,Q91,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,X,x,X,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,yob,yob,yob,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,sex,sex,sex,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,edu,edu,edu,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,hisp,hisp,hisp,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_1,race_1,race_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_2,race_2,race_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_3,race_3,race_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_4,race_4,race_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_5,race_5,race_5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_6,race_6,race_6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,race_6_TEXT,race_6_text,race_6_TEXT,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,attention,attention,attention,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro2,intro2,intro2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr2,instr2,instr2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2a_1,time2a_1,time2a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2a_2,time2a_2,time2a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2a_3,time2a_3,time2a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2a_4,time2a_4,time2a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd2,cvd2,cvd2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2b_1,time2b_1,time2b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2b_2,time2b_2,time2b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2b_3,time2b_3,time2b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2b_4,time2b_4,time2b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf2,conf2,conf2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2c_1,time2c_1,time2c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2c_2,time2c_2,time2c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2c_3,time2c_3,time2c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time2c_4,time2c_4,time2c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro4,intro4,intro4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr4,instr4,instr4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4a_1,time4a_1,time4a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4a_2,time4a_2,time4a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4a_3,time4a_3,time4a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4a_4,time4a_4,time4a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd4,cvd4,cvd4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4b_1,time4b_1,time4b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4b_2,time4b_2,time4b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4b_3,time4b_3,time4b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4b_4,time4b_4,time4b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf4,conf4,conf4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4c_1,time4c_1,time4c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4c_2,time4c_2,time4c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4c_3,time4c_3,time4c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time4c_4,time4c_4,time4c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro1,intro1,intro1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr1,instr1,instr1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1a_1,time1a_1,time1a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1a_2,time1a_2,time1a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1a_3,time1a_3,time1a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1a_4,time1a_4,time1a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd1,cvd1,cvd1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1b_1,time1b_1,time1b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1b_2,time1b_2,time1b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1b_3,time1b_3,time1b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1b_4,time1b_4,time1b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf1,conf1,conf1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1c_1,time1c_1,time1c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1c_2,time1c_2,time1c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1c_3,time1c_3,time1c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time1c_4,time1c_4,time1c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro3,intro3,intro3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr3,instr3,instr3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3a_1,time3a_1,time3a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3a_2,time3a_2,time3a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3a_3,time3a_3,time3a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3a_4,time3a_4,time3a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd3,cvd3,cvd3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3b_1,time3b_1,time3b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3b_2,time3b_2,time3b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3b_3,time3b_3,time3b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3b_4,time3b_4,time3b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf3,conf3,conf3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3c_1,time3c_1,time3c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3c_2,time3c_2,time3c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3c_3,time3c_3,time3c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time3c_4,time3c_4,time3c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ratewell_1,ratewell_1,ratewell_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,rateconv_1,rateconv_1,rateconv_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,bias,bias,bias,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,Q75,q75,Q75,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro5,intro5,intro5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr5,instr5,instr5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5a_1,time5a_1,time5a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5a_2,time5a_2,time5a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5a_3,time5a_3,time5a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5a_4,time5a_4,time5a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd5,cvd5,cvd5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5b_1,time5b_1,time5b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5b_2,time5b_2,time5b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5b_3,time5b_3,time5b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5b_4,time5b_4,time5b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf5,conf5,conf5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5c_1,time5c_1,time5c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5c_2,time5c_2,time5c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5c_3,time5c_3,time5c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time5c_4,time5c_4,time5c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro6,intro6,intro6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr6,instr6,instr6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6a_1,time6a_1,time6a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6a_2,time6a_2,time6a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6a_3,time6a_3,time6a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6a_4,time6a_4,time6a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd6,cvd6,cvd6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6b_1,time6b_1,time6b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6b_2,time6b_2,time6b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6b_3,time6b_3,time6b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6b_4,time6b_4,time6b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf6,conf6,conf6,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6c_1,time6c_1,time6c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6c_2,time6c_2,time6c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6c_3,time6c_3,time6c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time6c_4,time6c_4,time6c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro7,intro7,intro7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr7,instr7,instr7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7a_1,time7a_1,time7a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7a_2,time7a_2,time7a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7a_3,time7a_3,time7a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7a_4,time7a_4,time7a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd7,cvd7,cvd7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7b_1,time7b_1,time7b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7b_2,time7b_2,time7b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7b_3,time7b_3,time7b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7b_4,time7b_4,time7b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf7,conf7,conf7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7c_1,time7c_1,time7c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7c_2,time7c_2,time7c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7c_3,time7c_3,time7c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time7c_4,time7c_4,time7c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,intro8,intro8,intro8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,instr8,instr8,instr8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8a_1,time8a_1,time8a_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8a_2,time8a_2,time8a_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8a_3,time8a_3,time8a_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8a_4,time8a_4,time8a_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd8,cvd8,cvd8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8b_1,time8b_1,time8b_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8b_2,time8b_2,time8b_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8b_3,time8b_3,time8b_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8b_4,time8b_4,time8b_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conf8,conf8,conf8,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8c_1,time8c_1,time8c_1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8c_2,time8c_2,time8c_2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8c_3,time8c_3,time8c_3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,time8c_4,time8c_4,time8c_4,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,debrief,debrief,debrief,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,comments,comments,comments,remove,Direct identifier or administrative metadata
+data/extracted/coding/study_3.csv,pid7,pid7,pid7,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,pid3,pid3,pid3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,dem,dem,dem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,dem2,dem2,dem2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ideo5,ideo5,ideo5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,ideo3,ideo3,ideo3,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num1r,num1r,num1r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num2r,num2r,num2r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num3r,num3r,num3r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num4r,num4r,num4r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,num5r,num5r,num5r,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,numeracy,numeracy,numeracy,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,fem,fem,fem,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,age,age,age,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,edu5,edu5,edu5,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,banr,banr,banr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,banimpr,banimpr,banimpr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,owngun,owngun,owngun,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,wager,wager,wager,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,wageimpr,wageimpr,wageimpr,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cond,cond,cond,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,demcong,demcong,demcong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,acc,acc,acc,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,guncong,guncong,guncong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cond2,cond2,cond2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,demcong2,demcong2,demcong2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,acc2,acc2,acc2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,wagecong,wagecong,wagecong,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvd,cvd,cvd,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,cvdwage,cvdwage,cvdwage,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,well,well,well,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,conv,conv,conv,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,rating,rating,rating,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,sct1,sct1,sct1,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,sct2,sct2,sct2,retain,Research response or non-identifying survey metadata
+data/extracted/coding/study_3.csv,NA,interview_year,Calendar year of survey start,derive,Year extracted from source timestamp; exact timestamp removed
+data/extracted/coding/study_3.csv,NA,worker_attempt,Eligible gun-task participation order within worker,derive,Chronological eligible attempts in Study 1 survey export; other exports use 1 and do not identify repeat participation

@@ -1,0 +1,132 @@
+sample,variable,category,n,n_observed,share
+study_1,party_group,Democrat,511,785,0.6509554140127388
+study_1,party_group,Independent,110,785,0.14012738853503184
+study_1,party_group,Republican,164,785,0.2089171974522293
+study_1,ideology_group,Conservative,127,784,0.16198979591836735
+study_1,ideology_group,Liberal,396,784,0.5051020408163265
+study_1,ideology_group,Moderate,261,784,0.33290816326530615
+study_1,ideology_group,,1,784,
+study_1,education,College Degree,313,784,0.399234693877551
+study_1,education,HS or Less,71,784,0.09056122448979592
+study_1,education,Post-Graduate,84,784,0.10714285714285714
+study_1,education,Some College,316,784,0.4030612244897959
+study_1,education,,1,784,
+study_1,age_group,18-29,462,785,0.5885350318471337
+study_1,age_group,30-44,247,785,0.3146496815286624
+study_1,age_group,45-64,71,785,0.09044585987261146
+study_1,age_group,65 or older,5,785,0.006369426751592357
+study_1,is_female,0,531,785,0.6764331210191082
+study_1,is_female,1,254,785,0.3235668789808917
+study_1,race_ethnicity,"Asian, Non-Hisp",83,783,0.10600255427841634
+study_1,race_ethnicity,"Black, Non-Hisp",36,783,0.04597701149425287
+study_1,race_ethnicity,Hispanic/Latino,41,783,0.05236270753512133
+study_1,race_ethnicity,Mixed,28,783,0.035759897828863345
+study_1,race_ethnicity,"Other, Non-Hisp",5,783,0.006385696040868455
+study_1,race_ethnicity,"White, Non-Hisp",590,783,0.7535121328224776
+study_1,race_ethnicity,,2,783,
+study_2,party_group,Democrat,578,947,0.6103484688489969
+study_2,party_group,Independent,151,947,0.15945089757127773
+study_2,party_group,Republican,218,947,0.23020063357972545
+study_2,ideology_group,Conservative,159,945,0.16825396825396827
+study_2,ideology_group,Liberal,475,945,0.5026455026455027
+study_2,ideology_group,Moderate,311,945,0.3291005291005291
+study_2,ideology_group,,2,945,
+study_2,education,College Degree,366,946,0.386892177589852
+study_2,education,HS or Less,111,946,0.11733615221987315
+study_2,education,Post-Graduate,83,946,0.08773784355179703
+study_2,education,Some College,386,946,0.4080338266384778
+study_2,education,,1,946,
+study_2,age_group,18-29,466,946,0.492600422832981
+study_2,age_group,30-44,357,946,0.3773784355179704
+study_2,age_group,45-64,110,946,0.11627906976744186
+study_2,age_group,65 or older,13,946,0.013742071881606765
+study_2,age_group,,1,946,
+study_2,is_female,0,586,946,0.6194503171247357
+study_2,is_female,1,360,946,0.38054968287526425
+study_2,is_female,,1,946,
+study_2,race_ethnicity,"Asian, Non-Hisp",90,945,0.09523809523809523
+study_2,race_ethnicity,"Black, Non-Hisp",58,945,0.061375661375661375
+study_2,race_ethnicity,Hispanic/Latino,64,945,0.06772486772486773
+study_2,race_ethnicity,Mixed,36,945,0.0380952380952381
+study_2,race_ethnicity,"Other, Non-Hisp",11,945,0.01164021164021164
+study_2,race_ethnicity,"White, Non-Hisp",686,945,0.725925925925926
+study_2,race_ethnicity,,2,945,
+study_2_high,party_group,Democrat,433,692,0.6257225433526011
+study_2_high,party_group,Independent,110,692,0.15895953757225434
+study_2_high,party_group,Republican,149,692,0.2153179190751445
+study_2_high,ideology_group,Conservative,107,690,0.15507246376811595
+study_2_high,ideology_group,Liberal,359,690,0.5202898550724637
+study_2_high,ideology_group,Moderate,224,690,0.32463768115942027
+study_2_high,ideology_group,,2,690,
+study_2_high,education,College Degree,273,691,0.3950795947901592
+study_2_high,education,HS or Less,68,691,0.09840810419681621
+study_2_high,education,Post-Graduate,70,691,0.10130246020260492
+study_2_high,education,Some College,280,691,0.40520984081041966
+study_2_high,education,,1,691,
+study_2_high,age_group,18-29,338,691,0.48914616497829233
+study_2_high,age_group,30-44,273,691,0.3950795947901592
+study_2_high,age_group,45-64,72,691,0.10419681620839363
+study_2_high,age_group,65 or older,8,691,0.011577424023154847
+study_2_high,age_group,,1,691,
+study_2_high,is_female,0,458,691,0.662807525325615
+study_2_high,is_female,1,233,691,0.33719247467438496
+study_2_high,is_female,,1,691,
+study_2_high,race_ethnicity,"Asian, Non-Hisp",75,690,0.10869565217391304
+study_2_high,race_ethnicity,"Black, Non-Hisp",35,690,0.050724637681159424
+study_2_high,race_ethnicity,Hispanic/Latino,46,690,0.06666666666666667
+study_2_high,race_ethnicity,Mixed,27,690,0.0391304347826087
+study_2_high,race_ethnicity,"Other, Non-Hisp",5,690,0.007246376811594203
+study_2_high,race_ethnicity,"White, Non-Hisp",502,690,0.7275362318840579
+study_2_high,race_ethnicity,,2,690,
+study_3,party_group,Democrat,536,1059,0.506137865911237
+study_3,party_group,Independent,149,1059,0.14069877242681775
+study_3,party_group,Republican,374,1059,0.35316336166194523
+study_3,party_group,,3,1059,
+study_3,ideology_group,Conservative,302,1058,0.28544423440453687
+study_3,ideology_group,Liberal,246,1058,0.23251417769376181
+study_3,ideology_group,Moderate,510,1058,0.4820415879017013
+study_3,ideology_group,,4,1058,
+study_3,education,College Degree,279,1058,0.2637051039697543
+study_3,education,HS or Less,266,1058,0.2514177693761815
+study_3,education,Post-Graduate,105,1058,0.09924385633270322
+study_3,education,Some College,408,1058,0.3856332703213611
+study_3,education,,4,1058,
+study_3,age_group,18-29,104,1056,0.09848484848484848
+study_3,age_group,30-44,358,1056,0.3390151515151515
+study_3,age_group,45-64,460,1056,0.4356060606060606
+study_3,age_group,65 or older,134,1056,0.1268939393939394
+study_3,age_group,,6,1056,
+study_3,is_female,0,358,1056,0.3390151515151515
+study_3,is_female,1,698,1056,0.6609848484848485
+study_3,is_female,,6,1056,
+study_3,race_ethnicity,"Asian, Non-Hisp",30,1052,0.028517110266159697
+study_3,race_ethnicity,"Black, Non-Hisp",110,1052,0.10456273764258556
+study_3,race_ethnicity,Hispanic/Latino,72,1052,0.06844106463878327
+study_3,race_ethnicity,Mixed,22,1052,0.02091254752851711
+study_3,race_ethnicity,"Other, Non-Hisp",14,1052,0.013307984790874524
+study_3,race_ethnicity,"White, Non-Hisp",804,1052,0.7642585551330798
+study_3,race_ethnicity,,10,1052,
+study_3_high,party_group,Democrat,208,421,0.49406175771971494
+study_3_high,party_group,Independent,49,421,0.1163895486935867
+study_3_high,party_group,Republican,164,421,0.38954869358669836
+study_3_high,ideology_group,Conservative,119,421,0.2826603325415677
+study_3_high,ideology_group,Liberal,93,421,0.2209026128266033
+study_3_high,ideology_group,Moderate,209,421,0.49643705463182897
+study_3_high,education,College Degree,139,421,0.33016627078384797
+study_3_high,education,HS or Less,72,421,0.171021377672209
+study_3_high,education,Post-Graduate,55,421,0.13064133016627077
+study_3_high,education,Some College,155,421,0.3681710213776722
+study_3_high,age_group,18-29,46,421,0.10926365795724466
+study_3_high,age_group,30-44,137,421,0.3254156769596199
+study_3_high,age_group,45-64,197,421,0.4679334916864608
+study_3_high,age_group,65 or older,41,421,0.09738717339667459
+study_3_high,is_female,0,181,420,0.430952380952381
+study_3_high,is_female,1,239,420,0.569047619047619
+study_3_high,is_female,,1,420,
+study_3_high,race_ethnicity,"Asian, Non-Hisp",17,418,0.04066985645933014
+study_3_high,race_ethnicity,"Black, Non-Hisp",21,418,0.050239234449760764
+study_3_high,race_ethnicity,Hispanic/Latino,16,418,0.03827751196172249
+study_3_high,race_ethnicity,Mixed,6,418,0.014354066985645933
+study_3_high,race_ethnicity,"Other, Non-Hisp",5,418,0.011961722488038277
+study_3_high,race_ethnicity,"White, Non-Hisp",353,418,0.8444976076555024
+study_3_high,race_ethnicity,,3,418,

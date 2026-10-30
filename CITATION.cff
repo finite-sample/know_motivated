@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: Please cite the article and the original Dataverse dataset when using these materials.
+title: 'Motivated Responding in Studies of Factual Learning: Replication Archive'
+type: dataset
+authors:
+  - family-names: Khanna
+    given-names: Kabir
+  - family-names: Sood
+    given-names: Gaurav
+repository-code: https://github.com/finite-sample/know_motivated
+identifiers:
+  - type: doi
+    value: 10.7910/DVN/4JXJWI
+    description: Original replication dataset
+preferred-citation:
+  type: article
+  title: Motivated Responding in Studies of Factual Learning
+  authors:
+    - family-names: Khanna
+      given-names: Kabir
+    - family-names: Sood
+      given-names: Gaurav
+  journal: Political Behavior
+  year: 2018
+  volume: 40
+  issue: 1
+  start: 79
+  end: 101
+  doi: 10.1007/s11109-017-9395-7

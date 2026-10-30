@@ -1,0 +1,19 @@
+study,outcome,formula,n,f_statistic,df_numerator,df_denominator,p_value
+1,party_id,party_id ~ gun_congenial * gun_incentive,686,0.43698580846329155,3,682,0.7266036770146196
+1,ideology,ideology ~ gun_congenial * gun_incentive,685,0.2960103000779552,3,681,0.8282977148428836
+1,education_code,education_code ~ gun_congenial * gun_incentive,685,2.417375319944723,3,681,0.06523350219233998
+1,age_years,age_years ~ gun_congenial * gun_incentive,686,1.233100517982573,3,682,0.2966999155172415
+1,is_female,is_female ~ gun_congenial * gun_incentive,686,1.5337675030084958,3,682,0.20446982138120356
+1,is_white,is_white ~ gun_incentive,783,0.6406703190461059,1,781,0.42371157484958866
+2,party_id,party_id ~ gun_congenial * gun_incentive,824,0.7566951870422828,3,820,0.5186151027956567
+2,ideology,ideology ~ gun_congenial * gun_incentive,822,1.2933622304895513,3,818,0.2754770356329915
+2,education_code,education_code ~ gun_congenial * gun_incentive,823,0.781265528814008,3,819,0.5045458819353976
+2,age_years,age_years ~ gun_congenial * gun_incentive,824,0.5578346217545007,3,820,0.6429939686976975
+2,is_female,is_female ~ gun_congenial * gun_incentive,823,0.4663494719792714,3,819,0.7058376918222378
+2,is_white,is_white ~ gun_incentive,945,1.396797086466483,1,943,0.23755852174145095
+3,party_id,party_id ~ gun_incentive,1055,0.07542079314585584,1,1053,0.7836555654691294
+3,ideology,ideology ~ gun_incentive,1055,0.0024356292036801304,1,1053,0.9606480639624501
+3,education_code,education_code ~ gun_incentive,1055,2.510972889860374,1,1053,0.11335637107218546
+3,age_years,age_years ~ gun_incentive,1053,1.0036553016217828,1,1051,0.3166582395598751
+3,is_female,is_female ~ gun_incentive,1053,1.036276344062903,1,1051,0.30892335320286807
+3,is_white,is_white ~ gun_incentive,1049,0.05759999882771965,1,1047,0.8103772375467679

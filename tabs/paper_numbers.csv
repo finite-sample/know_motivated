@@ -1,0 +1,108 @@
+key,value,source
+accuracy.figure_2.carry_opponents.congeniality_no_incentive.estimate.one,14.4,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.congeniality_incentive.estimate.one,-3.4,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.interaction.estimate.one,-17.9,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.interaction.p,=0.055,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.interaction.ci,"[-36.12, 0.41]",tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.incentive_uncongenial.estimate.one,16.0,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.incentive_uncongenial.p,=0.014,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_opponents.incentive_uncongenial.ci,"[3.32, 28.67]",tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_supporters.congeniality_no_incentive.estimate.one,12.0,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_supporters.congeniality_incentive.estimate.one,13.9,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_supporters.interaction.estimate.one,1.9,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_supporters.interaction.p,=0.782,tabs/accuracy_contrasts.csv
+accuracy.figure_2.carry_supporters.interaction.ci,"[-11.62, 15.44]",tabs/accuracy_contrasts.csv
+accuracy.figure_3.carry_opponents.incentive_uncongenial.estimate.one,6.9,tabs/accuracy_contrasts.csv
+accuracy.figure_3.carry_opponents.incentive_uncongenial.p,=0.120,tabs/accuracy_contrasts.csv
+accuracy.figure_3.carry_opponents.incentive_uncongenial.ci,"[-1.81, 15.68]",tabs/accuracy_contrasts.csv
+accuracy.figure_3.carry_supporters.incentive_uncongenial.estimate.one,-0.3,tabs/accuracy_contrasts.csv
+accuracy.figure_3.carry_supporters.incentive_uncongenial.ci,"[-7.66, 7.03]",tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.congeniality_no_incentive.estimate.one,27.3,tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.congeniality_incentive.estimate.one,16.3,tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.interaction.estimate.one,-11.0,tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.interaction.p,=0.138,tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.interaction.ci,"[-25.54, 3.55]",tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.incentive_uncongenial.estimate.one,8.4,tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_opponents.incentive_uncongenial.ci,"[-3.88, 20.60]",tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_supporters.congeniality_no_incentive.estimate.one,-10.7,tabs/accuracy_contrasts.csv
+accuracy.figure_4.wage_supporters.congeniality_no_incentive.ci,"[-16.42, -5.06]",tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.conservative_republican.congeniality_no_incentive.estimate.one,4.2,tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.conservative_republican.congeniality_incentive.estimate.one,23.6,tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.conservative_republican.interaction.estimate.one,19.5,tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.conservative_republican.interaction.ci,"[-8.49, 47.43]",tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.liberal_democrat.congeniality_no_incentive.estimate.one,7.6,tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.liberal_democrat.congeniality_incentive.estimate.one,-4.2,tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.liberal_democrat.interaction.estimate.one,-11.8,tabs/accuracy_contrasts.csv
+accuracy.figure_si_4.liberal_democrat.interaction.ci,"[-26.50, 2.90]",tabs/accuracy_contrasts.csv
+accuracy.figure_si_5.carry_opponents.interaction.estimate.one,-17.1,tabs/accuracy_contrasts.csv
+accuracy.figure_si_5.carry_opponents.interaction.ci,"[-42.85, 8.72]",tabs/accuracy_contrasts.csv
+accuracy.figure_si_6.carry_opponents.interaction.estimate.one,-21.4,tabs/accuracy_contrasts.csv
+accuracy.figure_si_6.carry_opponents.interaction.ci,"[-47.67, 4.90]",tabs/accuracy_contrasts.csv
+accuracy.figure_si_8.wage_opponents.interaction.estimate.one,-14.1,tabs/accuracy_contrasts.csv
+accuracy.figure_si_8.wage_opponents.interaction.p,=0.100,tabs/accuracy_contrasts.csv
+accuracy.figure_si_8.wage_opponents.interaction.ci,"[-30.85, 2.73]",tabs/accuracy_contrasts.csv
+cell.figure_2.carry_opponents.0.0.estimate.one,41.0,tabs/accuracy_cells.csv
+cell.figure_2.carry_opponents.1.0.estimate.one,55.5,tabs/accuracy_cells.csv
+cell.figure_2.carry_supporters.0.0.estimate.one,42.6,tabs/accuracy_cells.csv
+cell.figure_2.carry_supporters.1.0.estimate.one,54.6,tabs/accuracy_cells.csv
+cell.figure_3.carry_opponents.0.0.estimate.one,25.6,tabs/accuracy_cells.csv
+cell.figure_3.carry_opponents.0.1.estimate.one,32.5,tabs/accuracy_cells.csv
+cell.figure_3.carry_supporters.0.0.estimate.one,33.6,tabs/accuracy_cells.csv
+cell.figure_3.carry_supporters.0.1.estimate.one,33.3,tabs/accuracy_cells.csv
+cell.figure_4.wage_opponents.0.0.estimate.one,62.0,tabs/accuracy_cells.csv
+cell.figure_4.wage_opponents.1.0.estimate.one,89.3,tabs/accuracy_cells.csv
+rating.carry_opponents.interaction.estimate,0.41,tabs/rating_contrasts.csv
+rating.carry_opponents.interaction.p,=0.336,tabs/rating_contrasts.csv
+rating.carry_opponents.interaction.ci,"[-0.42, 1.23]",tabs/rating_contrasts.csv
+rating.carry_supporters.interaction.estimate,0.31,tabs/rating_contrasts.csv
+rating.carry_supporters.interaction.p,=0.344,tabs/rating_contrasts.csv
+rating.carry_supporters.interaction.ci,"[-0.33, 0.95]",tabs/rating_contrasts.csv
+rating.pooled.interaction.estimate,0.34,tabs/rating_pooled_contrasts.csv
+rating.pooled.interaction.p,=0.180,tabs/rating_pooled_contrasts.csv
+rating.pooled.interaction.ci,"[-0.16, 0.85]",tabs/rating_pooled_contrasts.csv
+recall.recall_a.0.estimate.one,213.9,tabs/recall_cells.csv
+recall.recall_a.0.std_error.one,5.5,tabs/recall_cells.csv
+recall.recall_a.1.estimate.one,212.5,tabs/recall_cells.csv
+recall.recall_a.1.std_error.one,4.9,tabs/recall_cells.csv
+recall.recall_c.0.estimate.one,103.1,tabs/recall_cells.csv
+recall.recall_c.0.std_error.one,2.7,tabs/recall_cells.csv
+recall.recall_c.1.estimate.one,105.2,tabs/recall_cells.csv
+recall.recall_c.1.std_error.one,4.7,tabs/recall_cells.csv
+odds.study_2_high.carry_opponents.0.response_odds,1.22,tabs/response_bias_pooled.csv
+odds.study_2_high.carry_opponents.1.response_odds,0.84,tabs/response_bias_pooled.csv
+odds.study_2_low.carry_opponents.0.response_odds,1.25,tabs/response_bias_pooled.csv
+odds.study_2_low.carry_opponents.1.response_odds,1.06,tabs/response_bias_pooled.csv
+odds.study_3_high.carry_opponents.0.response_odds,2.04,tabs/response_bias_pooled.csv
+odds.study_3_high.carry_opponents.1.response_odds,1.68,tabs/response_bias_pooled.csv
+odds.study_3_low.carry_opponents.0.response_odds,3.68,tabs/response_bias_pooled.csv
+odds.study_3_low.carry_opponents.1.response_odds,2.41,tabs/response_bias_pooled.csv
+mean.1.gun_ban.estimate.one,33.7,tabs/overall_means.csv
+mean.2.gun_ban.estimate.one,35.7,tabs/overall_means.csv
+mean.2.wage_correct.estimate.one,87.1,tabs/overall_means.csv
+mean.2.wage_support.estimate.one,84.6,tabs/overall_means.csv
+mean.3.gun_ban.estimate.one,39.5,tabs/overall_means.csv
+mean.3.wage_correct.estimate.one,76.9,tabs/overall_means.csv
+mean.3.wage_support.estimate.one,65.0,tabs/overall_means.csv
+welch.0.1.true.estimate,1.05,tabs/rating_welch_tests.csv
+welch.1.1.true.estimate,1.41,tabs/rating_welch_tests.csv
+model.gun_logit_position_1.classical.gun_congenial_gun_incentive.p,=0.058,tabs/model_coefficients.csv
+worldview.liberal_democrat.discordant,46.8,data/build/respondents.rds
+worldview.conservative_republican.discordant,14.6,data/build/respondents.rds
+sample.1.n,785,data/build/respondents.rds
+sample.1.position,686,data/build/respondents.rds
+sample.2.n,947,data/build/respondents.rds
+sample.2.high,692,data/build/respondents.rds
+sample.2.high_pct,73.1,data/build/respondents.rds
+sample.2.wage_opponents,129,data/build/respondents.rds
+sample.3.n,1062,data/build/respondents.rds
+sample.3.high,421,data/build/respondents.rds
+sample.3.high_pct,39.6,data/build/respondents.rds
+sample.1.roster,1207,data/extracted/surveys/study_1.csv
+worldview.study_2.low.correlation,0.16,data/build/respondents.rds
+worldview.study_2.high.correlation,0.41,data/build/respondents.rds
+sample.1.workers,749,data/build/respondents.rds
+rating.alpha,0.82,tabs/rating_reliability.csv
+confidence.gun.certain,13.1,tabs/confidence_joint.csv
+confidence.gun.incorrect,10.5,tabs/confidence_joint.csv
+confidence.wage.certain,23.3,tabs/confidence_joint.csv
+confidence.wage.incorrect,3.8,tabs/confidence_joint.csv

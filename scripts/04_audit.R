@@ -1,0 +1,5 @@
+respondents <- readRDS(file.path(build_dir, "respondents.rds"))
+tasks <- readRDS(file.path(build_dir, "tasks.rds"))
+write_audit(respondents, tasks)
+comparison <- readr::read_csv(file.path(table_dir, "wage_source_comparison.csv"), show_col_types = FALSE)
+save_figure(plot_wage_replication(comparison), "wage_replication_comparison", height = 7)

@@ -1,0 +1,1874 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[titletoc,title]{appendix}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{dark-red}{rgb}{0.75,0.10,0.10} 
+\usepackage[margin=1in]{geometry}
+\usepackage[linkcolor=dark-red,
+colorlinks=true,
+urlcolor=blue,
+pdfstartview={XYZ null null 1.00},
+pdfpagemode=UseNone,
+citecolor={dark-red},
+pdftitle={Partisan Learning}]{hyperref}
+
+\usepackage{natbib}
+
+\usepackage{float}
+
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\geometry{letterpaper}               % This is 8.5x11 paper. Options are a4paper or a5paper or other... 
+\usepackage{graphicx}                % Handles inclusion of major graphics formats and allows use of 
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{amsxtra}
+\usepackage{verbatim}
+\setcitestyle{round,semicolon,aysep={},yysep={;}}
+\usepackage{setspace}		     % Permits line spacing control. Options are \doublespacing, \onehalfspace
+\usepackage{sectsty}		     % Permits control of section header styles
+\usepackage{lscape}
+\usepackage{fancyhdr}		     % Permits header customization. See header section below.
+\usepackage{url}                     % Correctly formats URLs with the \url{} tag
+\usepackage{fullpage}		%1-inch margins
+\usepackage{multirow}
+\usepackage{rotating}
+\setlength{\parindent}{3em}
+
+
+
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{.}{5}}
+\newcolumntype{q}{D{.}{.}{3}}
+ 
+\usepackage{natbib}
+\bibpunct[, ]{(}{)}{;}{a}{}{,}
+
+\usepackage{filecontents}
+\begin{filecontents}{partisanlearning.bib}
+@article{pasek2015,
+	Author = {Pasek, Josh and Sood, Gaurav and Krosnick, Jon A.},
+	Date-Added = {2017-02-10 01:03:39 +0000},
+	Date-Modified = {2017-02-10 01:30:10 +0000},
+	Journal = {Journal of Communication},
+	Month = {August},
+	Number = {4},
+	Pages = {660-673},
+	Title = {Misinformed about the {Affordable Care Act}? {L}everaging Certainty to Assess the Prevalence of Misperceptions},
+	Volume = {65},
+	Year = {2015}}
+
+@webpage{pew2016,
+	Date-Added = {2016-12-02 23:16:08 +0000},
+	Date-Modified = {2016-12-02 23:25:02 +0000},
+	Institution = {Pew Research Center},
+	Lastchecked = {December 2, 2016},
+	Month = {October},
+	Title = {In Presidential Contest, Voters Say `Basic Facts,' Not Just Policies, Are in Dispute},
+	Url = {http://www.people-press.org/2016/10/14/in-presidential-contest-voters-say-basic-facts-not-just-policies-are-in-dispute/},
+	Year = {2016},
+	Bdsk-Url-1 = {http://www.people-press.org/2016/10/14/in-presidential-contest-voters-say-basic-facts-not-just-policies-are-in-dispute/}}
+
+@article{palmer2001,
+	Author = {Palmer, Harvey D. and Duch, Raymond M.},
+	Date-Added = {2016-12-02 22:08:49 +0000},
+	Date-Modified = {2016-12-02 22:09:39 +0000},
+	Journal = {Political Analysis},
+	Number = {1},
+	Pages = {58-77},
+	Title = {Do Surveys Provide Representative or Whimsical Assessments of the Economy?},
+	Volume = {9},
+	Year = {2001}}
+
+@article{wilcox1993,
+	Author = {Wilcox, Nathaniel and Wlezien, Christopher},
+	Date-Added = {2016-12-02 22:06:57 +0000},
+	Date-Modified = {2016-12-02 22:08:46 +0000},
+	Journal = {Political Analysis},
+	Number = {1},
+	Pages = {181-213},
+	Title = {The Contamination of Responses to Survey Items: Economic Perceptions and Political Judgments},
+	Volume = {5},
+	Year = {1993}}
+
+@article{lau1990,
+	Author = {Lau, Richard R. and Sears, David O. and Jessor, Tom},
+	Date-Added = {2016-12-02 22:06:10 +0000},
+	Date-Modified = {2016-12-02 22:06:49 +0000},
+	Journal = {Political Behavior},
+	Month = {September},
+	Number = {3},
+	Pages = {217-242},
+	Title = {Fact or Artifact Revisited: Survey Instrument Effects and Pocketbook Politics},
+	Volume = {12},
+	Year = {1990}}
+
+@article{sears1983,
+	Author = {Sears, David O. and Lau, Richard R.},
+	Date-Added = {2016-12-02 22:04:47 +0000},
+	Date-Modified = {2016-12-02 22:05:29 +0000},
+	Journal = {American Journal of Political Science},
+	Month = {May},
+	Number = {2},
+	Pages = {223-252},
+	Title = {Apparently Self-Interested Political Preferences},
+	Volume = {27},
+	Year = {1983}}
+
+@article{gerber2009,
+	Author = {Gerber, Alan S. and Huber, Gregory A.},
+	Date-Added = {2016-12-02 21:58:15 +0000},
+	Date-Modified = {2016-12-02 21:59:20 +0000},
+	Journal = {American Political Science Review},
+	Month = {August},
+	Number = {3},
+	Pages = {407-426},
+	Title = {Partisanship and Economic Behavior: Do Partisan Differences in Economic Forecasts Predict Real Economic Behavior?},
+	Volume = {103},
+	Year = {2009}}
+
+@book{zaller1992,
+	Address = {Cambridge},
+	Author = {Zaller, John},
+	Date-Added = {2016-06-05 20:34:51 +0000},
+	Date-Modified = {2016-06-05 20:34:58 +0000},
+	Publisher = {Cambridge University Press},
+	Title = {The Nature and Origins of Mass Opinion},
+	Year = {1992}}
+
+@article{prior2013,
+	Author = {Markus Prior},
+	Date-Added = {2016-06-05 20:25:39 +0000},
+	Date-Modified = {2016-06-05 20:25:39 +0000},
+	Journal = {Annual Review of Political Science},
+	Pages = {101-127},
+	Title = {Media and Political Polarization},
+	Volume = {16},
+	Year = {2013}}
+
+@article{paolacci2014,
+	Author = {Paolacci, G. and Chandler, J.},
+	Date-Added = {2016-05-24 18:12:59 +0000},
+	Date-Modified = {2017-02-05 01:23:20 +0000},
+	Journal = {Current Directions in Psychological Science},
+	Number = {3},
+	Pages = {184-188},
+	Title = {Inside the {Turk}: Understanding {Mechanical Turk} as a Participant Pool},
+	Volume = {23},
+	Year = {2014}}
+
+@article{mullinix2015,
+	Author = {Mullinix, Kevin J. and Leeper, Thomas J. and Druckman, James N. and Freese, Jeremy},
+	Date-Added = {2016-05-24 18:09:49 +0000},
+	Date-Modified = {2016-05-24 18:10:00 +0000},
+	Journal = {Journal of Experimental Political Science},
+	Number = {2},
+	Pages = {109--138},
+	Publisher = {Cambridge Univ Press},
+	Title = {The Generalizability of Survey Experiments},
+	Volume = {2},
+	Year = {2015}}
+
+@article{park:2013,
+	Abstract = {Research on American mass behavior finds that party identifiers discount policy-relevant facts and interpret the same facts differently. Both findings imply enduring differences in the opinions that direct policy change. What this research does not consider, however, is that partisans confront the burden of evidence when they interpret facts about policy conditions. And thus, because policy-relevant evidence is always changing, the information environment could facilitate or inhibit partisan-directed rationalization. Employing national survey data and a Bayesian multilevel model, this study tests whether the distribution of economic facts moderates partisan disagreement about the U.S. economy. The results indicate that, when economic facts move in the positive and negative direction simultaneously, disagreement about the economy grows. When these facts move in one direction, however, disagreement recedes. In general, this study contributes theory and evidence on the tides of disagreement in partisan public opinion.},
+	Author = {Parker-Stephen, Evan},
+	Copyright = {Copyright {\copyright} 2013 Southern Political Science Association},
+	Date-Added = {2015-11-16 20:27:10 +0000},
+	Date-Modified = {2015-11-16 20:27:16 +0000},
+	Issn = {00223816},
+	Journal = {The Journal of Politics},
+	Jstor_Articletype = {research-article},
+	Jstor_Formatteddate = {October 2013},
+	Language = {English},
+	Number = {4},
+	Pages = {pp. 1077-1088},
+	Publisher = {The University of Chicago Press on behalf of the Southern Political Science Association},
+	Title = {Tides of Disagreement: How Reality Facilitates (and Inhibits) Partisan Public Opinion},
+	Url = {http://www.jstor.org/stable/10.1017/S0022381613000789},
+	Volume = {75},
+	Year = {2013},
+	Bdsk-Url-1 = {http://www.jstor.org/stable/10.1017/S0022381613000789}}
+
+@unpublished{gues:copp:2015,
+	Author = {Guess, Andrew and Coppock, Alexander},
+	Date-Added = {2015-11-16 19:12:01 +0000},
+	Date-Modified = {2015-11-16 19:12:40 +0000},
+	Title = {Back to Bayes: Confronting the Evidence on Attitude Polarization}}
+
+@article{mata2015a,
+	Author = {Andr{\'e} Mata and Leonel Garcia-Marques and M{\'a}rio B. Ferreira and Cristina Mendon{\c c}a},
+	Date-Added = {2015-10-02 05:31:24 +0000},
+	Date-Modified = {2017-02-05 01:19:59 +0000},
+	Doi = {10.1080/20445911.2014.982129},
+	Eprint = {http://dx.doi.org/10.1080/20445911.2014.982129},
+	Journal = {Journal of Cognitive Psychology},
+	Number = {2},
+	Pages = {238-249},
+	Title = {Goal-Driven Reasoning Overcomes Cell {D} Neglect in Contingency Judgements},
+	Volume = {27},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1080/20445911.2014.982129}}
+
+@article{ahler2014,
+	Author = {Ahler, Douglas J.},
+	Date-Added = {2015-10-02 05:25:35 +0000},
+	Date-Modified = {2015-10-02 05:25:42 +0000},
+	Doi = {10.1017/S0022381614000085},
+	Issn = {1468-2508},
+	Issue = {03},
+	Journal = {The Journal of Politics},
+	Month = {7},
+	Numpages = {14},
+	Pages = {607--620},
+	Title = {Self-Fulfilling Misperceptions of Public Polarization},
+	Url = {http://journals.cambridge.org/article_S0022381614000085},
+	Volume = {76},
+	Year = {2014},
+	Bdsk-Url-1 = {http://journals.cambridge.org/article_S0022381614000085},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1017/S0022381614000085}}
+
+@unpublished{clifford,
+	Author = {Clifford, Scott and Jewell, Ryan M. and Waggoner, Philip D.},
+	Date-Added = {2015-10-02 05:22:49 +0000},
+	Date-Modified = {2015-10-02 05:23:46 +0000},
+	Note = {http://scottaclifford.com/wp-content/uploads/2012/02/MTurkRepublicans.pdf},
+	Title = {Are Samples Drawn from Mechanical Turk Valid for Research on Political Ideology?}}
+
+@unpublished{ahler2015,
+	Author = {Ahler, Douglas and Sood, Gaurav},
+	Date-Added = {2015-10-02 05:00:51 +0000},
+	Date-Modified = {2015-10-02 05:01:41 +0000},
+	Title = {The Parties in our Heads: Misperceptions About Party Composition and Their Consequences}}
+
+@unpublished{ahler2016,
+	Author = {Ahler, Douglas and Sood, Gaurav},
+	Date-Added = {2015-10-02 05:00:51 +0000},
+	Date-Modified = {2015-10-02 05:01:41 +0000},
+	Title = {Measuring Perceptions of Share of Salient Groups}}
+
+@article{arceneaux2013,
+	Author = {Arceneaux, Kevin and Vander Wielen, Ryan J.},
+	Date-Added = {2015-10-02 04:25:19 +0000},
+	Date-Modified = {2015-10-02 04:25:28 +0000},
+	Doi = {10.1111/j.1467-9221.2012.00925.x},
+	Issn = {1467-9221},
+	Journal = {Political Psychology},
+	Keywords = {partisanship, party evaluation, information processing, motivated reasoning, need for cognition, need for affect},
+	Number = {1},
+	Pages = {23--42},
+	Publisher = {Blackwell Publishing Inc},
+	Title = {The Effects of Need for Cognition and Need for Affect on Partisan Evaluations},
+	Volume = {34},
+	Year = {2013},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1111/j.1467-9221.2012.00925.x}}
+
+@article{thibodeau2015,
+	Author = {Thibodeau, Paul and Peebles, Matthew M. and Grodner, Daniel J. and Durgin, Frank H.},
+	Date-Added = {2015-10-02 03:54:47 +0000},
+	Date-Modified = {2015-10-02 03:55:33 +0000},
+	Doi = {10.1111/pops.12100},
+	Issn = {1467-9221},
+	Journal = {Political Psychology},
+	Keywords = {motivated reasoning, belief bias, political reasoning, Wason selection task, emotion regulation},
+	Number = {4},
+	Pages = {431--448},
+	Title = {The Wished-For Always Wins Until the Winner Was Inevitable All Along: Motivated Reasoning and Belief Bias Regulate Emotion During Elections},
+	Volume = {36},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1111/pops.12100}}
+
+@unpublished{arceneaux,
+	Author = {Arceneaux, Kevin and van der Wielen, Ryan J.},
+	Date-Added = {2015-10-02 03:17:32 +0000},
+	Date-Modified = {2015-10-02 03:21:05 +0000},
+	Note = {http://sites.duke.edu/2014bmp/files/2014/10/Arceneaux_VanderWielen.pdf},
+	Title = {Democratic Accountability for Some: Individual Differences in How Partisans Process Political Information}}
+
+@article{chambers2014,
+	Abstract = {Three studies examined Americans' perceptions of incomes and income inequality using a variety of criterion measures. Contrary to recent findings indicating that Americans underestimate wealth inequality, we found that Americans not only overestimated the rise of income inequality over time, but also underestimated average incomes. Thus, economic conditions in America are more favorable than people seem to realize. Furthermore, ideological differences emerged in two of these studies, such that political liberals overestimated the rise of inequality more than political conservatives. Implications of these findings for public policy debates and ideological disagreements are discussed.},
+	Author = {Chambers, John R. and Swan, Lawton K. and Heesacker, Martin},
+	Date-Added = {2015-10-02 02:54:01 +0000},
+	Date-Modified = {2015-10-02 02:54:07 +0000},
+	Doi = {10.1177/0956797613504965},
+	Eprint = {http://pss.sagepub.com/content/25/2/613.full.pdf+html},
+	Journal = {Psychological Science},
+	Number = {2},
+	Pages = {613-618},
+	Title = {Better Off Than We Know: Distorted Perceptions of Incomes and Income Inequality in America},
+	Volume = {25},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1177/0956797613504965}}
+
+@article{chambers2015,
+	Abstract = {The ability to move upward in social class or economic position (i.e., social mobility) is a defining feature of the American Dream, yet recent public-opinion polls indicate that many Americans are losing confidence in the essential fairness of the system and their opportunities for financial advancement. In two studies, we examined Americans' perceptions of both current levels of mobility in the United States and temporal trends in mobility, and we compared these perceptions with objective indicators to determine perceptual accuracy. Overall, participants underestimated current mobility and erroneously concluded that mobility has declined over the past four decades. These misperceptions were more pronounced among politically liberal participants than among politically moderate or conservative ones. These perception differences were accounted for by liberals' relative dissatisfaction with the current social system, social hierarchies, and economic inequality. These findings have important implications for theories of political ideology.},
+	Author = {Chambers, John R. and Swan, Lawton K. and Heesacker, Martin},
+	Date-Added = {2015-10-02 02:53:22 +0000},
+	Date-Modified = {2017-02-05 01:10:21 +0000},
+	Doi = {10.1177/0956797614566657},
+	Eprint = {http://pss.sagepub.com/content/26/4/413.full.pdf+html},
+	Journal = {Psychological Science},
+	Number = {4},
+	Pages = {413-423},
+	Title = {Perceptions of {U.S.} Social Mobility Are Divided (and Distorted) Along Ideological Lines},
+	Volume = {26},
+	Year = {2015},
+	Bdsk-Url-1 = {http://pss.sagepub.com/content/26/4/413.abstract},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1177/0956797614566657}}
+
+@article{lyons2014,
+	Abstract = {How do people assign blame in the wake of significant government failures? If the role of the citizenry in a representative democracy is to discipline elected officials for failing to meet collective expectations, then this question is of paramount importance. Much research suggests that the base tendency of citizens is to simply blame the other party---a normatively concerning outcome. However, some argue that information, especially that from expert and nonpartisan sources, may push citizens to overlook their party affiliation and assign blame in a more performance-based fashion. Using an experimental design, we test this possibility, manipulating whether there is unified or divided government, the partisanship of key actors, and the nature of expert information that participants receive during a hypothetical budget crisis at the state level. We find strong evidence that party weighs heavily on individuals' minds when assigning blame, as expected. More importantly, we find that nonpartisan expert information about the situation does not live up to its potential to sway partisans from their priors. Rather, unbiased information appears to be used as a weapon---ignored when it challenges partisan expectations and used to magnify blame of the other party when it conforms with them.},
+	Author = {Lyons, Jeffrey and Jaeger, William P.},
+	Date-Added = {2015-10-02 02:49:49 +0000},
+	Date-Modified = {2017-02-10 01:33:24 +0000},
+	Doi = {10.1177/1532440014537504},
+	Eprint = {http://spa.sagepub.com/content/early/2014/04/20/1532440014537504.full.pdf+html},
+	Journal = {State Politics \& Policy Quarterly},
+	Title = {Who Do Voters Blame for Policy Failure? {I}nformation and the Partisan Assignment of Blame},
+	Year = {2014},
+	Bdsk-Url-1 = {http://spa.sagepub.com/content/early/2014/04/20/1532440014537504.abstract},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1177/1532440014537504}}
+
+@article{crawford2015a,
+	Author = {Crawford, Jarret T. and Xhambazi, Eneda},
+	Date-Added = {2015-10-02 02:34:28 +0000},
+	Date-Modified = {2017-02-05 01:09:45 +0000},
+	Journal = {Political Psychology},
+	Number = {1},
+	Pages = {111--121},
+	Publisher = {Wiley Online Library},
+	Title = {Predicting Political Biases against the {Occupy Wall Street} and {Tea Party} movements},
+	Volume = {36},
+	Year = {2015}}
+
+@article{crawford2015b,
+	Abstract = {The ideologically objectionable premise model posits that biased political judgments can emerge across the political spectrum. Previous tests of ideological differences in political judgment biases have utilized between-subjects designs (i.e., separate comparisons). In this study (N = 410), we examined whether these biases also emerge in within-subjects designs (i.e., joint comparisons) and compared the strengths of judgment biases in between-subjects and within-subjects designs. Across designs, both liberals and conservatives favored sympathetic over unsympathetic targets in scenario judgments, but biases were attenuated in the within-subjects design. No ideological differences in bias strength emerged, although liberals reported a stronger internal motivation to respond without prejudice toward ideologically dissimilar others. Further, consistent with the ideological conflict hypothesis, both liberals and conservatives were prejudiced toward ideologically dissimilar targets, although biases in prejudice ratings were stronger among liberals than conservatives. Together, results support the ideological symmetry perspective on political bias and prejudice.},
+	Author = {Crawford, Jarret T. and Kay, Sophie A. and Duke, Kristen E.},
+	Date-Added = {2015-10-02 02:32:16 +0000},
+	Date-Modified = {2015-10-02 02:32:42 +0000},
+	Doi = {10.1177/1948550614566858},
+	Eprint = {http://spp.sagepub.com/content/6/4/422.full.pdf+html},
+	Journal = {Social Psychological and Personality Science},
+	Number = {4},
+	Pages = {422-430},
+	Title = {Speaking Out of Both Sides of Their Mouths: Biased Political Judgments Within (and Between) Individuals},
+	Volume = {6},
+	Year = {2015},
+	Bdsk-Url-1 = {http://spp.sagepub.com/content/6/4/422.abstract},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1177/1948550614566858}}
+
+@article{bisgaard2015,
+	Abstract = {Partisans often perceive real world conditions in a manner that credits their own party. Yet recent findings suggest that partisans are capable of setting their loyalties aside when confronted with clear evidence, for example, during an economic crisis. This study examines a different possibility. While partisans may acknowledge the same reality, they may find other ways of aligning undeniable realities with their party loyalties. Using monthly survey data collected before and after the unexpected collapse of the British national economy (2004--10), this study presents one key finding: As partisans came to agree that economic conditions had gotten much worse, they conversely polarized in whether they thought the government was responsible. While the most committed partisans were surprisingly apt in acknowledging the economic collapse, they were also the most eager to attribute responsibility selectively. For that substantial share of the electorate, partisan-motivated reasoning seems highly adaptive.},
+	Author = {Bisgaard, Martin},
+	Copyright = {Copyright {\copyright} 2015 Southern Political Science Association},
+	Date-Added = {2015-09-28 15:17:50 +0000},
+	Date-Modified = {2015-11-16 20:35:51 +0000},
+	Issn = {00223816},
+	Journal = {The Journal of Politics},
+	Jstor_Articletype = {research-article},
+	Jstor_Formatteddate = {July 2015},
+	Language = {English},
+	Number = {3},
+	Pages = {pp. 849-860},
+	Publisher = {The University of Chicago Press on behalf of the Southern Political Science Association},
+	Title = {Bias Will Find a Way: Economic Perceptions, Attributions of Blame, and Partisan-Motivated Reasoning during Crisis},
+	Volume = {77},
+	Year = {2015},
+	Bdsk-Url-1 = {http://www.jstor.org/stable/10.1086/681591}}
+
+@article{shani2006,
+	Author = {Shani, Danielle},
+	Date-Added = {2015-09-22 20:18:59 +0000},
+	Date-Modified = {2015-09-22 20:25:52 +0000},
+	Title = {Knowing Your True Colors: Can Knowledge Correct for Partisan Bias in Political Perceptions?},
+	Volume = {Presented at the Annual Meeting of the Midwest Political Science Association, Chicago, IL},
+	Year = {2006}}
+
+@article{wells2009,
+	Author = {Wells, Chris and Reedy, Justin and Gastil, John and Lee, Carolyn},
+	Date-Added = {2015-09-22 19:42:35 +0000},
+	Date-Modified = {2015-09-22 19:42:43 +0000},
+	Doi = {10.1111/j.1467-9221.2009.00735.x},
+	Issn = {1467-9221},
+	Journal = {Political Psychology},
+	Keywords = {Heuristic processing, Initiative elections, Misinformation, Motivated reasoning, Political sophistication, Public opinion},
+	Number = {6},
+	Pages = {953--969},
+	Publisher = {Blackwell Publishing Inc},
+	Title = {Information Distortion and Voting Choices: The Origins and Effects of Factual Beliefs in Initiative Elections},
+	Url = {http://dx.doi.org/10.1111/j.1467-9221.2009.00735.x},
+	Volume = {30},
+	Year = {2009},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1111/j.1467-9221.2009.00735.x}}
+
+@article{nyhanreifler2010,
+	Author = {Nyhan, Brendan and Reifler, Jason},
+	Date-Added = {2015-09-21 20:38:56 +0000},
+	Date-Modified = {2017-02-05 01:21:12 +0000},
+	Journal = {Political Behavior},
+	Number = {2},
+	Pages = {303--330},
+	Publisher = {Springer},
+	Title = {When Corrections Fail: The Persistence of Political Misperceptions},
+	Volume = {32},
+	Year = {2010}}
+
+@article{edwards1996,
+	Author = {Edwards, Kari and Smith, Edward E.},
+	Date-Added = {2015-09-21 18:05:42 +0000},
+	Date-Modified = {2017-02-05 00:36:05 +0000},
+	Journal = {Journal of Personality and Social Psychology},
+	Number = {1},
+	Pages = {5},
+	Publisher = {American Psychological Association},
+	Title = {A Disconfirmation Bias in the Evaluation of Arguments},
+	Volume = {71},
+	Year = {1996}}
+
+@article{blais2010,
+	Author = {Blais, Andr{\'e} and Gidengil, Elisabeth and Fournier, Patrick and Nevitte, Neil and Everitt, Joanna and Kim, Jiyoon},
+	Date-Added = {2015-09-21 18:03:30 +0000},
+	Date-Modified = {2017-02-05 00:31:22 +0000},
+	Journal = {Electoral Studies},
+	Number = {1},
+	Pages = {1--12},
+	Publisher = {Elsevier},
+	Title = {Political Judgments, Perceptions of Facts, and Partisan Effects},
+	Volume = {29},
+	Year = {2010}}
+
+@article{slothuus2010,
+	Author = {Slothuus, Rune and de Vreese,Claes H.},
+	Date-Added = {2015-09-17 19:03:58 +0000},
+	Date-Modified = {2015-09-17 19:06:07 +0000},
+	Doi = {10.1017/S002238161000006X},
+	Issn = {1468-2508},
+	Issue = {03},
+	Journal = {The Journal of Politics},
+	Month = {7},
+	Numpages = {16},
+	Pages = {630--645},
+	Title = {Political Parties, Motivated Reasoning, and Issue Framing Effects},
+	Url = {http://journals.cambridge.org/article_S002238161000006X},
+	Volume = {72},
+	Year = {2010},
+	Bdsk-Url-1 = {http://journals.cambridge.org/article_S002238161000006X},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1017/S002238161000006X}}
+
+@article{lebo2007,
+	Author = {Lebo, Matthew J. and Cassino, Daniel},
+	Date-Added = {2015-09-17 18:53:55 +0000},
+	Date-Modified = {2017-02-05 01:15:57 +0000},
+	Doi = {10.1111/j.1467-9221.2007.00601.x},
+	Issn = {1467-9221},
+	Journal = {Political Psychology},
+	Number = {6},
+	Pages = {719--746},
+	Publisher = {Blackwell Publishing Inc},
+	Title = {The Aggregated Consequences of Motivated Reasoning and the Dynamics of Partisan Presidential Approval},
+	Volume = {28},
+	Year = {2007},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1111/j.1467-9221.2007.00601.x}}
+
+@article{dawson2002,
+	Author = {Dawson, Erica and Gilovich, Thomas and Regan, Dennis T.},
+	Date-Added = {2015-09-16 01:25:07 +0000},
+	Date-Modified = {2017-02-05 01:11:44 +0000},
+	Journal = {Personality and Social Psychology Bulletin},
+	Number = {10},
+	Pages = {1379--1387},
+	Publisher = {Sage Publications},
+	Title = {Motivated Reasoning and Performance on the {Wason} Selection Task},
+	Volume = {28},
+	Year = {2002}}
+
+@article{ansolabehere2014,
+	Author = {Ansolabehere, Stephen and Meredith, Marc and Snowberg, Erik},
+	Journal = {Economics \& Politics},
+	Number = {3},
+	Pages = {380--410},
+	Publisher = {Wiley Online Library},
+	Title = {Mecro-Economic Voting: Local Information and Micro-Perceptions of the Macro-Economy},
+	Volume = {26},
+	Year = {2014}}
+
+@article{bartels2002,
+	Author = {Bartels, Larry M.},
+	Journal = {Political Behavior},
+	Number = {2},
+	Pages = {117--150},
+	Publisher = {Springer},
+	Title = {Beyond the Running Tally: Partisan Bias in Political Perceptions},
+	Volume = {24},
+	Year = {2002}}
+
+@article{bartels2014,
+	Author = {Bartels, Larry M.},
+	Journal = {Political Communication},
+	Number = {4},
+	Pages = {532--544},
+	Publisher = {Taylor \& Francis},
+	Title = {Remembering to Forget: A Note on the Duration of Campaign Advertising Effects},
+	Volume = {31},
+	Year = {2014}}
+
+@article{bechlivanidis2013,
+	Author = {Bechlivanidis, Christos and Lagnado, David A.},
+	Date-Modified = {2017-02-10 01:52:51 +0000},
+	Journal = {Psychological Science},
+	Number = {8},
+	Pages = {1563--1572},
+	Publisher = {Sage Publications},
+	Title = {Does the ``Why'' Tell Us the ``When''?},
+	Volume = {24},
+	Year = {2013}}
+
+@article{berinsky2012,
+	Author = {Berinsky, Adam J. and Huber, Gregory J. and Lenz, Gabriel S.},
+	Date-Modified = {2017-02-05 01:10:36 +0000},
+	Journal = {Political Analysis},
+	Number = {3},
+	Pages = {351---368},
+	Title = {Evaluating Online Labor Markets for Experimental Research: {Amazon.com's Mechanical Turk}},
+	Volume = {20},
+	Year = {2012}}
+
+@article{bolsen2014,
+	Author = {Bolsen, Toby and Druckman, James N. and Cook, Fay L.},
+	Journal = {Political Behavior},
+	Number = {2},
+	Pages = {235--262},
+	Title = {The Influence on Partisan Motivated Reasoning on Public Opinion},
+	Volume = {36},
+	Year = {2014}}
+
+@article{bullock2015,
+	Author = {Bullock, John G. and Gerber, Alan S. and Hill, Seth J. and Huber, Gregory A.},
+	Date-Modified = {2016-01-13 19:30:09 +0000},
+	Journal = {Quarterly Journal of Political Science},
+	Number = {4},
+	Pages = {519-578},
+	Title = {Partisan Bias in Factual Beliefs about Politics},
+	Volume = {10},
+	Year = {2015}}
+
+@article{buhrmester2011,
+	Author = {Michael Buhrmester and Tracy Kwang and Samuel D. Gosling},
+	Date-Modified = {2017-02-05 01:11:08 +0000},
+	Journal = {Perspectives on Psychological Science},
+	Number = {1},
+	Pages = {3-5},
+	Title = {{Amazon's Mechanical Turk}: A New Source of Inexpensive, Yet High-Quality, Data?},
+	Volume = {6},
+	Year = {2011}}
+
+@book{campbell1960,
+	Author = {Campbell, Angus and Converse, Philip E. and Miller, Warren E. and Stokes, Donald E.},
+	Publisher = {New York: Wiley},
+	Title = {The American Voter},
+	Year = {1960}}
+
+@article{chaiken1994,
+	Author = {Chaiken, Shelly and Maheswaran, Durairaj},
+	Journal = {Journal of Personality and Social Psychology},
+	Number = {66},
+	Pages = {460-473},
+	Title = {Heuristic Processing Can Bias Systematic Processing: Effects of Source Credibility, Argument Ambiguity, and Task Importance on Attitude Judgment},
+	Volume = {3},
+	Year = {1994}}
+
+@article{christiansen2013,
+	Author = {Christiansen, Martin Bisgaard},
+	Title = {Partisan Motivated Reasoning During the Great Recession: Does an Unambiguous Economy Eliminate Partisan Motivated Biases?},
+	Year = {2013}}
+
+@article{dawson2002cella,
+	Author = {Dawson, Erica and Gilovich, Thomas and Regan, Dennis T.},
+	Date-Modified = {2017-02-10 01:41:40 +0000},
+	Title = {Motivated Reasoning and Susceptibility to the ``{Cell A}'' Bias},
+	Volume = {Manuscript submitted for publication},
+	Year = {2002}}
+
+@article{ditto1992,
+	Author = {Ditto, Peter H. and Lopez, David F.},
+	Journal = {Journal of Personality and Social Psychology},
+	Number = {63},
+	Pages = {568---584},
+	Title = {Motivated Skepticism: Use of Differential Decision Criteria for Preferred and Nonpreferred Conclusions},
+	Volume = {4},
+	Year = {1992}}
+
+@article{ditto1998,
+	Author = {Ditto, Peter H. and Scepansky, James A. and Munro, Geoffrey D. and Apanovitch, Anne Marie and Lockhart, Lisa K.},
+	Journal = {Journal of Personality and Social Psychology},
+	Number = {75},
+	Pages = {53-69},
+	Title = {Motivated Sensitivity to Preference-Inconsistent Information},
+	Volume = {1},
+	Year = {1998}}
+
+@article{druckman2011,
+	Author = {Druckman, James N. and Bolsen, Toby},
+	Journal = {Journal of Communication},
+	Number = {4},
+	Pages = {659--688},
+	Publisher = {Wiley Online Library},
+	Title = {Framing, Motivated Reasoning, and Opinions about Emergent Technologies},
+	Volume = {61},
+	Year = {2011}}
+
+@article{druckman2013,
+	Author = {Druckman, James N. and Peterson, Erik and Slothuus, Rune},
+	Journal = {American Political Science Review},
+	Number = {01},
+	Pages = {57--79},
+	Publisher = {Cambridge Univ Press},
+	Title = {How Elite Partisan Polarization Affects Public Opinion Formation},
+	Volume = {107},
+	Year = {2013}}
+
+@article{enns2012,
+	Author = {Enns, Peter K. and Kellstedt, Paul M. and McAvoy, Gregory E.},
+	Journal = {Public Opinion Quarterly},
+	Number = {2},
+	Pages = {287--310},
+	Publisher = {AAPOR},
+	Title = {The Consequences of Partisanship in Economic Perceptions},
+	Volume = {76},
+	Year = {2012}}
+
+@article{gaines2007,
+	Author = {Gaines, Brian J. and Kuklinski, James H. and Quirk, Paul J. and Peyton, Buddy and Verkuilen, Jay},
+	Date-Modified = {2017-02-05 01:13:32 +0000},
+	Journal = {Journal of Politics},
+	Number = {4},
+	Pages = {957--974},
+	Title = {Same Facts, Different Interpretations: Partisan Motivation and Opinion on {Iraq}},
+	Volume = {69},
+	Year = {2007}}
+
+@article{gilens2001,
+	Author = {Martin Gilens},
+	Journal = {American Political Science Review},
+	Number = {2},
+	Pages = {379-396},
+	Read = {0},
+	Title = {Political Ignorance and Collective Policy Preferences},
+	Volume = {95},
+	Year = {2001}}
+
+@book{gilovich1991,
+	Address = {New York},
+	Author = {Gilovich, Thomas D.},
+	Publisher = {The Free Press},
+	Title = {How We Know What Isn't So: The Fallibility of Human Reason in Everyday Life.},
+	Year = {1991}}
+
+@article{hastorf1954,
+	Author = {Hastorf, Albert H. and Cantril, Hadley},
+	Journal = {The Journal of Abnormal and Social Psychology},
+	Number = {1},
+	Pages = {129},
+	Publisher = {American Psychological Association},
+	Title = {They Saw a Game: A Case Study.},
+	Volume = {49},
+	Year = {1954}}
+
+@incollection{hochschild2001,
+	Address = {New York},
+	Author = {Hochschild, Jennifer L.},
+	Booktitle = {Citizens and Politics: Perspectives from Political Psychology},
+	Date-Modified = {2015-11-16 20:31:27 +0000},
+	Editor = {James H. Kuklinski},
+	Publisher = {Cambridge University Press},
+	Title = {Where You Stand Depends on What You See: Connections among Values, Perceptions of Fact, and Political Prescriptions},
+	Year = {2001}}
+
+@article{iyengar2012affect,
+	Author = {Iyengar, Shanto and Sood, Gaurav and Lelkes, Yphtach},
+	Journal = {Public Opinion Quarterly},
+	Number = {3},
+	Pages = {405--431},
+	Publisher = {AAPOR},
+	Title = {Affect, Not Ideology: A Social Identity Perspective on Polarization},
+	Volume = {76},
+	Year = {2012}}
+
+@article{iyengar2014fear,
+	Author = {Iyengar, Shanto and Westwood, Sean J.},
+	Journal = {American Journal of Political Science},
+	Publisher = {Wiley Online Library},
+	Title = {Fear and Loathing Across Party Lines: New Evidence on Group Polarization},
+	Year = {2014}}
+
+@article{jacobson2010,
+	Author = {Jacobson, Gary},
+	Date-Modified = {2017-02-05 01:14:06 +0000},
+	Journal = {Political Science Quarterly},
+	Number = {125},
+	Pages = {31--56},
+	Title = {Perception, Memory, and Partisan Polarization on the {Iraq War}},
+	Volume = {1},
+	Year = {2010}}
+
+@article{jerit2012,
+	Author = {Jerit, Jennifer and Barabas, Jason},
+	Journal = {Journal of Politics},
+	Number = {3},
+	Pages = {672--684},
+	Publisher = {Cambridge Univ Press},
+	Title = {Partisan Perceptual Bias and the Information Environment},
+	Volume = {74},
+	Year = {2012}}
+
+@article{kahan2006,
+	Author = {Kahan, Dan M. and Braman, Donald},
+	Journal = {Yale Law \& Policy Review},
+	Number = {1},
+	Pages = {149--172},
+	Publisher = {JSTOR},
+	Title = {Cultural Cognition and Public Policy},
+	Volume = {24},
+	Year = {2006}}
+
+@article{kahan2013,
+	Author = {Kahan, Dan M.},
+	Date-Modified = {2017-02-04 23:27:46 +0000},
+	Journal = {Judgment and Decision Making},
+	Number = {4},
+	Pages = {407--424},
+	Publisher = {Society for Judgment and Decision Making},
+	Title = {Ideology, Motivated Reasoning, and Cognitive Reflection},
+	Volume = {8},
+	Year = {2013}}
+
+@article{kahan2017,
+	Author = {Kahan, Dan M. and Peters, Ellen and Dawson, Erica C. and Slovic, Paul},
+	Date-Modified = {2017-02-04 23:34:25 +0000},
+	Journal = {Behavioural Public Policy},
+	Title = {Motivated Numeracy and Enlightened Self-Government},
+	Volume = {Forthcoming},
+	Year = {2017}}
+
+@incollection{kahneman2013,
+	Author = {Daniel Kahneman},
+	Booktitle = {Thinking: The New Science of Decision-making, Problem-solving, and Prediction},
+	Date-Modified = {2017-02-04 23:27:35 +0000},
+	Editor = {John Brockman},
+	Publisher = {Harper Collins},
+	Title = {The Marvels and Flaws of Intuitive Thinking},
+	Year = {2013}}
+
+@article{kim2010,
+	Author = {Kim, Sung and Taber, Charles S. and Lodge, Milton},
+	Date-Modified = {2017-02-10 01:45:37 +0000},
+	Journal = {Political Behavior},
+	Number = {1},
+	Pages = {1--28},
+	Publisher = {Springer},
+	Title = {A Computational Model of the Citizen as Motivated Reasoner: Modeling the Dynamics of the 2000 Presidential Election},
+	Volume = {32},
+	Year = {2010}}
+
+@article{krosnick1996satisficing,
+	Author = {Krosnick, Jon A. and Narayan, Sowmya and Smith, Wendy R.},
+	Journal = {New Directions for Evaluation},
+	Number = {70},
+	Pages = {29--44},
+	Publisher = {Wiley Online Library},
+	Title = {Satisficing in Surveys: Initial Evidence},
+	Volume = {1996},
+	Year = {1996}}
+
+@article{krosnick1999survey,
+	Author = {Krosnick, Jon A.},
+	Journal = {Annual Review of Psychology},
+	Number = {1},
+	Pages = {537--567},
+	Publisher = {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA},
+	Title = {Survey Research},
+	Volume = {50},
+	Year = {1999}}
+
+@article{kruglanksi1996,
+	Author = {Kruglanski, Arie W. and Webster, Donna M.},
+	Date-Modified = {2017-02-10 01:37:52 +0000},
+	Journal = {Psychological Review},
+	Number = {2},
+	Pages = {263-283},
+	Title = {Motivated Closing of the Mind: ``Seizing'' and ``Freezing''},
+	Volume = {103},
+	Year = {1996}}
+
+@article{kunda1990,
+	Author = {Kunda, Ziva},
+	Journal = {Psychological Bulletin},
+	Number = {3},
+	Pages = {480--498},
+	Title = {The Case for Motivated Reasoning},
+	Volume = {108},
+	Year = {1990}}
+
+@book{lodge2013,
+	Author = {Lodge, Milton and Taber, Charles S.},
+	Publisher = {Cambridge University Press},
+	Title = {The Rationalizing Voter},
+	Year = {2013}}
+
+@article{lord1979,
+	Author = {Lord, Charles G. and Ross, Lee and Lepper, Mark R.},
+	Journal = {Journal of Personality and Social Psychology},
+	Number = {11},
+	Pages = {2098--2109},
+	Title = {Biased Assimilation and Attitude Polarization: The Effects of Prior Theories on Subsequently Considered Evidence},
+	Volume = {37},
+	Year = {1979}}
+
+@article{luskin2011,
+	Author = {Luskin, Robert C. and Bullock, John G.},
+	Date-Modified = {2017-02-10 01:36:00 +0000},
+	Journal = {The Journal of Politics},
+	Number = {2},
+	Pages = {547--557},
+	Publisher = {Cambridge Univ Press},
+	Title = {``{D}on't Know'' Means ``Don't Know'': {DK} Responses and the Public's Level of Political Knowledge},
+	Volume = {73},
+	Year = {2011}}
+
+@article{luskin2013,
+	Author = {Luskin, Robert C and Sood, Gaurav and Blank, Joshua},
+	Date-Modified = {2017-02-10 01:43:13 +0000},
+	Title = {The Waters of {Casablanca}: Political Misinformation (and Knowledge and Ignorance)},
+	Volume = {Unpublished manuscript},
+	Year = {2013}}
+
+@article{mata2015b,
+	Author = {Mata, Andr{\'e} and Sherman, Steven J. and Ferreira, M{\'a}rio B. and Mendon{\c c}a, Cristina},
+	Date-Modified = {2015-10-02 05:30:27 +0000},
+	Journal = {Basic and Applied Social Psychology},
+	Number = {3},
+	Pages = {165-173},
+	Publisher = {Routledge Univ Press},
+	Title = {Strategic Numeracy: Self-Serving Reasoning About Health Statistics},
+	Volume = {37},
+	Year = {2015}}
+
+@incollection{muirhead2013,
+	Address = {New York},
+	Author = {Muirhead, Russell},
+	Booktitle = {Loyalty},
+	Date-Modified = {2015-10-04 21:05:44 +0000},
+	Editor = {Sanford Levinson and Joel Parker and Paul Woodruff},
+	Publisher = {New York University Press},
+	Title = {The Case for Party Loyalty},
+	Year = {2013}}
+
+@book{mutz2006,
+	Address = {Cambridge},
+	Author = {Mutz, Diana C.},
+	Date-Modified = {2016-05-24 18:30:18 +0000},
+	Publisher = {Cambridge University Press},
+	Title = {Hearing the Other Side: Deliberative Versus Participatory Democracy},
+	Year = {2006}}
+
+@article{nickerson1998,
+	Author = {Nickerson, Raymond S.},
+	Journal = {Review of General Psychology},
+	Number = {2},
+	Pages = {175--220},
+	Title = {Confirmation Bias: A Ubiquitous Phenomenon in Many Guises},
+	Volume = {2},
+	Year = {1998}}
+
+@article{nyhan2010,
+	Author = {Nyhan, Brendan},
+	Date-Modified = {2017-02-10 01:31:55 +0000},
+	Journal = {The Forum},
+	Number = {1},
+	Pages = {Article 5},
+	Title = {Why the ``Death Panel'' Myth Wouldn't Die: Misinformation in the Health Care Reform Debate},
+	Volume = {8},
+	Year = {2010}}
+
+@article{petersen2013,
+	Author = {Petersen, Michael Bang and Skov, Martin and Serritzlew, S{\o}ren and Rams{\o}y, Thomas},
+	Journal = {Political Behavior},
+	Pages = {1--24},
+	Publisher = {Springer},
+	Title = {Motivated Reasoning and Political Parties: Evidence for Increased Processing in the Face of Party Cues},
+	Year = {2013}}
+
+@book{prior2007,
+	Address = {Cambridge},
+	Author = {Prior, Markus},
+	Date-Modified = {2015-10-04 21:05:57 +0000},
+	Publisher = {Cambridge University Press},
+	Title = {Post-Broadcast Democracy: How Media Choice Increases Inequality in Political Involvement and Polarizes Elections},
+	Year = {2007}}
+
+@article{prior2008,
+	Author = {Prior, Markus and Lupia, Arthur},
+	Journal = {American Journal of Political Science},
+	Number = {1},
+	Pages = {169--183},
+	Publisher = {Wiley Online Library},
+	Title = {Money, Time, and Political Knowledge: Distinguishing Quick Recall and Political Learning Skills},
+	Volume = {52},
+	Year = {2008}}
+
+@article{prior2015,
+	Author = {Prior, Markus and Sood, Gaurav and Khanna, Kabir},
+	Date-Modified = {2016-01-13 19:30:31 +0000},
+	Journal = {Quarterly Journal of Political Science},
+	Number = {4},
+	Pages = {489-518},
+	Title = {You Cannot be Serious: The Impact of Accuracy Incentives on Partisan Bias in Reports of Economic Perceptions},
+	Volume = {10},
+	Year = {2015}}
+
+@article{shapiro2008,
+	Author = {Shapiro, Robert Y. and Bloch-Elkon, Yaeli},
+	Date-Modified = {2017-02-10 01:30:02 +0000},
+	Journal = {Critical Review},
+	Number = {1-2},
+	Pages = {115--139},
+	Title = {Do the Facts Speak for Themselves? {P}artisan Disagreement as a Challenge to Democratic Competence},
+	Volume = {20},
+	Year = {2008}}
+
+@article{stroud2010,
+	Author = {Stroud, Natalie J.},
+	Date-Modified = {2015-10-04 21:04:03 +0000},
+	Journal = {Journal of Communication},
+	Number = {3},
+	Pages = {556--576},
+	Title = {Polarization and Partisan Selective Exposure},
+	Volume = {60},
+	Year = {2010}}
+
+@article{taber2006,
+	Author = {Taber, Charles S. and Lodge, Milton},
+	Journal = {American Journal of Political Science},
+	Number = {3},
+	Pages = {755--769},
+	Publisher = {Wiley Online Library},
+	Title = {Motivated Skepticism in the Evaluation of Political Beliefs},
+	Volume = {50},
+	Year = {2006}}
+
+@article{vallone1985,
+	Author = {Vallone, Robert P and Ross, Lee and Lepper, Mark R},
+	Journal = {Journal of personality and social psychology},
+	Number = {3},
+	Pages = {577},
+	Publisher = {American Psychological Association},
+	Title = {The Hostile Media Phenomenon: Biased Perception and Perceptions of Media Bias in Coverage of the Beirut Massacre.},
+	Volume = {49},
+	Year = {1985}}
+
+@article{weller2012,
+	Author = {Weller, Joshua A. and Dieckmann, Nathan F. and Tusler, Martin and Mertz, C. K. and Burns, William J. and Peters, Ellen},
+	Date-Modified = {2017-02-05 01:24:03 +0000},
+	Journal = {Journal of Behavioral Decision Making},
+	Number = {2},
+	Pages = {198---212},
+	Title = {Development and Testing of an Abbreviated Numeracy Scale: A {Rasch} Analysis Approach},
+	Volume = {26},
+	Year = {2012}}
+\end{filecontents}
+
+
+\usepackage[normalem]{ulem}
+  
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+\usepackage{libertine}
+
+\usepackage{chngcntr}
+
+%This section double-spaces & makes footnotes the same size as normal text.
+\usepackage{footmisc}
+\setlength{\footnotesep}{\baselineskip}
+\makeatother
+\renewcommand{\footnotelayout}{\normalsize \doublespacing}
+
+
+% Caption
+\usepackage[hang, font=small,skip=0pt, labelfont={bf}]{caption}
+%\captionsetup[subtable]{font=small,skip=0pt}
+\usepackage{subcaption}
+
+% tt font issues
+% \renewcommand*{\ttdefault}{qcr}
+\renewcommand{\ttdefault}{pcr}
+
+\setcounter{page}{0}
+
+\usepackage{lscape}
+\renewcommand{\textfraction}{0}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.40}
+\setcounter{totalnumber}{5}
+\makeatletter
+\providecommand\phantomcaption{\caption@refstepcounter\@captype}
+\makeatother
+
+\title{\large{Motivated Responding in Studies of Factual Learning}\footnote{We would like to thank Princeton Research in Experimental Social Science (PRESS) for financial support.
+We are also very grateful to Dan Kahan for generously sharing experimental design details; Doug Ahler, Martin Bisgaard, Katie McCabe, Peter Mohanty, and Markus Prior for insightful comments on a previous draft; participants of the PRESS workshop for suggestions about the experimental design; and finally, the editor of this journal and three reviewers for their critical feedback and guidance.
+The data and code necessary to replicate the results in this paper are available at \href{https://dataverse.harvard.edu/dataverse/polbehavior}{https://dataverse.harvard.edu/dataverse/polbehavior}.}}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{comment}
+  
+setwd(paste0(basedir, "partisanInnumeracy/manuscript/"))
+tools::texi2dvi("partisanlearning.tex", pdf=TRUE, clean=TRUE)
+setwd(basedir)
+
+\end{comment}
+
+\begin{abstract}
+\noindent Large partisan gaps in reports of factual beliefs have fueled concerns about citizens' competence and ability to hold representatives accountable. In three separate studies, we reconsider the evidence for one prominent explanation of these gaps---motivated learning. We extend a recent study on motivated learning that asks respondents to deduce the conclusion supported by numerical data. We offer a random set of respondents a small financial incentive to accurately report what they have learned. We find that a portion of what is taken as motivated learning is instead motivated responding. That is, without incentives, some respondents give incorrect but congenial answers when they have correct but uncongenial information. Relatedly, respondents exhibit little bias in recalling the data. However, incentivizing people to faithfully report uncongenial facts increases bias in their judgments of credibility of what they have learned. In all, our findings suggest that motivated learning is less common than what the literature suggests, but also that there is a whack-a-mole nature to bias, with reduction in bias in one place being offset by increase at another place.
+\end{abstract}
+
+\newpage
+\doublespacing
+\setcounter{page}{1}
+
+Surveys of political knowledge frequently find large partisan differences in reported beliefs about policy-relevant facts. When Democrats control the White House, Democrats are likelier than Republicans to report that economic conditions are improving; the reverse holds true under a Republican administration \citep{bartels2002}. Similar patterns exist on answers to factual questions about healthcare \citep[e.g.,][]{nyhan2010}, foreign policy \citep[e.g.,][]{jacobson2010}, and social services \citep[e.g.,][]{jerit2012}, among other issues. In general, when people are surveyed about facts, they are more likely to report having beliefs that are {\it congenial} to their existing beliefs and attachments than beliefs that are {\it uncongenial}. While we expect values and preferences to differ in a pluralistic society, we do not expect disagreement over established facts. Factual disagreement fuels concerns about the public's ability to form preferences that are in line with their values or interests \citep[e.g.,][]{hochschild2001}, hold representatives accountable \citep[e.g.,][]{bartels2002}, and productively deliberate with each other \citep[][]{shapiro2008, muirhead2013}.
+
+We consider two distinct explanations for differences in survey reports of factual beliefs: motivated learning and motivated responding.\footnote{Partisan gaps in factual beliefs may also arise from selective exposure to information (see \citealt{stroud2010}, though see also \citealt{prior2013}), and motivated assessments of credibility of information \citep[see, e.g.,][]{lord1979}.} According to the former, when people are presented with information, they are more likely to deduce that the information supports a congenial conclusion than an uncongenial conclusion \citep{jerit2012, kahan2013, kahan2017}. This bias in learning is thought to stem from the psychological drive to hold internally consistent beliefs that reflect positively on one's core attachments, such as political party, ideology, or cultural identity \citep{kunda1990}. Motivated learning is especially concerning from a normative standpoint. It suggests that even when people come across the same information, they can form very different beliefs about the conclusions supported by the information. (Note that learning about conclusions supported by information is different from believing that the conclusions are correct.) Such bias makes reducing gaps in factual beliefs yet harder---mere provision of accurate information is even less likely to work, and may even backfire \citep[see, e.g.,][]{nyhanreifler2010}.
+
+However, differences in survey reports of factual beliefs do not always reflect differences in what people believe. Instead, they may be artifacts of the survey response process. Respondents sometimes give congenial but inaccurate answers in response to factual questions even when they have accurate but uncongenial facts at hand \citep{bullock2015, prior2015}. Other times, respondents are ignorant, having no relevant cognitions, and they offer a congenial answer as their best guess \citep{luskin2013}. In both cases, the survey response process inflates estimates of bias in factual beliefs. We extend this line of thinking to estimates of {\it learning}, the process that produces such beliefs. Like studies of stored cognitions, studies of learning may overstate bias if they do not account for motivated responding. 
+
+We reassess the extent to which people learn in a motivated manner by simultaneously measuring motivated learning and motivated responding in three separate studies. Building on the design in \citet{kahan2017}---people are presented data from a social scientific study and asked to report the conclusion supported by the data---we incentivize a random set of respondents to honestly report the conclusion they actually think the data supports. Incentives reduce congeniality bias in reporting the study's result, suggesting that a portion of what appears to be motivated learning is in fact motivated responding. Correspondingly, we find no evidence that respondents selectively recall the data they were presented. However, there is considerable heterogeneity in responsiveness to the incentive treatment, depending on respondents' initial position on the issue under study. Moreover, incentivizing respondents to report uncomfortable conclusions supported by a study comes at a price: respondents become more skeptical about the study's credibility. In all, our findings suggest that motivated learning is less common than what previous work suggests, but that motivated evaluation of information remains common.
+
+\section*{Motivated Learning, Reporting, and Interpretation}
+
+Psychological motivations are powerful in shaping how people process information. Broadly, people are motivated to both reach conclusions that are accurate and that are congenial to their beliefs \citep[see][]{kunda1990}. Most research in political psychology focuses on the latter, which \citeauthor{kunda1990} calls ``directional'' motivation. A great deal of research shows that directional motivations, like partisanship and ideology, bias evaluations of policy arguments \citep[e.g.,][]{lord1979, taber2006, bolsen2014} and of leaders \citep[e.g.,][]{bartels2002, lebo2007, kim2010}.
+
+\subsection*{Motivated Learning}
+While most research on motivated reasoning focuses on subjective attitudes, motivated reasoning may also influence factual learning. Suppose, for instance, that there exist some data that support an unequivocal conclusion relevant to public policy. And we ask an individual with an existing opinion on said policy to learn the conclusion supported by the data. The extent to which directional goals outweigh accuracy goals will be correlated with the probability the individual learns that the data support a conclusion that is congenial to them, even if this conclusion is incorrect. We refer to this phenomenon as {\it motivated learning}.
+
+Motivated learning has received recent attention. For instance, \citet{nyhanreifler2010} find that partisans ignore correct information that contradicts their ideological worldview.\footnote{\citeauthor{nyhanreifler2010} test motivated learning using two-sided information flows. They instill false beliefs in respondents via misleading news stories and then attempt to reduce misperceptions with corrective stories. While this design lends external validity to their study, a one-sided context without contradictory information would afford a stricter test of motivated learning.} Similarly, \citet{jerit2012} find that partisans selectively learn party-relevant factual information. The authors present partisans with facts that reflect either positively or negatively on Democrats or Republicans. They find that partisans are more likely to learn congenial than uncongenial facts, e.g., Democrats are more likely to learn about the success of the Troubled Asset Relief Program than the size of the trade deficit. A major challenge in such experiments is cleanly manipulating information congeniality, while holding constant other attributes, such as topic and difficulty. We now consider a recent study that does just that.\footnote{
+Many observational studies suggest motivated learning indirectly, by documenting partisan bias in factual beliefs \citep{bartels2002, shani2006, jerit2012}, though other observational studies find little partisan bias in factual beliefs \citep[e.g.,][]{gaines2007, blais2010}.}
+
+\citet{kahan2017} cleverly repurpose a ``covariance detection task'' \citep[see][]{gilovich1991} to test whether people engage in motivated reasoning when processing policy-relevant data. Respondents see a $2 \times 2$ table with data on the relationship between banning concealed carry and rates of crime. The table's column headings are manipulated so that the data either support the conclusion that banning concealed reduces crime or the conclusion that banning concealed carry increases crime. When asked what result the data support, respondents are more likely to answer correctly when the data support a congenial claim than when the data support an uncongenial claim. That is, liberal Democrats are more likely to report the correct result when banning concealed carry reduces crime than when banning concealed carry increases crime, while the reverse is true among conservative Republicans. \citeauthor{kahan2017} use the terms {\it motivated numeracy} and {\it motivated cognition} to describe the phenomenon.
+
+The finding is consistent with several other studies that show that people evaluate congenial and uncongenial claims differently, using different evidentiary standards and investing different amounts of effort in processing the information. When evaluating congenial claims, people tend not to be as thorough in searching for evidence \citep[e.g.,][]{kruglanksi1996, nickerson1998}, and evaluate available evidence more superficially and less skeptically \citep[e.g.,][]{chaiken1994}. On the other hand, when evaluating uncongenial claims, people are more skeptical and invest greater processing effort \citep[e.g.,][]{ditto1992, ditto1998, dawson2002}.  For instance, in the covariance detection task, respondents are more likely to only partially consider the data if doing so leads them to think that the data support a congenial conclusion \citep{dawson2002cella}. 
+
+Building on this psychological literature, \citet{kahan2017} argue that our natural tendency to learn from data heuristically (i.e., using mental shortcuts) results in bias. For instance, when presented with tabular data, people tend to only consider the most salient datum in the table, for instance, the largest number, to deduce the conclusion supported by the data \citep[][p. 31]{gilovich1991}. If heuristic processing yields a congenial answer, people tend to stop processing, concluding that the data supports their beliefs. If heuristic processing instead yields an uncongenial result, people tend to look at the data more carefully to make sure they are correct. For instance, activating directional goals can motivate people to overcome the common error of neglecting `cell D' in a $2 \times 2$ table \citep{mata2015a, mata2015b}. This imbalance in scrutiny produces a {\it congeniality effect}: people learn congenial facts more readily than uncongenial facts. \citeauthor{kahan2017} argue that this effect increases with numeracy, because only respondents with sufficient numerical ability are capable of learning the correct result by considering all four cells.
+
+Aside from asymmetric scrutiny, selective perception may also contribute to motivated learning. A long line of research suggests that expectation structures cognition \citep{hastorf1954, bechlivanidis2013, kahneman2013}. In our hurry to learn from data, for example, we misperceive data in ways that are consistent with our prior beliefs. For instance, when trying to distill information from a contingency table, people potentially misread the column or row labels in a way that suggests a congenial result. Alternatively, one might misread the numbers in the table. In all, either due to selective perception or an imbalance in scrutiny, people are thought to be more likely to learn correctly when the data are congenial than when they are uncongenial.
+
+\subsection*{Motivated Responding}
+
+Motivated responding concerns what survey respondents report on surveys, rather than what they have learned or know.\footnote{It is possible, even likely, that motivated responding also operates outside the survey context, explaining which beliefs people reveal in discussions with social networks, for example. However, in this paper, we focus on motivated responding in surveys.} In particular, it occurs when people with same underlying beliefs giving congenial answers more often than uncongenial answers when asked about their beliefs. In all, it contends that survey responses to factual questions reflect a mix of what people believe and what they wish to be true \citep{luskin2013, prior2015}.
+
+People engage in motivated responding for a variety of reasons. Some deliberately misreport as a way to express their attitudes. For example, a survey respondent who vehemently opposes President Barack Obama may not admit knowing that the unemployment rate declined between 2008 and 2016 on a survey. The respondent may instead report a rise in unemployment to express their opposition. This kind of expressive self-presentation has been described as ``cheerleading'' \citep[e.g.,][]{gerber2009}. Others may misreport just to be consistent within a survey, ensuring that later answers do not contradict their earlier ones \citep[e.g.,][]{sears1983, lau1990, wilcox1993, palmer2001}. Yet others may engage in motivated responding to indicate their disbelief in information. For instance, in \citet{kahan2017}, a respondent may pick the congenial answer even after figuring out that the data support an uncongenial conclusion as a way to express their disbelief in the putative data.
+
+In addition to actively misreporting what they believe, motivated responding may take more passive forms. For example, a respondent may withhold their beliefs by selecting ``Don't Know'' or skipping a question. Alternately, respondents who don't know the correct answer may report a congenial answer as their best guess. People may also engage in motivated responding without being consciously aware of it. For example, when asked a factual question in a survey, respondents may scan their memory for a longer time to come up with instances of congenial beliefs than uncongenial beliefs. In all, a variety of reasons exist why people may engage in motivated responding. Our study does not disentangle the various reasons behind motivated responding. Instead, our aim is to merely estimate the bias due to motivated responding in estimates of motivated learning derived from ordinary survey instruments.
+
+While both motivated learning and responding fall under motivated reasoning, there are two major differences. First, motivating responding is about the survey response process, as opposed to learning. Motivated responding affects what people {\it say} they have learned, not what they actually learn. Second, and relatedly, we suspect that part of motivated responding is just ``cheap talk'' that people engage in to publicly protect their core attachments and beliefs. And to the extent that these public pronouncements are shallow, based not in what people deeply believe but what people are prepared to say publicly, these reported `beliefs' are unlikely to shape respondents' attitudes and behavior. On the other hand, uncongenial beliefs, which respondents are reluctant to express, may nonetheless influence attitudes and behavior. It is therefore important to distinguish between beliefs and instrumental or shallow responses.
+
+A pair of recent studies find evidence that partisans engage in motivated responding on factual questions with political implications. \citet{bullock2015} and \citet{prior2015} find that partisans incorrectly report congenial beliefs, even when they know or could have inferred a more accurate answer. Both studies uncover motivated responding by boosting respondents' accuracy motivation. \citet{bullock2015} do so by offering respondents bonus payments for correct answers and for admitting their ignorance (by marking `don't know'), while \citet{prior2015} use a combination of bonus payments for correct answers, and textual appeals for responding honestly. Importantly, neither of the treatments provide any additional information. Therefore, any change in responses can be attributed to a change in respondents' motivation, rather than a change in their knowledge. Both studies find that, consistent with motivated responding, accuracy incentives substantially reduce partisan bias---by as much as half. 
+
+Because studies of knowledge and learning rely on similar survey instruments, discovery of motivated responding on questions about stored knowledge suggests that estimates of motivated learning may also be inflated. To uncover motivated responding, we borrow a design feature of \citet{prior2008}, \citet{bullock2015}, and \citet{prior2015}, offering a random set of respondents small monetary incentives to accurately report their beliefs. To minimize the possibility that incentives affect processing of information, we present information about incentives \textit{after} respondents have seen the information and can no longer revisit it. These incentives increase respondents' motivation to honestly answer the which conclusion they think the data support. Respondents who would ordinarily offer a congenial answer as their best guess or as an act of political expression may be nudged to think more carefully or be more truthful. We therefore hypothesize that this treatment will attenuate the congeniality effect that \citet{kahan2017} and others observe.
+
+More specifically, we hypothesize that incentives will increase the probability of answering correctly when the correct answer is uncongenial. If respondents learn the uncongenial result correctly, and then knowingly report an incorrect answer, incentives should encourage them to reveal their true belief. If respondents offer an incorrect, congenial response as their best guess, incentives should increase the probability that they will guess more evenhandedly. In both scenarios, incentives should increase correctness. However, we do not expect incentives to significantly increase correctness in the congenial condition, because here the congenial answer is the correct answer. We present our hypothesized pattern of results in a graphical format in Figure~\ref{fig:hypo}. The vertical axis represents the probability of answering correctly, and the dashed lines indicate the size of the congeniality effect. Incentives reduce the congeniality effect by increasing the probability of answering correctly in the uncongenial condition.
+
+\begin{figure}[h!]
+  \centering
+  \caption{Hypothesized Pattern of Results. Probability of correctly reporting study's result by experimental condition. Dashed vertical lines indicate congeniality effect, i.e., difference in probability of answering correctly between congenial and uncongenial conditions. We hypothesize that incentives will reduce the congeniality effect by increasing the probability of answering correctly in the uncongenial, but not the congenial, condition.}
+\vspace{5mm}
+   \includegraphics[scale=.75, trim = {1cm 0 0 0}, clip]{cvd_eff_hypo.pdf}
+\label{fig:hypo}
+\end{figure}
+
+\subsection*{Motivated Interpretation}
+Directional motivations affect not just what people learn and report but also how credible people think a study is. Previous work suggests that people are more likely to question a study's credibility when its results are uncongenial than when they are congenial \citep[e.g.,][]{lord1979, kunda1990, ditto1992}. This phenomenon likely stems from the more general tendency to spend greater time and effort scrutinizing and refuting uncongenial claims than congenial claims, known as disconfirmation bias \citep[e.g.,][]{edwards1996, taber2006}. We therefore expect a congeniality effect on subjective study ratings: respondents will rate the same study as more convincing and well executed when its result is congenial than when it is not. And we expect this congeniality effect to be more pronounced when we incentivize respondents to report the correct study result, because respondents who admit an uncongenial result should be even more likely to report that the study behind the result is unconvincing.\footnote{We do not incentivize study ratings, because unlike the question about study's result, ratings are inherently subjective. Therefore, the logic of providing incentives to be accurate on subjective questions is unclear. Correspondingly, even if we were to provide incentives, we would not be able to interpret the results unambiguously.} 
+
+\section*{Research Design}
+
+To distinguish between motivated learning and motivated responding, we conduct three experiments that build upon the original design of \citet{kahan2017}. In particular, we add an orthogonal manipulation, offering participants a small monetary incentive to accurately report what they have learned. The $2 \times 2$ design enables us to test whether incentives reduce the congeniality effect, which has been interpreted as evidence for motivated learning. In addition to measuring the outcome used by \citeauthor{kahan2017}, we also measure subjective ratings of the study to examine whether the study's congeniality influences its perceived credibility. Below we elaborate on each of these extensions.
+
+In Study 1, we asked respondents to read a summary of a hypothetical study on gun control. A preface to the study described its purpose: a city government is trying to decide whether or not to ban private citizens from carrying concealed weapons and wants to know if doing so would increase or decrease crime. After the preface, the study was briefly summarized: researchers compared changes in annual crime rates in cities that had banned concealed carry with changes in annual crime rates in cities that had not banned concealed carry. A $2 \times 2$ contingency table with the study's putative results came next.
+
+Following \citet{kahan2017}, we manipulated the conclusion supported by the study by switching the column labels. In Table~\ref{tab:antigun}, cities that banned concealed carry were more likely to experience a crime {\it decrease} relative to cities that did not ban concealed carry. This result can be learned by comparing the ratios of cities in the first row (75:223 or about 1:3) and the second row (21:107 or about 1:5). Flipping the column labels produces the opposite result---the data now indicate that cities that banned concealed carry saw {\it increases} in crime (see Table~\ref{tab:progun} below).
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {Oppose Concealed Carry} \label{tab:antigun}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in crime  & Decrease in crime \\\hline
+  Cities that \underline{did} ban carrying     & \multirow{2}{*}{223 cities} & \multirow{2}{*}{75 cities} \\ 
+  concealed handguns in public           &               & \\ \hline
+  Cities that \underline{did not} ban carrying & \multirow{2}{*}{107 cities} & \multirow{2}{*}{21 cities} \\ 
+  concealed handguns in public           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption {Support Concealed Carry} \label{tab:progun}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Decrease in crime & Increase in crime \\\hline
+  Cities that \underline{did} ban carrying     & \multirow{2}{*}{223 cities} & \multirow{2}{*}{75 cities} \\ 
+  concealed handguns in public           &               & \\ \hline
+  Cities that \underline{did not} ban carrying & \multirow{2}{*}{107 cities} & \multirow{2}{*}{21 cities} \\ 
+  concealed handguns in public           &               &  \\\hline
+\end{tabular}
+\end{table}
+\doublespacing
+\vspace{5mm}
+
+After presenting the summary of the study, we asked respondents whether cities with a ban were more likely to experience an {\it increase} or {\it decrease} in crime than cities without a ban. This question serves as our primary dependent variable. Note that it is strictly factual in nature. It simply asks which of two descriptions is consistent with the data. The question does not ask the respondents to assess a causal claim, evaluate gun control, or indicate their faith in the study. Respondents could not access the study description and table when picking which of the conclusions were supported by the data. At the end of the survey, respondents were debriefed and informed that the data were not real.
+
+To measure motivated responding, we independently manipulated respondents' motivation to give the answer they thought was correct. We offered a random set of respondents a small `nudge,' an additional \$0.10 for the correct answer.  Keeping the amount small has the virtue of not raising respondents' suspicions---some respondents may take a larger amount as cue that uncongenial answer is the right one. As to whether the small nudge is sufficient, we strictly cannot say, but note that \citet{prior2015} uncover about same amount of motivated responding by emphasizing the importance of accuracy without any extra money as they do by offering another \$1 for the correct answer. To ensure that incentives did not affect how respondents processed the contingency table in the treatment condition, we withheld any information about the incentive until after they had seen the table, and could no longer return to it. The control group was not offered incentives.
+
+After measuring the primary dependent variable, we asked respondents to rate how convincing and how well done they found the concealed carry study. Each rating was measured on a 0-10 scale. We also asked respondents to recall the numbers in the contingency table at the end of the survey, in order to test whether respondents are more likely to remember congenial data than uncongenial data. To minimize respondent disengagement, we offered an additional \$0.05 for each number recalled correctly.
+
+In Study 2, we readministered the concealed carry task and added another task following it. In the second task, respondents were presented with a study on the impact of raising the minimum wage. Again, respondents were asked to indicate its result based on tabular data. The minimum wage task was very similar to the concealed carry task in design, with two important differences (aside from the change in topic). First, with the intention of making it easier to learn the correct result, we replaced cell frequencies with percentages in the table. The data suggest that the change had the intended effect, as there was a large increase in the percentage of correct responses. Second, we manipulated the study's congeniality by switching the row labels instead of the column labels in the table (see Supporting Information (SI) Section~\ref{sec:qwording}). We believe this is a cleaner manipulation as it holds constant the increase-to-decrease ratio in each row, and simply changes the policy associated with each ratio. While lowering the task's difficulty might change the congeniality effect observed, we do not expect our changes to affect the degree of motivated responding. Lastly, randomization in the second task was conducted independently of the first, but the sequence of the two tasks was fixed.
+
+In Study 3, we readministered both the concealed carry and minimum wage tasks on a more representative sample. Following our hypothesis that incentives influence responses in the uncongenial condition, we presented all respondents with an uncongenial version of the concealed carry task (based on their pre-treatment attitudes) and randomized incentives as in Studies 1 and 2. This simpler design allows us to conserve resources while testing our central theoretical claim that incentives increase correctness in the uncongenial condition. Additionally, we replicated the full $2 \times 2$ minimum wage task. The purpose of Study 3 was to gather confirmatory evidence and probe the generalizability of the estimates in Studies 1 and 2.
+
+In each study, in order to identify respondents that would find each study's result congenial or uncongenial, we measured attitudes toward banning concealed carry and raising the federal minimum wage before the tasks (experiments). We expect respondents who oppose concealed carry to find a {\it decrease} in crime because of a concealed carry ban to be congenial, and an {\it increase} in crime uncongenial; we expect the opposite among respondents who support support concealed carry. The same logic applies to the minimum wage task. We measured party identification, political ideology, and demographics prior to the experiments in each study. SI Section~\ref{sec:qwording} contains a complete description of the three studies and the complete wording of each task and question. In Studies 2 and 3, we omitted recall questions and ratings of the minimum wage study due to concerns about the length of the survey.
+
+\section*{Data}
+
+We recruited respondents from Amazon's Mechanical Turk (MTurk) in Studies 1 and 2.\footnote{MTurk is a micro-task market: workers complete small tasks, such as surveys, for money. For details of how samples are recruited on MTurk and general characteristics of the market, see \citet{buhrmester2011} and \citet{berinsky2012}.} We recruited `workers' for both studies by advertising a `task' of completing a short survey on `how people learn.' To assess whether our findings generalize beyond samples recruited on MTurk, we recruited respondents via Qualtrics in Study 3.
+While it is not a ``gold standard,'' the Qualtrics sample is more representative of the general population, and respondents appear to be less attentive and detail-oriented than MTurk workers.
+Study 1 was fielded in December 2013--January 2014, Study 2 in March 2015--April 2015, and Study 3 in August 2016.
+For details of the recruited samples and how the samples compare to established benchmarks, see Table~\ref{tab:sample}.
+
+While none of the samples are nationally `representative,' we can still learn a great deal from them. Multiple studies find that MTurk samples yield high-quality data and are more heterogeneous and representative than other common convenience samples, such as student samples \citep{buhrmester2011, berinsky2012, paolacci2014}. And recently, \citet{mullinix2015} replicate a broad array of experiments across different samples and find that treatment effects are broadly similar across samples. More generally, treatment effects vary across samples only when they are strongly conditioned by covariates that vary heavily across samples. We do not expect partisans on MTurk to differ from other partisans with respect to motivated reasoning. Multiple studies using MTurk samples find partisan bias in both stored knowledge \citep[e.g.,][]{chambers2014, ahler2015, chambers2015, bullock2015} and political judgments \citep[e.g.,][]{arceneaux2013, lyons2014, crawford2015a, crawford2015b, thibodeau2015}. In all, we think it likely that our treatment effects would be similar to studies using a nationally representative sample. 
+
+Given the theoretical expectation that we should only observe motivated learning among respondents with sufficient numerical ability to complete the covariance detection task, we screened for high-numeracy respondents using a numeracy quiz in Study 1. The numeracy quiz was composed of the five easiest questions in \citet{weller2012} (see SI Section \ref{sec:numscreener} for exact items). We invited respondents answering four or more items correctly to participate in the full study. We use a threshold of four because \citet{kahan2017} find that the median respondent answers four items correctly on the full nine-item scale. In Studies 2 and 3, we invited all respondents to complete the main task, irrespective of numeracy, to ensure that our findings in Study 1 were not contingent on the relatively numerate MTurk sample.
+In SI Section~\ref{sec:flow}, we track the number of respondents in the enrollment, screening, allocation, and analysis phases of the concealed carry experiment by study.
+We find that low- and high-numeracy respondents are similar in terms of party identification, ideology, and demographics (see Table~\ref{tab:sample} in SI Section~\ref{sec:sample}), but we also present their results separately in SI Section~\ref{sec:numeracy}.
+
+In Study 1, we recruited 1,207 respondents and invited 785 (65\% of sample) who passed the numeracy quiz to participate in the full survey. Our main analyses include 686 respondents (87\% of screened sample) reporting a position on a concealed carry ban, which is necessary to code congeniality. Of them, 34\% opposed concealed carry (i.e., favored ban) and 66\% supported concealed carry (i.e., opposed ban). In Studies 2 and 3, we recruited another 947 and 1,062 respondents, respectively. Of those indicating a position, similar percentages to those in Study 1 opposed concealed carry: 36\% in Study 2 and 40\% in Study 3. The vast majority of respondents were in favor of raising the federal minimum wage: 85\% in Study 2 and 65\% in Study 3.\footnote{
+Attitudes in our study are similar to Americans' attitudes in two nationally representative surveys. A CBS/New York Times Survey from January 2013 finds that 34\% of Americans favor ``a federal law requiring a nationwide ban on people other than law enforcement carrying concealed weapons'' (including 19\% of Republicans a 52\% of Democrats). And an Associated Press/GfK Poll from January 2015 finds that 77\% favor raising the federal minimum wage (from \$7.25/hour).}
+
+\section*{Results}
+
+We begin by presenting results from the concealed carry task, first pooling data from Studies 1 and 2, followed by results from Study 3. We separate out Study 3 because the concealed carry task only included the uncongenial condition. We follow it with results from the minimum wage task, and end with describing impact of treatment on respondents' subjective study ratings.
+
+If people learn in a motivated manner, the percentage of respondents answering correctly when the study's result is congenial should be greater than when the study's result is uncongenial. Respondents who {\it oppose} concealed carry should be more likely to answer correctly if the data support the conclusion that crime is more likely to decrease in cities with concealed carry bans than in cities without such bans. Among respondents who {\it support} concealed carry, the reverse should be true. We thus examine whether the congeniality manipulation increases the probability of answering correctly.\footnote{\citet{kahan2017} define congeniality on the basis of party identification and ideology. However, overlap between a composite of partisanship and ideology and attitude toward concealed carry is considerably short of 100\%. Across the three studies, 47\% of self-described liberal Democrats oppose a ban on concealed carry, and 15\% of self-described conservative Republicans favor such a ban. We therefore opt for coding congeniality in terms of the attitude most directly related to the data being. Recoding congeniality on the basis of party identification and ideology, following \citeauthor{kahan2017}, results in a substantively similar congeniality effect (see SI Section~\ref{sec:kahan}).}
+
+Before analyzing data from the covariance detection tasks, we check to see if partisanship, ideology, and demographics are balanced across the experimental conditions. The average p-value of cross-condition comparisons is .42 in Study 1, .47 in Study 2, .56 in Study 3, and .48 overall (see Table~\ref{tab:balance} in SI Section~\ref{sec:balance}). We also confirm that the first experimental task did not affect behavior in the second (see Table~\ref{tab:spillover} in SI Section~\ref{sec:spillover}). In all, the data suggest that randomization was successful, so we now move on to analyzing data from the first experiment.
+ 
+Figure~\ref{fig:pooled} plots the percentage of respondents answering correctly in the concealed carry task by experimental condition across Studies 1 and 2.\footnote{We subset high-numeracy respondents in Study 2 to ensure commensurability with Study 1. For concealed carry task results separated out by study, see Figures~\ref{fig:study1} and~\ref{fig:study2} in Section~\ref{sec:bystudy}.} We first consider the percentage correct among concealed carry supporters in the absence of incentives (Panel A, left). When the result is uncongenial (i.e., pro-ban), only 42.6\% of respondents mark the right answer. When the result is congenial (i.e., anti-ban), the percentage increases  to 54.6\%. Thus, simply changing the study's result from uncongenial to congenial (by swapping column headers) increases the probability of answering correctly by 12.0 percentage points (plotted in Panel B). The pattern is similar among concealed carry opponents in the \texttt{No Incentives} condition (Panel C, left). When the result is uncongenial (i.e., anti-ban), 41.0\% of the respondents answer correctly. When the result is congenial (i.e., pro-ban), the number increases to 55.5\%. The congeniality effect is 14.4 percentage points (see Panel D). Thus, in the absence of incentives, the congeniality effects among both concealed carry supporters and opponents is statistically significant.
+
+\begin{figure}[!htbp]
+  \centering
+  \caption{Concealed Carry Task Results (Studies 1 and 2 Pooled). Panels on the left display percentage of concealed carry opponents (Panel A) and supporters (Panel C) correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among concealed carry opponents (Panel B) and supporters (Panel D). Vertical lines indicate 95 percent confidence intervals. Only respondents who passed the numeracy screener and indicated a position on concealed carry are included (686 in Study 1 and 604 in Study 2).}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0 0 0}, clip]{cvd_eff_pooled.pdf}
+\label{fig:pooled}
+\end{figure}
+
+We next examine the extent to which incentives reduce these congeniality effects, which \citet{kahan2017} and other scholars take as evidence of motivated learning. As we note earlier, the incentive treatment was administered in such a way that it did not affect how respondents (initially) processed the data---incentives were revealed after the respondents had seen the data and could not go back to it. If we were successful in  administering the incentive treatment in the way we intended to, respondents should be as good at recalling the data in the \texttt{No Incentives} condition as in \texttt{Incentives} condition. We tested this hypothesis with the recall questions at the end of the survey. Data suggest that incentives had no impact on the accuracy of recall (see Tables~\ref{tab:recalla} and ~\ref{tab:recallc} in SI Section~\ref{sec:recall}.) Thus, it is unlikely that any treatment effects we see are explained by greater attention to the data when incentives are offered.
+
+Examining Panel B of Figure~\ref{fig:pooled}, we see that offering incentives to concealed carry supporters does not reduce bias. The congeniality effect is 13.9 percentage points with incentives, which is almost indistinguishable from the congeniality effect in the absence of incentives (difference-in-differences is 1.9). Since the congeniality effect remains substantial regardless of incentive condition, it appears that concealed carry supporters learn in a motivated manner.
+
+Data from opponents of concealed carry, however, tell quite a different story (Figure~\ref{fig:pooled}, Panel D). Here, it appears that motivated responding masquerades as motivated learning. Incentives lower the congeniality effect from 14.4 percentage points to an insignificant -3.9 percentage points. The difference-in-differences is -18.3 percentage points and statistically significant (s.e. = 9.3, $p = .05$). Incentives completely wipe out the bias in answering the question about the study's result. Moreover, consistent with our hypothesis, the reduction in bias is entirely due to an increase in correctness in the uncongenial condition (16.0 percentage points, s.e. = 6.4, $p < .05$), rather than any change in the congenial condition.\footnote{For equivalent logistic regressions, see Tables~\ref{tab:logit1} and~\ref{tab:logit2} in SI Section~\ref{sec:logit}.}
+
+Results from Study 3 are similar to results from Studies 1 and 2 for both concealed carry supporters and opponents. Recall that Study 3 only included the uncongenial version of the concealed carry task. Figure~\ref{fig:study3} displays the percent correct among concealed carry supporters (Panel A) and opponents (Panel B) by incentive condition. Overall, Study 3 respondents had more trouble correctly identifying the study's result than respondents in Studies 1 and 2. For instance, only 33.6\% of concealed carry supporters correctly identified the uncongenial study's results without incentives, while 42.6\% did so in Studies 1 and 2. More relevant for our purposes, we see that concealed carry supporters are again essentially immune to the incentive treatment. The percentage correct among this group is almost identical when we offer accuracy incentives (33.3\%). There is no evidence of motivated responding here.
+
+Concealed carry opponents, on the other hand, once again exhibit a pattern of motivated responding. While only 25.6\% answer correctly without incentives, 32.5\% answer correctly when offered incentives, resulting in a treatment effect of 6.9 percentage points  (s.e. = 4.4, $p < .06$). While the magnitude of the effect is smaller than in Studies 1 and 2, it is still non-trivial. In all, the evidence suggests that motivated responding introduces substantial amounts of bias in estimates of motivated learning.
+
+\begin{figure}[h!]
+  \centering
+  \caption{Concealed Carry Task Results (Study 3). Panels display percentage of concealed carry opponents (Panel A) and supporters (Panel B) correctly indicating study result by experimental condition. Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {.5cm 12.5cm 0 0}, clip]{cvd_eff_study3.pdf}
+\label{fig:study3}
+\end{figure}
+
+We now turn our attention to the minimum wage task, which we included in Studies 2 and 3, to probe the degree of motivated learning and responding on a different issue, using a slightly different experimental design. The overall percent correct was high in this task (87\% in Study 2 and 77\% in Study 3), which is unsurprising given our decision to make this task easier on respondents than the concealed carry task --- we had replaced frequencies with percentages. Figure~\ref{fig:mwpool} summarizes the results from this experiment, pooling respondents in Studies 2 and 3.\footnote{In Study 2, only 129 respondents (15\%) oppose raising the minimum wage. Pooling them with opponents in Study 3 yields a large enough sample to analyze. We also obtain substantively similar results we see when analyze each study separately (see Figures~\ref{fig:study2_wage} and~\ref{fig:study3_wage} in SI~\ref{sec:bystudy}).}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Minimum Wage Task Results (Studies 2 and 3). Panels on the left display percentage of opponents (Panel A) and supporters (Panel C) of raising the federal minimum wage correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among opponents (Panel B) and supporters (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0cm 0 0}, clip]{cvdwage_eff_pooled.pdf}
+\vspace{-1cm}
+\label{fig:mwpool}
+\end{figure}
+
+Our results from the minimum wage task are more consistent with motivated responding than motivated learning, on balance. Among opponents of raising the minimum wage, we see the familiar pattern that opponents of concealed carry display in the first task. The percentage of these respondents correctly identifying the result of the minimum wage study is 62.0\% in the uncongenial condition and 89.3\% in the congenial condition (Panel A). This dramatic congeniality effect is significantly attenuated by incentives. Specifically, it decreases from 27.3 to 16.3 percentage points, which is a 40\% reduction (see Panel B). Again, this reduction is due to an increase in correctness in the uncongenial condition. Incentives increase the percent correct by 8.4 points in the uncongenial condition, but their effect is null in the congenial condition.
+
+Supporters of raising the minimum wage do not behave in a manner consistent with motivated learning (Panel C). In fact, the congeniality effect is a significant -10.7 percentage points without incentives, indicating that respondents are actually {\it less} likely to correctly report a congenial result than an uncongenial result. In this case, the theoretical expectation for incentives is unclear, because the bias in the control condition is neither consistent with directionally motivated learning nor responding. We do not expect incentives to significantly alter behavior if there is no bias to reduce. Indeed, incentives do little to affect responses in either the uncongenial or congenial condition, so the congeniality effect remains negative with incentives (Panel D).\footnote{
+One possible explanation for this finding is that behavior in this task was affected by the previous task on concealed carry, since we did not randomize task order. We explore this possibility in SI Section~\ref{sec:spillover} but find little support for it.
+Another, related possibility is that respondents mistook the row labels in the second task to be parallel to the row labels in the first task (i.e., cities enacting the given policy are always in the first row). Properly testing this hypothesis (e.g., by fully randomizing row and column labels, and task order) is beyond the scope of this study.}
+Nevertheless, this finding suggests that a congeniality bias in factual learning is yet less common than the literature suggests.
+In sum, across the two experimental tasks in our three studies, we see some evidence of motivated learning and a great deal of evidence for motivated responding.
+
+\subsection*{Biased Study Ratings}
+
+Does the congeniality of the hypothetical study's result affect how positively respondents rate the study? Recall that after the concealed carry task in both Study 1 and 2, we had asked respondents to rate how ``well done'' and ``convincing'' they found the study on a 0--10 scale (see SI Section~\ref{sec:qwording} for wording). We find that the two ratings are strongly correlated, so we average them into a single rating (Cronbach's $\alpha$ = .82).
+
+In Figure~\ref{fig:ratings}, we plot the effect of the congeniality manipulation on this average rating among concealed carry supporters (Panel A) and opponents (Panel B). We estimate the overall congeniality effect and then disaggregate it by incentive condition. Consistent with our expectations, congeniality affects ratings, but more so when we incentivize respondents. Among concealed carry supporters, the overall congeniality effect is a marginally significant .25 ($t = 1.53$, $p = .06$). Drilling down, we find a null effect without incentives and a significant increase of .41 with incentives ($t = 1.78$, $p = .04$). Similarly, among concealed carry opponents, the overall effect is .20, which is in the hypothesized direction but not significant. And again, the effect only appears in the \texttt{Incentive} condition ($t = 1.41$, $p = .08$).\footnote{
+Pooling concealed carry supporters and opponents, we find that ratings increase from 4.79 if the study is uncongenial to 5.02 if the result supported by the study is congenial ($t = 1.79$, $p = .04$). With incentives, the effect is .42 ($t=2.30$, $p=.01$), and in the absence of incentives, the effect is only .08 ($t=.46$, $p=.32$). All t-tests reported here are one-tailed.}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Congeniality Effect on Study Ratings. Figure displays effect of congeniality manipulation on average study ratings, which were measured on a 0-10 scale, among concealed carry opponents (A) and supporters (B). Data are pooled from Studies 1 and 2. Effects are calculated overall and disaggregated by incentive condition. Vertical lines indicate 90 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {.5cm 11cm 0 0}, clip]{ratings.pdf}
+\label{fig:ratings}
+\vspace{-1cm}
+\end{figure}
+
+One possible explanation for this pattern is that when we incentivize respondents to admit having learned an uncongenial fact, they express displeasure via the study ratings. If so, we should see a greater congeniality effect among respondents who correctly report the study's result than among incorrect respondents. Indeed, we find that the congeniality effect in the \texttt{Incentive} condition only occurs among respondents answering correctly. Among concealed carry supporters answering correctly, the congeniality effect on study ratings in the \texttt{Incentive} condition is 1.05 ($t=3.31$, $p < .001$). Among concealed carry opponents answering correctly, effect in the \texttt{Incentive} condition is 1.39 ($t=3.43$, $p < .001$). These findings are merely suggestive, because answering correctly is of course an endogenous variable.
+
+
+\section*{Discussion}
+
+Increasing affective polarization \citep[see, e.g.,][]{iyengar2012affect, iyengar2014fear} has brought long-standing concerns over motivated reasoning to the fore. These concerns were amply highlighted during the recent presidential election, with numerous stories of people quickly latching on to congenial information, whatever the source, making the rounds. Motivated learning is related to such incidents, but it refers to something even more alarming: people coming across the same information supporting an unambiguous conclusion and yet walking away with different beliefs about what this information supports.
+
+Motivated learning is particularly troubling because it has the potential to upend the benefits bestowed by the information age---easy access to reliable, trustworthy, objective information about a variety of politically relevant topics. Motivated learning means that people may possess different facts even after being exposed to the same information supporting an unambiguous conclusion, and may reach preferences that are very different from what they would had if they learned in an unbiased manner \citep{gilens2001, hochschild2001}. Given that motivated learning facilitates disagreement over what the facts are, it also implies that the possibility of democratic deliberation and compromise is slimmer still \citep{shapiro2008, muirhead2013}.
+
+Our findings confirm that motivated learning occurs in some cases, but also suggest that estimates of motivated learning are upwardly biased. The concealed carry experiments suggest that supporters of concealed carry likely learn in a motivated manner. Manipulating the congeniality of the data through a minor change has a significant impact on the probability of reporting the correct answer among these respondents. And the accuracy incentives fail to change this tendency. 
+On the other hand, a portion of what is thought to be motivated learning is instead motivated responding. When other respondents are offered a mere \$0.10 to report their beliefs accurately, estimates of motivated learning decline sharply in some cases. And given that incentives could not have affected how respondents initially processed the data---respondents could not go back and look at the data after being informed about the incentives---incentives very likely identify the artifactual component of the evidence for motivated learning. 
+
+However, there are other potential explanations for why money may reduce estimates of motivated learning. The lure of making additional money may cause respondents to choose the answer that they believe the experimenter favors, rather than the one they think is right. Or, respondents may take monetary incentives as a cue that the congenial answer is incorrect. In both cases, the decline would be artifactual. We explore both possibilities, finding little empirical support for either (see SI~\ref{sec:demand}, and in particular tables~\ref{tab:demand_opp} and~\ref{tab:demand_supp}). On balance, the data suggest that incentives reduced bias in estimates of motivated learning, rather than increase it.
+
+It is possible that the data, even accounting for incentives, still overstate the extent to which people learn (or mislearn) in a biased manner. It is likely that a non-trivial proportion of respondents in the experimental tasks simply tune out because they find the wording too complex, or because they are disinterested in the question. Such respondents may pick an answer by taking a blind guess or by relying on their priors. They are aware that they haven not really learned the result supported by the study. Other respondents may use cheap heuristics to deduce the correct result. And some of these respondents also likely know the fallibility of inference, and prorate their certainty in what they have learned accordingly. A simple correct/incorrect scoring does not capture either of these concerns, instead treating each answer as evidence of learning a particular result. To assess these concerns, we asked people how confident they were about the answers they gave after they had selected their answers in Study 3. Only 13\% of respondents are certain of their answer in the concealed carry task without incentives. Even fewer, 10\%, are certain and incorrect. This suggests that the proportion of people who become confidently misinformed due to motivated learning, which is the gravest concern, is not very large.\footnote{In the minimum wage task, 23\% of respondents are certain of their answer, while only 4\% are certain and incorrect. We present these results in more detail in Table~\ref{tab:confidence} in SI Section~\ref{sec:confidence}.}
+
+Two other pieces of evidence suggest that motivated learning is less common than what conventional estimates reveal. Firstly, we find that respondents recall the data in a largely unbiased manner. Secondly, among those who support increasing the minimum wage, the congeniality effect is \textit{negative}---respondents were more likely to report the correct result in the uncongenial condition than in the congenial condition. This is exactly the opposite of what the theory of motivated learning would have predicted, which suggests that motivated learning may not be a feature of learning more generally.
+
+Lastly, data from the minimum wage task suggest that when the task is made easier, motivated learning all but disappears. This may happen because when the truth is transparent and easy to grasp, even people who are otherwise prone to motivated reasoning have trouble denying it \citep[see also][who shows that when economic conditions are unambiguous, as in the 2008 recession, factual beliefs about the economy converge]{bisgaard2015}. The finding is consistent with bounded rationality, a mechanism proposed for motivated learning. When little effort is required, motivated learning is perhaps not as much an issue. This also suggests that treatments designed to teach people how to infer data correctly from the contingency table ought to prove efficacious. So should treatments that give people more time to learn, and incentivize attention.
+
+More work is, however, needed to understand why incentives reduced the congeniality effect among those who oppose concealed carry, and not among those who support it. One possibility is that supporters of concealed carry have a stronger affective reaction to the issue and experience a greater directional pull toward their preferred conclusion. Another possibility is that this group of respondents differs on traits, such as need for cognition, that likely affect the extent to which people learn in a biased learning \citep[e.g.,][]{arceneaux2013}.
+
+The fact that incentives reduce estimates of motivated learning has broad implications for survey measurement. It suggests that in order to precisely measure certain variables, such as factual beliefs with partisan implications, accuracy incentives may be the best way to obtain unbiased estimates. In extending this method to experiments on learning, our study contributes to the burgeoning literature on motivated responding, which combines the insights of survey satisficing with literature on group-based reasoning and affect \citep{bullock2015, prior2015}. 
+
+To put the results in perspective, however, note that estimates of motivated learning and motivated responding come from a unique task. The task of interpreting a contingency table is unusual for many people. It is also the case that the data in the table is arranged so that common heuristics (e.g., focusing on the upper-left cell) will always lead to the wrong answer. While news media occasionally present studies using tabular or graphical formats, it is not the norm. And in such cases, it is likely that training people in how to interpret tables or incentivizing how attentively they process the data will significantly reduce bias. 
+
+Finally, the results suggest that incentivizing accurate reporting among respondents comes at a price. Respondents rate the study as less well done and less convincing when incentivized to report the uncongenial fact. Thus, while it is possible to increase accuracy in reported factual beliefs, doing so may increase bias in interpretations of these facts. Our finding is consistent with other research showing that even when people agree on factual information, they nevertheless tend to interpret the information in a motivated manner \citep[e.g.,][]{gaines2007, bisgaard2015}. While the observed reduction in motivated learning is welcome news for the prospect of democratic accountability, reducing differences between groups in one place may increase differences between them in another place.
+
+\clearpage
+\bibliographystyle{apa}
+\bibliography{partisanlearning}  
+\clearpage
+
+\section*{Supporting Information}
+\setcounter{section}{0}
+\renewcommand\thetable{SI \arabic{table}}
+\renewcommand\thefigure{SI \arabic{figure}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+
+\section{Additional Details about the Sample and Research Design}
+
+\subsection{Question Wording}
+\label{sec:qwording}
+\singlespacing
+\setlength{\parindent}{0cm} 
+
+\subsubsection{Gun Attitudes and Ownership (Studies 1, 2, and 3)}
+Do you favor or oppose a federal law requiring a nationwide ban on people other than law enforcement officers carrying concealed weapons?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Ban people other than law enforcement officers from carrying concealed weapons
+  \item Do not ban people other than law enforcement officers from carrying concealed weapons
+  \item Unsure
+\end{itemize}
+
+How important is the issue to you?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Extremely important
+  \item Very important
+  \item Somewhat important
+  \item Not too important
+  \item Not important at all
+\end{itemize}
+
+Do you or someone else in your household own a gun?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Yes
+  \item No
+\end{itemize}
+
+\subsubsection{Minimum Wage Attitudes (Studies 2 and 3 Only)}
+The federal minimum wage is currently \$7.25 per hour. Do you favor or oppose raising the federal minimum wage?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Favor raising the federal minimum wage
+  \item Oppose raising the federal minimum wage
+  \item Neither favor nor oppose raising the federal minimum wage
+\end{itemize}
+
+How important is the issue to you?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Extremely important
+  \item Very important
+  \item Somewhat important
+  \item Not too important
+  \item Not important at all
+\end{itemize}
+
+
+\subsubsection{Concealed Carry Task (Studies 1, 2, and 3)}
+A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were unsure whether the law would be more likely to decrease crime by reducing the number of people carrying weapons or increase crime by making it harder for law-abiding citizens to defend themselves from violent criminals.
+
+\medskip
+Researchers completed a study of two groups of cities to answer that question. The study involved comparing changes in annual crime rates for one group of cities that \uline{had} banned concealed handguns with changes in annual crime rates for a second group of cities that had \uline{not} banned concealed handguns.
+
+\medskip
+In each group, the number of cities in which the crime rate \uline{decreased} and the number of cities in which the crime rate \uline{increased} are recorded in the table below. The exact number of cities in each group is not the same, but this does not prevent assessment of the results.
+
+\medskip
+\textbf{We would like to know whether cities that enacted a ban were more likely to have a \underline{decrease} or \underline{increase} in crime than cities without bans.}
+
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to pro-gun condition:{]}} \label{tab:siprogun}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in crime  & Decrease in crime \\\hline
+  Cities that \underline{did} ban carrying     & \multirow{2}{*}{223 cities} & \multirow{2}{*}{75 cities} \\ 
+  concealed handguns in public           &               & \\ \hline
+  Cities that \underline{did not} ban carrying & \multirow{2}{*}{107 cities} & \multirow{2}{*}{21 cities} \\ 
+  concealed handguns in public           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5mm}
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to anti-gun condition:{]}} \label{tab:siantigun}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Decrease in crime & Increase in crime \\\hline
+  Cities that \underline{did} ban carrying     & \multirow{2}{*}{223 cities} & \multirow{2}{*}{75 cities} \\ 
+  concealed handguns in public           &               & \\ \hline
+  Cities that \underline{did not} ban carrying & \multirow{2}{*}{107 cities} & \multirow{2}{*}{21 cities} \\ 
+  concealed handguns in public           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5mm}
+\begin{center}
+ {[}Page Break{]}
+\end{center}
+
+What result does the study support? {[}\textbf{Incentive Treatment:}{]} We will give you a bonus of \$0.10 for the correct answer.
+\begin{itemize}
+  \item Cities that enacted a ban on carrying concealed handguns were more likely to have \uline{a decrease in crime} than cities without bans.
+  \item Cities that enacted a ban on carrying concealed handguns were more likely to have \uline{an increase in crime} than cities without bans.
+\end{itemize}
+
+\begin{center}
+{[}Page Break{]}\\
+\end{center}
+
+On a scale of 0 to 10, where 0 is ``very poorly done'' and 10 is ``very well done,'' how well do you think the study on concealed handguns was done?
+
+\bigskip
+On a scale of 0 to 10, where 0 is ``completely unconvincing'' and 10 is ``completely convincing,'' how convincing is this study as evidence of the effect of banning concealed handguns on crime?
+
+\subsubsection{Minimum Wage Task (Studies 2 and 3 Only)}
+A city government is trying to decide whether to pass a law increasing the minimum wage. Government officials were unsure whether the law would be more likely to decrease jobs or increase jobs.
+ 
+\medskip
+Researchers completed a study of two groups of states to answer that question. The study involved comparing changes in jobs for one group of states that \uline{had} increased the minimum wage with changes in jobs for a second group of states that had \uline{not} increased the minimum wage.
+ 
+\medskip
+In each group, the percentage of states in which jobs \uline{decreased} and the percentage of states in which jobs \uline{increased} are recorded in the table below. The exact number of states in each group is not the same, but this does not prevent assessment of the results.
+ 
+\medskip
+\textbf{We would like to know whether states that increased the minimum wage were more likely to have a \underline{decrease} or \underline{increase} in jobs than states without minimum wage increases.}
+
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to pro-raise condition:{]}} \label{tab:siprowage}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in jobs  & Decrease in jobs \\\hline
+  States that \underline{did not} increase     & \multirow{2}{*}{16\%} & \multirow{2}{*}{84\%} \\ 
+  minimum wage           &               & \\ \hline
+  States that \underline{did} increase & \multirow{2}{*}{37\%} & \multirow{2}{*}{63\%} \\ 
+  minimum wage           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5mm}
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to anti-raise condition:{]}} \label{tab:siantiwage}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in jobs  & Decrease in jobs \\\hline
+  States that \underline{did} increase     & \multirow{2}{*}{16\%} & \multirow{2}{*}{84\%} \\ 
+  minimum wage           &               & \\ \hline
+  States that \underline{did not} increase & \multirow{2}{*}{37\%} & \multirow{2}{*}{63\%} \\ 
+  minimum wage           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-2.5mm}
+\begin{center}
+ {[}Page Break{]}
+\end{center}
+
+What result does the study support? {[}\textbf{Incentive Treatment:}{]} We will give you a bonus of \$0.10 for the correct answer.
+\begin{itemize}
+  \item States that increased the minimum wage were more likely to have \uline{a decrease in jobs} than states without minimum wage increases.
+  \item States that increased the minimum wage were more likely to have \uline{an increase in jobs} than states without minimum wage increases.
+\end{itemize}
+
+\bigskip
+\subsection{Numeracy Screener}
+\label{sec:numscreener}
+\doublespacing
+\setlength{\parindent}{1cm} 
+
+We include our numeracy scale below. It is a shortened version of the scale used by \citet{kahan2017} and developed by \citet{weller2012}. We include the five easiest items that \citeauthor{weller2012} find, in order to identify low-numeracy respondents. Two concerns vitiate commensurability of our scores and those of \citeauthor{kahan2017}: guessing and item sampling. Research suggests that lucky guessing is a minor concern on open-ended items \citep{luskin2011}. And if we assume that the items are Guttman scaled, i.e., a person who answers a more difficult item correctly will also answer easier items correctly, our threshold will be exactly the same as the median score in \citeauthor{kahan2017}. We take Guttman scaling on numeracy items to not only be plausible but likely.
+
+\begin{enumerate}
+  \item If we roll a fair, six-sided die 1,000 times, on average, how many times would the die come up as an even number? \\{\bf Answer:} 500
+  \item There is a 1\% chance of winning a \$10 prize in the Megabucks Lottery. On average, how many people would win the \$10 prize if 1,000 people each bought a single ticket? \\{\bf Answer:} 10
+  \item If the chance of getting a disease is 20 out of 100, this would be the same as having a \underline{\hspace{1cm}}\% chance of getting the disease. \\{\bf Answer:} 20
+  \item If there is a 10\% chance of winning a concert ticket, how many people out of 1,000 would be expected to win the ticket? \\{\bf Answer:} 100
+  \item In the PCH Sweepstakes, the chances of winning a car are 1 in a 1,000. What percent of PCH Sweepstakes tickets win a car? \\{\bf Answer:} .1
+\end{enumerate}
+
+\newpage
+\subsection{Respondents Enrolled, Screened, Allocated, and Analyzed by Study}
+\label{sec:flow}
+Figures~\ref{fig:flowchart1},~\ref{fig:flowchart2},~and \ref{fig:flowchart3} are flow diagrams displaying the number of respondents in each phase of Studies 1, 2, and 3, respectively. We display the number of respondents assessed for eligibility, invited to participate, assigned to an experimental condition in the concealed carry task, and included in our main analyses.
+
+\bigskip
+\begin{figure}[h!]
+  \centering
+   \caption{Flow Diagram of Concealed Carry Experiment in Study 1}
+   \label{fig:flowchart1}
+   \includegraphics[scale=.75, trim = {1cm 2.5cm 0 1cm}, clip]{flowchart1.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \caption{Flow Diagram of Concealed Carry Experiment in Study 2}
+   \label{fig:flowchart2}
+   \includegraphics[scale=.75, trim = {1cm 2.5cm 0 1cm}, clip]{flowchart2.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \caption{Flow Diagram of Concealed Carry Experiment in Study 3}
+   \label{fig:flowchart3}
+   \includegraphics[scale=.75, trim = {1 6.25cm 6cm 1cm}, clip]{flowchart3.pdf}
+\end{figure}
+
+\clearpage
+\subsection{Sample Characteristics}
+\label{sec:sample}
+
+To shed light on the quality of our respondent samples, we compared marginals on key variables to the numbers from better samples in Table~\ref{tab:sample}. We used the 2012 American National Election Study to compare partisanship and ideology, and the U.S. Census 2015 American Community Survey for demographics. Like other MTurk samples, the Study 1 and 2 samples are more young, white, male, and liberal than the general population. Study 3 is more representative in terms of party and ideology, but more educated, female, and white than the general population. In Studies 2 and 3, we can compare high-numeracy respondents with the entire sample (55\% of sample). As before, we define high-numeracy as answering four or more items correctly in the five-item scale. In Study 2, there are no appreciable differences by numeracy. However, high-numeracy respondents in Study 3 are more educated, white, and male than low-numeracy respondents.
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption{Sample Characteristics by Study} \label{tab:sample}
+\begin{tabular}{| l c c c c c c |}
+\hline 
+			& Study 1	& Study 2	& Study 2	& Study 3	& Study 3	& National	\\
+			& 		& 		& High-Num. & 		& High-Num. & Sample	\\ \hline
+Democrat		& 65\%	& 60\% 	& 62\%	& 51\%	&50\%	& 46\%	\\ 
+Republican	& 21\%	& 24\% 	& 22\%	& 35\%	&39\%	& 39\%	\\ \hline
+Liberal		& 51\%	& 50\% 	& 52\%	& 23\%	&22\%	& 27\%	\\ 
+Conservative	& 16\%	& 17\% 	& 16\%	& 29\%	&28\%	& 39\% 	\\ \hline
+HS or Less	& 9\%	& 12\% 	& 10\%	& 25\%	&17\%	& 41\% 	\\ 
+Some College	& 40\%	& 41\% 	& 41\%	& 39\%	&37\%	& 31\% 	\\ 
+College Degree	& 40\%	& 39\% 	& 39\%	& 26\%	&33\%	& 18\% 	\\ 
+Post-Graduate	& 11\%	& 9\% 	& 10\%	& 10\%	&13\%	& 10\% 	\\ \hline
+18-29 years old	& 57\%	& 55\% 	& 55\%	& 10\%	&11\%	& 22\% 	\\ 
+30-44 years old	& 33\%	& 33\% 	& 34\%	& 34\%	&33\%	& 25\% 	\\ 
+45-64 years old	& 9\%	& 11\% 	& 10\%	& 44\%	&47\%	& 34\% 	\\ 
+65+ years old	& 1\%	& 1\% 	& 1\%	& 13\%	&10\%	& 19\% 	\\ \hline
+Female		& 32\%	& 38\% 	& 34\%	& 66\%	&57\%	& 52\% 	\\ \hline
+White		& 75\%	& 73\% 	& 73\%	& 76\%	&84\%	& 62\% 	\\ 
+Black		& 5\%	& 6\% 	& 5\%	& 10\%	&5\%		& 12\% 	\\ 
+Hispanic/Latino	& 5\%	& 7\% 	& 7\%	& 7\%	&4\%		& 18\% 	\\ 
+Asian		& 11\%	& 10\% 	& 11\%	& 3\%	&4\%		& 5\% 	\\ 
+Other/Mixed	& 4\%	& 5\% 	& 5\%	& 3\%	&3\%		& 3\% 	\\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+\clearpage
+\subsection{Covariate Balance}
+\label{sec:balance}
+
+Table~\ref{tab:balance} presents estimates of the extent to which covariates were balanced across conditions in the concealed carry task, separately by study. Each row reports the F-statistic and associated p-value from a linear regression of the indicated covariate on the congeniality treatment, incentive treatment, and interaction between the two treatments. In Study 3, which only contained the uncongenial version of the concealed carry task, the only regressor is the accuracy treatment.
+
+\vspace{-3mm}
+\singlespacing
+\begin{table}[h]
+\centering
+\caption{Covariate Balance across Experimental Conditions in Concealed Carry Task} \label{tab:balance}
+\begin{tabular}{| l c c c |}
+\hline 
+				& Study 1 (N=785)		& Study 2 (N=947)		& Study 3 (N=1,062)	\\ \hline
+Partisanship (7-point)	& $F = .45$, $p = .72$	& $F = .88$, $p = .45$	& $F = .04$, $p = .85$ \\ 
+Ideology (5-point)	& $F = .30$, $p = .83$	& $F = 1.29$, $p = .28$	& $F = .002$, $p = .96$ \\ 
+Education (4-point)	& $F = 2.42$, $p = .07$	& $F = .78$, $p = .50$	& $F = 2.51$, $p = .11$ \\ 
+Age (continuous)	& $F = 1.34$, $p = .26$	& $F = .56$, $p = .64$	& $F = 1.00$, $p = .32$ \\ 
+Gender (binary)		& $F = 1.53$, $p = .20$	& $F = .47$, $p = .71$	& $F = 1.04$, $p = .31$ \\ 
+Non-White (binary)	& $F = .64$, $p = .42$	& $F = 1.40$, $p = .24$	& $F = .06$, $p = .81$ \\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+%\clearpage
+\vspace{-5mm}
+\subsection{Assessing Spillover}
+\label{sec:spillover}
+
+Because the concealed carry task always preceded the minimum wage task in Studies 2 and 3, we assess the extent to which randomization in the former task affected behavior in the latter task. We estimate treatment effects in both tasks simultaneously via logistic regression. The outcome variable indicates correctness in the minimum wage task (1 = correct). The regressors are the congeniality treatment, the incentive treatment, and their interaction, in both tasks. We allow the minimum wage treatments to vary by concealed carry condition.
+
+Table~\ref{tab:spillover} displays the results for supporters of raising the minimum wage in Studies 2 and 3, and opponents in Study 3. In each regression, none of the coefficients reach significance, except for the congeniality treatment in the minimum wage task. Importantly, the concealed carry task treatments all have null effects, confirming that the first task did not spill over into the second task. Moreover, the null interactive effects indicate that the concealed carry treatments did not alter the effects of the minimum wage treatments in any of the samples.
+
+\medskip
+\begin{table}[ht]
+\centering
+\caption{Logistic Regression of Minimum Wage Correctness on Experimental Treatments in Both Tasks} \label{tab:spillover}
+\begin{tabular}{l c c c}
+  \hline
+ & Coefficient (SE) & z value & Pr($>$$|$z$|$) \\ 
+  \hline
+{\bf Study 2: Supporters of Raising Minimum Wage (n=818)}  & & & \\ 
+  Intercept 									& 1.556 (.389) 	& 4.006 	& .000 \\ 
+  Concealed Carry Congeniality					& .611 (.656) 	& .932 	& .352 \\ 
+  Concealed Carry Incentives					& .777 (.719) 	& 1.081 	& .280 \\ 
+  CC Congeniality $\times$ CC Incentives			& .717 (1.350) 	& .532 	& .595 \\ 
+  Minimum Wage Congeniality					& .927 (.716) 	& 1.295 	& .195 \\ 
+  Minimum Wage Incentives						& 1.045 (.830) 	& 1.259 	& .208 \\ 
+  MW Congeniality $\times$ MW Incentives			& -.667 (1.256) 	& -.531 	& .595 \\ 
+
+  CC Congeniality $\times$ MW Congeniality	  		& -1.767 (.965)	& -1.830 	& .067 \\ 
+  CC Incentives $\times$ MW Congeniality			& -1.443 (1.035)	& -1.394 	& .163 \\ 
+  CC Congeniality $\times$ CC Incentives $\times$ MW Congeniality 
+										& -.157 (1.627)	& -.096	& .923 \\ 
+  CC Congeniality $\times$ MW Incentives			& .450 (1.412) 	& .319 	& .750 \\ 
+  CC Incentives $\times$ MW Incentives			& -1.534 (1.117) & -1.374 	& .170 \\ 
+  CC Congeniality $\times$ CC Incentives $\times$ MW Incentives 
+										& -1.545 (1.964)	& -.786	& .432 \\ 
+  CC Congeniality $\times$ MW Congeniality $\times$ MW Incentives 
+										& -.735 (1.789)	& -.411	& .681 \\ 
+  CC Incentives $\times$ MW Congeniality $\times$ MW Incentives 
+										& 1.209 (1.618)	& .747 	& .455 \\ 
+  CC Congen. $\times$ CC Incent. $\times$ MW Congen. $\times$ MW Incent. 
+										& 2.856 (2.458)	& 1.162	& .245 \\ \hline
+
+{\bf Study 3: Supporters of Raising Minimum Wage (n=918)}  & & & \\ 
+  Intercept 									& 1.655 (.303) 	& 5.466 	& .000 \\ 
+  Concealed Carry Incentives					& -.060 (.421) 	& -.141 	& .888 \\ 
+  Minimum Wage Congeniality					& -.961 (.376) 	& -2.56 	& .011 \\ 
+  Minimum Wage Incentives						& -.032 (.414) 	& -.077 	& .939 \\ 
+  MW Congeniality $\times$ MW Incentives			& .452 (.531) 	& .852 	& .394 \\ 
+  CC Incentives $\times$ MW Congeniality			& .155 (.535)	& .290 	& .772 \\ 
+  CC Incentives $\times$ MW Incentives			& -.032 (.577) 	& -.055 	& .956 \\ 
+  CC Incentives $\times$ MW Congeniality $\times$ MW Incentives 
+										& -.348 (.750)	& -.464 	& .643 \\ \hline
+{\bf Study 3: Opponents of Raising Minimum Wage (n=262)}  & & & \\ 
+  Intercept 									& .211 (.326) 	& .648 	& .517 \\ 
+  Concealed Carry Incentives					& .482 (.462) 	& 1.043 	& .297 \\ 
+  Minimum Wage Congeniality					& 2.519 (.679) 	& .679 	& .0002 \\ 
+  Minimum Wage Incentives						& .792 (.480) 	& 1.649 	& .099 \\ 
+  MW Congeniality $\times$ MW Incentives			& -1.443 (.900) 	& -1.602 	& .109 \\ 
+  CC Incentives $\times$ MW Congeniality			& -1.015 (.920)	& -1.103 	& .270 \\ 
+  CC Incentives $\times$ MW Incentives			& -.846 (.647) 	& -1.308 	& .191 \\ 
+  CC Incentives $\times$ MW Congeniality $\times$ MW Incentives 
+										& .889 (1.182)	& .752 	& .452 \\ 
+   \hline
+\end{tabular}
+Note: CC and MW indicate concealed carry and minimum wage experiments, respectively.
+\end{table}
+\normalsize
+\doublespacing
+
+\clearpage
+\doublespacing
+\section{Additional Empirical Results}
+
+\subsection{Does Numeracy Condition Treatment Effects?}
+\label{sec:numeracy}
+\doublespacing
+
+We confined Study 1 to high-numeracy respondents based on the theoretical argument and main result of \citet{kahan2017} that polarization only occurs among this group. However, in Studies 2 and 3, we invited all respondents to participate fully, regardless of numeracy, to compare the behavior and background characteristics of high- and low-numeracy respondents. In theory, respondents may differ by numeracy in multiple ways. First, high-numeracy respondents are probably more educated, which we see in Study 3 (see Table~\ref{tab:sample}). Second, they may hold different attitudes. For example, high-numeracy respondents may exhibit greater political sophistication, ideological constraint, party identification, or other traits that predispose them to motivated learning, motivated responding, or both.
+
+Therefore, in Table~\ref{tab:accnum}, we compare the behavior of low- and high-numeracy respondents in the concealed carry experiment. Note that our numeracy scale is truncated, so our ability to fully answer this question is limited. We find that the substantive pattern of results is similar among both groups, though the magnitudes of treatment effects change. Each cell in Table~\ref{tab:accnum} displays the incentive treatment effect in percentage points, which is percent correct in the \texttt{Incentive} condition minus the percent correct in the \texttt{No Incentive} condition (standard errors in parentheses). Each row contains a type of respondent, and each column contains a different study and congeniality condition. Among concealed carry supporters, neither high- nor low-numeracy respondents exhibit significant treatment effects, in either the uncongenial or congenial condition. (The effects are positive among low-numeracy respondents in Study 2, but have large standard errors.) Among concealed carry opponents, we see the familiar pattern of positive treatment effects in the uncongenial, but not the congenial, condition. These effects occur among high-numeracy respondents in Study 2, and both high- and low-numeracy respondents in Study 3 (though they are only statistically significant among the latter group).
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption{Incentive Effects in Concealed Carry Task by Study, Condition, and Respondent Numeracy} \label{tab:accnum}
+\begin{tabular}{| l | c c | c c | c |}
+\hline 
+& \multicolumn{2}{c}{\bf Study 1}	& \multicolumn{2}{|c|}{\bf Study 2} & {\bf Study 3}	\\
+{\bf Respondents} & {\bf Uncongenial} & {\bf Congenial} & {\bf Uncongenial} & {\bf Congenial} & {\bf Uncongenial}	\\ 
+\hline
+{\bf CC Supporters} & & & & & \\
+High-Numeracy	& -1.5 (6.3)& -3.3 (6.9)	& -4.2 (7.3)	& 2.8 (7.1)		& 2.9 (5.8)	\\ 
+			& n=248	& n=207		& n=180		& n=200		& n=261	\\ 
+Low-Numeracy	& -		& -			& 13.3 (11.3)	& 13.3 (11.0)	& -2.4 (4.9)\\ 
+			& 		& 			& n=72		& n=78		& n=378	\\ 
+Combined		& -		& -			& .6 (6.2)		& 5.9 (6.0)		& -0.3 (3.7)\\ 
+			& 		&			& n=252		& n=278		& n=639	\\ 
+\hline
+{\bf CC Opponents} & & & & & \\
+High-Numeracy	& 9.1 (9.1)	& -8.0 (9.5)	& 25.4 (9.4) 	& 3.0 (9.4)		& 4.5 (7.6)	\\ 
+			& n=123	& n=108		& n=108		& n=116		& n=159	\\ 
+Low-Numeracy	& - 		& -			& -10.1 (16.0)	& -11.7 (17.9)	& 8.0 (5.4)	\\ 
+			& 		& 			& n=38		& n=32		& n=257	\\ 
+Combined		& -		& -			& 17.1 (8.1)	& -0.3 (8.2)	& 6.9 (4.4)	\\ 
+			& 		& 			& n=146		& n=148		& n=416	\\ 
+\hline
+\end{tabular}
+\footnotesize{Note: `CC Supporters' and `CC Opponents' refer to concealed carry supporters and opponents, respectively.}
+\end{table}
+\doublespacing
+
+Since numeracy is not a prerequisite to understand which result is more congenial, in response to a concern raised by a reviewer, we also checked whether low-numeracy respondents tended to pick the congenial answer more often than the uncongenial one. We term this behavior ``response bias'' and operationalize it as the odds of choosing the congenial answer. Low-numeracy respondents indeed exhibit such bias. In Study 2, response bias is 1.25 without incentives, meaning respondents are 25\% more likely to pick the congenial answer. High-numeracy response bias is a very similar 1.22. Where the two groups differ is in their responsiveness to incentives. Low-numeracy respondents continue to exhibit a response bias of 1.13 with incentives, while bias among high-numeracy respondents reverses itself to .82, indicating that as expected, they become more likely to pick the {\it uncongenial} answer.
+
+In Study 3, incentives reduce response bias among both low- and high-numeracy respondents alike, paralleling the results in the last column of Table~\ref{tab:accnum}. Incentives reduce low-numeracy response bias from 3.68 to 2.41 and high-numeracy response bias from 2.04 to 1.68. Interestingly, it is low-numeracy respondents who exhibit more response bias overall in Study 3.
+
+\clearpage
+\subsection{Subsetting Respondents by `Ideological Worldview'}
+\label{sec:kahan}
+\doublespacing
+
+\citet{kahan2017} operationalize congeniality using respondents' `ideological worldview' instead of their position on concealed carry. The authors conceive of `ideological worldview' as a combination of partisanship and ideology, and measure it by simply multiplying the two. At one end of the scale are ``Conservative Republicans,'' and at the other end, ``Liberal Democrats.'' And while we are skeptical, it is possible that ideological worldview establishes what information is congenial to a respondent, more so than relevant attitudes. To explore this concern, we construct a similar variable, categorizing respondents as either conservative Republicans or liberal Democrats, depending on their self reported party identification (including leaners) and three-point ideology (conservative, moderate, or liberal). Using this variable, we re-analyze the concealed carry task in Studies 1 and 2.  
+
+Before we present the results, a caveat: positions on concealed carry are only weakly related to ideological worldview, especially among low-numeracy respondents. In Study 2, for example, the correlation is .41 among high-numeracy respondents and only .16 among low-numeracy respondents. In fact, this weak relationship may be why \citeauthor{kahan2017} do not observe bias among low-numeracy respondents. We prefer to subset respondents by their issue position, precisely because the overlap between issue positions and ideological worldview is not 100\%.
+
+With the caveats above, we rerun our main analyses using this new variable to subset respondents, presenting the results in Figure~\ref{fig:libdem}. The substantive pattern of results is very similar to our main results in Figure~\ref{fig:pooled}. Conservative Republicans exhibit congeniality effects with and without incentives. The magnitudes are substantial, but the effects are marginally significant due to the small size of this group in Studies 1 and 2. Liberal Democrats, on the other hand, exhibit a significant congeniality effect of 10.9 points without incentives, which is reduced to an insignificant 3.8 points with incentives. While we view this conditioning variable as indirectly related to our outcome of interest, it is reassuring that we are able to replicate the main result of \citeauthor{kahan2017}. And again, incentives only work on respondents on the political left.
+
+\begin{figure}[h]
+  \centering
+  \caption{Concealed Carry Task Results using \citet{kahan2017} Conditioning Variable (Studies 1 and 2). Panels on the left display percentage of conservative Republicans (Panel A) and liberal Democrats (Panel C) of raising the minimum wage correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among conservative Republicans (Panel B) and liberal Democrats (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0cm 0 0}, clip]{cvd_eff_pooled_libdem.pdf}
+\vspace{-1cm}
+\label{fig:libdem}
+\end{figure}
+
+\clearpage
+\subsection{No Evidence of Selective Perception}
+\label{sec:recall}
+
+One proposed mechanism for why people learn in a motivated manner is that they simply misperceive the data. Thus, we next examine the extent to which errors in cognition are explained by congeniality of the data. Given our hypothesis that motivated responding explains a large portion of what appears to be motivated learning, we also conjectured that most respondents do not perceive data in a selective manner.
+
+To test this hypothesis, we examined how well respondents did across various conditions in recalling the numbers in the contingency table (in Study 1 only). Prior studies using similar tasks suggest that errors are most common in the top-left cell in the contingency table \citep{gilovich1991, dawson2002cella}. We therefore first examine whether the congeniality manipulation changed estimates of the number of cities in this cell. Since the incentive treatment occurred only after respondents saw the contingency table, we do not expect incentives to affect recall. We therefore focus on the effect of congeniality on data recall in the absence of incentives. 
+
+There were 223 cities in the upper-left cell in both conditions (see Tables~\ref{tab:antigun} and ~\ref{tab:progun}). If respondents misperceive (or misremember) this value in a way that makes the study's result more congenial to them, then we would expect them to overestimate this number in the uncongenial condition, relative to the congenial condition.\footnote{Overestimating the upper-left cell inflates the crime increase:decrease (decrease:increase) ratio for cities that banned concealed handguns in the anti-gun (pro-gun) version of the table.} However, we find that mean estimates do not differ appreciably by congeniality (without incentives). The mean number of cities recalled was 213.9 (s.e. = 5.5) in the uncongenial condition and 212.5 (s.e. = 4.9) in the congenial condition.
+
+We next checked whether estimates of the 107 cities in the lower-left cell varied by condition. Here we would expect estimates to be {\it lower} in the uncongenial condition than in the congenial condition. However, recall was again fairly consistent across conditions: 103.1 (s.e. = 2.7) and 105.2 (s.e. = 4.7) in the uncongenial and congenial conditions, respectively. Estimates of the other two cells in the table were also unaffected by the congeniality manipulation. In summary, we do not find a congeniality effect on the recall task in the absence of incentives.
+
+Finally, we simultaneously test the effect of congeniality, incentives, and their interaction on recall. We examine recall estimates of the number of cities in the upper-left and lower-left cells of the contingency table. As Tables~\ref{tab:recalla} and ~\ref{tab:recallc} below show, we find no significant effects for either cell. We conclude that respondents do not perceive the data selectively. This analysis also serves as a placebo test, indicating that incentives affect reporting without affecting recall.
+
+\begin{table}[ht]
+\centering
+\caption{Linear Regression: Upper-Left Cell Recall Estimates} \label{tab:recalla}
+\begin{tabular}{l c c c}
+  \hline
+ & Coefficient (SE) & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+  Intercept & 213.92 (5.58) & 38.31 & .00 \\ 
+  Congeniality & -1.39 (8.08) & -.17 & .86 \\ 
+  Incentive & -1.92 (7.97) & -.24 & .81 \\ 
+  Congeniality $\times$ Incentives & 2.66 (11.79) & .23 & .82 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Linear Regression: Lower-Left Cell Recall Estimates} \label{tab:recallc}
+\begin{tabular}{l c c c}
+  \hline
+ & Coefficient (SE) & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+  Intercept & 103.09 (3.40) & 30.34 & .00 \\ 
+  Congeniality & 2.10 (4.91) & .43 & .67 \\ 
+  Incentive & 1.08 (4.85) & .22 & .82 \\ 
+  Congeniality $\times$ Incentives & 1.92 (7.17) & .27 & .79 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+%\clearpage
+\subsection{Covariance Detection Task Results  by Study}
+\label{sec:bystudy}
+\doublespacing
+
+We present the concealed carry results separately for Studies 1 and 2 in Figures~\ref{fig:study1} and~\ref{fig:study2}, respectively. Our findings are substantively similar across studies. In both studies, concealed carry supporters exhibit sizable congeniality effects, with and without incentives. And in both studies, concealed carry opponents exhibit a congeniality effect in the control condition that is wiped out by incentives. Due to the reduced power of splitting up studies, the difference-in-differences is marginally significant but substantively large: 17.1 percentage points in Study 1 and 22.4 percentage points in Study 2. Moreover, incentives increase correctness only in the uncongenial condition, which is consistent with our hypothesis, in both studies.
+
+\begin{figure}[h!]
+  \centering
+  \caption{Concealed Carry Task Results from Study 1. Panels on the left display percentage of concealed carry supporters (Panel A) and opponents (Panel C) correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among concealed carry supporters (Panel B) and opponents (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0 0 0}, clip]{cvd_eff_study1.pdf}
+\label{fig:study1}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Concealed Carry Task Results from Study 2. Panels on the left display percentage of concealed carry supporters (Panel A) and opponents (Panel C) correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among concealed carry supporters (Panel B) and opponents (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0 0 0}, clip]{cvd_eff_study2.pdf}
+\label{fig:study2}
+\end{figure}
+
+\clearpage
+We present the results of the minimum wage task separately for Studies 2 and 3 in Figures~\ref{fig:study2_wage} and~\ref{fig:study3_wage}, respectively. In both studies, supporters of raising the minimum wage exhibit a negative congeniality effect in the absence of incentives, indicating they are more likely to answer correctly in the {\it uncongenial} condition than in the congenial condition. This pattern is inconsistent with motivated learning. Among opponents of raising the minimum wage, whom we can only analyze in Study 3, there is a 31-point congeniality effect without incentives. The incentive treatment reduces this effect by 14 percentage points (or 46\%). This large decrease is consistent with motivated responding.
+
+\bigskip
+\bigskip
+\begin{figure}[h!]
+  \centering
+  \caption{Minimum Wage Task Results (Study 2). Panel A displays percentage of minimum wage raise supporters correctly indicating study result by experimental condition. Panel B displays congeniality effect by incentive condition, as well as difference-in-differences (DiD), among minimum wage raise supporters. Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 10cm 0 0}, clip]{cvdwage_eff_study2.pdf}
+\vspace{-1cm}
+\label{fig:study2_wage}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Minimum Wage Task Results (Study 3). Panels on the left display percentage of supporters (Panel A) and opponents (Panel C) of raising the minimum wage correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among supporters (Panel B) and opponents (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0cm 0 0}, clip]{cvdwage_eff_study3.pdf}
+\vspace{-1cm}
+\label{fig:study3_wage}
+\end{figure}
+
+
+\clearpage
+\subsection{Concealed Carry Task Results as Logistic Regressions}
+\label{sec:logit}
+\doublespacing
+
+For another succinct way to look at the results, we estimated the effects of the treatments using a logistic regression. The dependent variable is a dummy variable indicating whether or not the respondent correctly identified the result of the concealed carry study. Pooling our data from Studies 1 and 2, we run separate logistic regressions for concealed carry supporters (Table~\ref{tab:logit1}) and opponents (Table~\ref{tab:logit2}). Among concealed carry supporters, there is a significantly positive congeniality effect (odds ratio = 1.62), while the incentive effect is null. Among concealed carry opponents, both the congeniality and incentive treatments are significantly positive. And the interaction between the treatments is large and negative, indicating that the incentives significantly reduce the congeniality effect.
+
+\bigskip
+\begin{table}[ht]
+\centering
+\caption{Logistic Regression on Concealed Carry Supporters (Studies 1 \& 2)} \label{tab:logit1}
+\begin{tabular}{l c c c c}
+  \hline
+ 						& Coefficient (SE) & Odds Ratio 	& z value 	& Pr($>$$|$z$|$) \\ \hline
+  Intercept 					& -.298 (.138) 		& .742 	& -2.169	& .030 \\ 
+  Congeniality Treatment		& .483 (.196) 		& 1.620 	& 2.462 	& .014 \\ 
+  Incentives Treatment		& -.103 (.196) 		& .902 	& -.525 	& .600 \\ 
+  Congeniality $\times$ Incentives & .079 (.280) 		& 1.083 	& .284 	& .777 \\  \hline
+\end{tabular}
+\end{table}
+\normalsize
+\doublespacing
+
+\begin{table}[ht]
+\centering
+\caption{Logistic Regression on Concealed Carry Opponents (Studies 1 \& 2)} \label{tab:logit2}
+\begin{tabular}{l c c c c}
+  \hline
+ 						& Coefficient (SE) & Odds Ratio 	& z value 	& Pr($>$$|$z$|$) \\ \hline
+  Intercept 					& -.363 (.188) 		& .696 	& -1.931	& .054 \\ 
+  Congeniality Treatment		& .583 (.259) 		& 1.791 	& 2.251 	& .024 \\ 
+  Incentives Treatment		& .646 (.267) 		& 1.907 	& 2.420 	& .016 \\ 
+  Congeniality $\times$ Incentives & -.740 (.380) 		& .477 	& -1.946 	& .052 \\  \hline
+\end{tabular}
+\end{table}
+\normalsize
+\doublespacing
+
+
+\clearpage
+\subsection{Assessing Experimenter Demand Effects}
+\label{sec:demand}
+
+To earn a little extra money, do respondents report what they think the experimenter believes is true instead of what they believe to be true? To answer that, we need to conjecture about respondents' beliefs about the experimenter conducting the study. We consider two hypotheses about what respondents may think in this regard. The first is that respondents believe that most social scientists are liberal, and therefore infer that the result favoring gun control will always be treated as correct. Another is that respondents interpret financial incentives as a cue that the uncongenial option is the right one. We investigate both possibilities.
+
+If respondents believe the experimenter is liberal, incentives should encourage respondents to select the anti-gun (i.e., pro-ban) answer, irrespective of the study's congeniality. To investigate this, we pooled opponents of concealed carry from Studies 1 and 2 as they had responded appreciably to the incentive treatment (see Figure~\ref{fig:pooled}). In Table~\ref{tab:demand_opp} below, we display the percentage of these respondents who give the congenial (i.e., anti-gun/pro-ban) and uncongenial response (i.e., pro-gun/anti-ban) by condition. Without incentives, respondents are more likely to give the congenial response than the uncongenial response (59\% vs. 41\%). As in SI Section~\ref{sec:numeracy}, we quantify this ``response bias'' by computing the odds of selecting the anti-gun response. Response bias is 1.44 in the uncongenial condition and 1.25 in the congenial condition. When respondents are offered incentives, response bias reverses itself in the uncongenial condition. It falls to .75, indicating that respondents are now more likely to select the pro-gun answer. Thus, incentives do not cause respondents to blindly choose the anti-gun answer, or the pro-gun answer, for that matter. Instead, they become less likely to pick the congenial answer and more likely to pick the correct answer.
+
+Among concealed carry supporters, incentives have no discernible effect on response bias. These respondents are always more likely to pick the congenial (i.e., pro-gun) answer than the uncongenial  (i.e., anti-gun) answer. Bias is a bit greater in the uncongenial condition than in the congenial condition, resulting in poorer performance in the uncongenial condition. For example, in the absence of incentives, response bias is 1.35 in the uncongenial condition and 1.20 in the congenial condition. More importantly, incentives hardly change response bias in either the uncongenial or congenial condition. Thus, contrary to the scenario outlined above, incentives do not encourage supporters of concealed carry to select any particular response.
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {``Response Bias'' among Concealed Carry Opponents (Studies 1 and 2)}
+\label{tab:demand_opp}
+\begin{tabular}{| l | c | c | c | c |}
+\hline 
+\multirow{2}{*}{Experimental Condition} & \multirow{2}{*}{N} & \% Selecting & \% Selecting & Odds of \\ 
+					& 		& Anti-Gun Answer & Pro-Gun Answer  & Anti-Gun Answer \\ \hline
+No Incentives, Uncongenial	& 117	& 59.0\% & 41.0\% & 1.44 \\ 
+No Incentives, Congenial	& 128	& 55.5\% & 44.5\% & 1.25 \\ 
+Incentives, Uncongenial	& 114	& 43.0\% & 57.0\% & .75 \\ 
+Incentives, Congenial		& 96		& 53.1\% & 46.9\% & 1.13 \\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {``Response Bias'' among Concealed Carry Supporters (Studies 1 and 2)}
+\label{tab:demand_supp}
+\begin{tabular}{| l | c | c | c | c |}
+\hline 
+\multirow{2}{*}{Experimental Condition} & \multirow{2}{*}{N} & \% Selecting & \% Selecting & Odds of \\ 
+					& 		& Anti-Gun Answer & Pro-Gun Answer  & Pro-Gun Answer \\ \hline
+No Incentives, Uncongenial	& 216	& 42.6\%		& 57.4\%			& 1.35 \\ 
+No Incentives, Congenial	& 207	& 45.4\%		& 54.6\%			& 1.20 \\ 
+Incentives, Uncongenial	& 212	& 40.1\%		& 59.9\%			& 1.49 \\ 
+Incentives, Congenial		& 200	& 46.0\%		& 54.0\%			& 1.17 \\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+Do respondents interpret the incentive as a cue that the uncongenial answer is correct, no matter what version of the table they see? It doesn't appear so. Table~\ref{tab:demand_opp} shows that incentives only change behavior in the uncongenial condition. In the congenial condition, respondents are no more likely to pick the uncongenial (incorrect) answer with incentives than without them.
+And Table~\ref{tab:demand_supp} shows that concealed carry supporters always exhibit a response bias in favor of the congenial answer, and incentives do not significantly reduce this bias.
+All of the considerations above contradict the idea that incentives introduce demand effects whereby respondents falsify their factual beliefs to earn extra money. Instead, the most plausible interpretation of our results is that incentives reduce the prevalence of motivated responding, thereby increasing correctness in the uncongenial condition.
+
+\clearpage
+\subsection{How Confident are Respondents in Their Answers?}
+\label{sec:confidence}
+
+In Study 3, after the respondents had marked their answer about the conclusion supported by the study, we asked the respondents ``how confident are you of your answer to this question.'' The respondents could pick between the following options: Not confident at all, Not very confident, Moderately confident, Very confident, and Certain. Table~\ref{tab:confidence} below displays the percentage of incorrect and correct answers by respondents' subjective confidence in their answer. Few people are certain of their answers, particularly in the concealed carry task. Only 13\% of respondents report that they are certain of their answer, and the vast majority of these certain answers are incorrect. Still, only 10\% of respondents overall report being certain of an incorrect answer, mitigating the concern that motivated learning leads to being misinformed. Probably because the minimum wage task was relatively much easier, average certainty about the answer is substantially higher in the minimum wage task. One in five answers are certain and correct, and only 4\% are certain and incorrect.
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {Percentage of Incorrect and Correct Answers by Confidence (Study 3)}
+\label{tab:confidence}
+\begin{tabular}{| l | c  c | c  c | }
+\hline 
+  & \multicolumn{2}{|c|}{Concealed Carry Task} & \multicolumn{2}{c|}{Minimum Wage Task} \\
+Confidence Rating	& Incorrect & Correct  & Incorrect & Correct \\ \hline
+Not at all confident	& 2\%	& 1\%	& 1\% 	& 1\% \\ 
+Not very confident	& 8\%	& 5\%	& 2\% 	& 6\% \\ 
+Moderately confident	& 27\%	& 3\%	& 11\% 	& 24\% \\ 
+Very confident		& 22\%	& 9\%	& 6\% 	& 26\% \\ 
+Certain			& 10\%	& 3\%	& 4\% 	& 20\% \\ \hline
+\end{tabular}
+\\Note: Cells display overall percentages, so cells for a task add up to 100\%.
+\end{table}
+
+\end{document}

@@ -1,0 +1,8 @@
+verify_sources()
+respondents <- read_studies(raw_dir)
+replication <- read_studies(raw_dir, correct_coding = FALSE)
+tasks <- build_tasks(respondents)
+saveRDS(respondents, file.path(build_dir, "respondents.rds"), version = 3)
+saveRDS(replication, file.path(build_dir, "replication_respondents.rds"), version = 3)
+saveRDS(tasks, file.path(build_dir, "tasks.rds"), version = 3)
+readr::write_csv(respondents, file.path(build_dir, "respondents.csv"), na = "")

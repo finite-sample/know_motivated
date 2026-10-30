@@ -1,0 +1,33 @@
+Package: motivated
+Type: Project
+Title: Motivated Responding in Studies of Factual Learning
+Version: 0.1.0
+Authors@R: c(
+    person("Kabir", "Khanna", role = "aut"),
+    person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com"))
+Description: Reproducible analysis and audit of three experiments on accuracy
+    incentives, factual responses, and evaluations of hypothetical studies.
+License: CC0
+Encoding: UTF-8
+Depends: R (>= 4.6.0)
+Imports:
+    broom,
+    car,
+    clubSandwich,
+    digest,
+    dplyr,
+    emmeans,
+    estimatr,
+    ggplot2,
+    knitr,
+    psy,
+    readr,
+    tibble,
+    tidyr
+Suggests:
+    lintr,
+    renv,
+    styler,
+    testthat,
+    withr
+Config/testthat/edition: 3

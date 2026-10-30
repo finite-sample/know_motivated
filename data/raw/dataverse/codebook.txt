@@ -1,0 +1,48 @@
+CODEBOOK:
+Please see online appendix (http://dx.doi.org/10.1007/s11109-017-9395-7) for more details, including summary statistics and item wording.
+
+All Studies
+* study: indicates Study 1, 2, or 3
+* respid: respondent ID, which is unique within, but not between, studies
+* num1: response to numeracy item 1 (0 = incorrect, 1 = correct)
+* num2: response to numeracy item 2 (0 = incorrect, 1 = correct)
+* num3: response to numeracy item 3 (0 = incorrect, 1 = correct)
+* num4: response to numeracy item 4 (0 = incorrect, 1 = correct)
+* num5: response to numeracy item 5 (0 = incorrect, 1 = correct)
+* numeracy: respondent's score on 5-item numeracy scale (rescaled from 0 to 1)
+* fem: dummy variable indicating gender (0 = male, 1 = female)
+* age: respondent's age in years
+* agecat: age (categorical)
+* edu: education (categorical)
+* raceeth: race/ethnicity (categorical)
+* pid7: 7-point party identification scale (1 = strong Democrat, 7 = strong Republican)
+* ideo5: 5-point ideological scale (1 = very liberal, 5 = very conservative)
+
+Concealed Carry Task (Studies 1-3)
+* ban: dummy variable indicating respondent's position on federal ban on concealed weapons (0 = opposes ban, 1 = favors ban)
+* banimp: scale indicating importance of ban issue (0 = not important at all, 4 = extremely important)
+* owngun: dummy variable indicating whether respondent or someone in respondent's household owns gun (0 = does not own gun, 1 = owns gun)
+* cvd: dummy variable indicating whether respondent correctly identified study's result (0 = incorrect, 1 = correct)
+* antigun: congeniality manipulation (0 = pro-gun version, 1 = anti-gun version)
+* guncong: congeniality manipulation recoded based on respondent's position on banning concealed carry (0 = uncongenial, 1 = congenial, NA = missing because respondent did not take a position on concealed carry)
+* acc: incentive treatment in concealed carry task (0 = control, 1 = incentives)
+* well: "well done" study rating scale (0 = "very poorly done", 10 = "very well done")
+* conv: "convincing" study rating scale (0 = "completely unconvincing", 10 = "completely convincing")
+
+Recall Task (Study 1 only)
+* rec_a: respondent's estimate of number of cities in Cell A in recall task
+* rec_b: respondent's estimate of number of cities in Cell B in recall task
+* rec_c: respondent's estimate of number of cities in Cell C in recall task
+* rec_d: respondent's estimate of number of cities in Cell D in recall task
+
+Minimum Wage Task (Studies 2 and 3)
+* wage: dummy variable indicating respondent's position on raising federal minimum wage (0 = opposes raise, 1 = favors raise)
+* wageimp: scale indicating importance of minimum wage issue (0 = not important at all, 4 = extremely important)
+* cvdwage: dummy variable indicating whether respondent correctly identified study's result (0 = incorrect, 1 = correct)
+* prowage: congeniality manipulation (0 = anti-wage version, 1 = pro-wage version)
+* wagecong: congeniality manipulation recoded based on respondent's position on raising minimum wage (0 = uncongenial, 1 = congenial, NA = missing because respondent did not take a position on raising the federal minimum wage)
+* acc2: incentive treatment in minimum wage task (0 = control, 1 = incentives)
+
+Confidence Ratings (Study 3 only)
+* conf: respondent’s confidence in their answer in concealed carry task (1 = not confident  at all, 2 = not very confident, 3 = moderately confident, 4 = very confident, 5 = certain)
+* confwage: respondent’s confidence in their answer in minimum wage task (coded same as above)

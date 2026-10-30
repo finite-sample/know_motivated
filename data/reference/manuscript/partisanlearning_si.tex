@@ -1,0 +1,723 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[titletoc,title]{appendix}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{dark-red}{rgb}{0.75,0.10,0.10} 
+\usepackage[margin=1in]{geometry}
+\usepackage[linkcolor=dark-red,
+colorlinks=true,
+urlcolor=blue,
+pdfstartview={XYZ null null 1.00},
+pdfpagemode=UseNone,
+citecolor={dark-red},
+pdftitle={Partisan Learning}]{hyperref}
+
+\usepackage{natbib}
+
+\usepackage{float}
+
+\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+\geometry{letterpaper}               % This is 8.5x11 paper. Options are a4paper or a5paper or other... 
+\usepackage{graphicx}                % Handles inclusion of major graphics formats and allows use of 
+\usepackage{amsfonts,amssymb,amsbsy}
+\usepackage{amsxtra}
+\usepackage{verbatim}
+\setcitestyle{round,semicolon,aysep={},yysep={;}}
+\usepackage{setspace}		     % Permits line spacing control. Options are \doublespacing, \onehalfspace
+\usepackage{sectsty}		     % Permits control of section header styles
+\usepackage{lscape}
+\usepackage{fancyhdr}		     % Permits header customization. See header section below.
+\usepackage{url}                     % Correctly formats URLs with the \url{} tag
+\usepackage{fullpage}		%1-inch margins
+\usepackage{multirow}
+\usepackage{rotating}
+\setlength{\parindent}{3em}
+
+
+
+\usepackage{dcolumn}
+\newcolumntype{.}{D{.}{.}{5}}
+\newcolumntype{q}{D{.}{.}{3}}
+ 
+\usepackage{natbib}
+\bibpunct[, ]{(}{)}{;}{a}{}{,}
+
+
+\usepackage[normalem]{ulem}
+  
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+\usepackage{libertine}
+
+\usepackage{chngcntr}
+
+%This section double-spaces & makes footnotes the same size as normal text.
+\usepackage{footmisc}
+\setlength{\footnotesep}{\baselineskip}
+\makeatother
+\renewcommand{\footnotelayout}{\normalsize \doublespacing}
+
+
+% Caption
+\usepackage[hang, font=small,skip=0pt, labelfont={bf}]{caption}
+%\captionsetup[subtable]{font=small,skip=0pt}
+\usepackage{subcaption}
+
+% tt font issues
+% \renewcommand*{\ttdefault}{qcr}
+\renewcommand{\ttdefault}{pcr}
+
+\setcounter{page}{0}
+
+\usepackage{lscape}
+\renewcommand{\textfraction}{0}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.40}
+\setcounter{totalnumber}{5}
+\makeatletter
+\providecommand\phantomcaption{\caption@refstepcounter\@captype}
+\makeatother
+
+\title{\large{Motivated Responding in Studies of Factual Learning: \\Supplementary Information}}
+
+\author{Kabir Khanna \& Gaurav Sood}
+
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{comment}
+  
+setwd(paste0(basedir, "partisanInnumeracy/manuscript/pb_final"))
+tools::texi2dvi("partisanlearning.tex", pdf=TRUE, clean=TRUE)
+setwd(basedir)
+
+\end{comment}
+
+
+\newpage
+\doublespacing
+\setcounter{page}{1}
+
+%\section*{Supporting Information}
+%\setcounter{section}{0}
+%\renewcommand\thetable{SI \arabic{table}}
+%\renewcommand\thefigure{SI \arabic{figure}}
+%\setcounter{table}{0}
+%\setcounter{figure}{0}
+
+\section{Additional Details about the Sample and Research Design}
+
+\subsection{Question Wording}
+\label{sec:qwording}
+\singlespacing
+\setlength{\parindent}{0cm} 
+
+\subsubsection{Gun Attitudes and Ownership (Studies 1, 2, and 3)}
+Do you favor or oppose a federal law requiring a nationwide ban on people other than law enforcement officers carrying concealed weapons?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Ban people other than law enforcement officers from carrying concealed weapons
+  \item Do not ban people other than law enforcement officers from carrying concealed weapons
+  \item Unsure
+\end{itemize}
+
+How important is the issue to you?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Extremely important
+  \item Very important
+  \item Somewhat important
+  \item Not too important
+  \item Not important at all
+\end{itemize}
+
+Do you or someone else in your household own a gun?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Yes
+  \item No
+\end{itemize}
+
+\subsubsection{Minimum Wage Attitudes (Studies 2 and 3 Only)}
+The federal minimum wage is currently \$7.25 per hour. Do you favor or oppose raising the federal minimum wage?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Favor raising the federal minimum wage
+  \item Oppose raising the federal minimum wage
+  \item Neither favor nor oppose raising the federal minimum wage
+\end{itemize}
+
+How important is the issue to you?
+\vspace{-3mm}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+  \item Extremely important
+  \item Very important
+  \item Somewhat important
+  \item Not too important
+  \item Not important at all
+\end{itemize}
+
+
+\subsubsection{Concealed Carry Task (Studies 1, 2, and 3)}
+A city government is trying to decide whether to pass a law banning private citizens from carrying concealed handguns in public. Government officials were unsure whether the law would be more likely to decrease crime by reducing the number of people carrying weapons or increase crime by making it harder for law-abiding citizens to defend themselves from violent criminals.
+
+\medskip
+Researchers completed a study of two groups of cities to answer that question. The study involved comparing changes in annual crime rates for one group of cities that \uline{had} banned concealed handguns with changes in annual crime rates for a second group of cities that had \uline{not} banned concealed handguns.
+
+\medskip
+In each group, the number of cities in which the crime rate \uline{decreased} and the number of cities in which the crime rate \uline{increased} are recorded in the table below. The exact number of cities in each group is not the same, but this does not prevent assessment of the results.
+
+\medskip
+\textbf{We would like to know whether cities that enacted a ban were more likely to have a \underline{decrease} or \underline{increase} in crime than cities without bans.}
+
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to pro-gun condition:{]}} \label{tab:siprogun}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in crime  & Decrease in crime \\\hline
+  Cities that \underline{did} ban carrying     & \multirow{2}{*}{223 cities} & \multirow{2}{*}{75 cities} \\ 
+  concealed handguns in public           &               & \\ \hline
+  Cities that \underline{did not} ban carrying & \multirow{2}{*}{107 cities} & \multirow{2}{*}{21 cities} \\ 
+  concealed handguns in public           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5mm}
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to anti-gun condition:{]}} \label{tab:siantigun}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Decrease in crime & Increase in crime \\\hline
+  Cities that \underline{did} ban carrying     & \multirow{2}{*}{223 cities} & \multirow{2}{*}{75 cities} \\ 
+  concealed handguns in public           &               & \\ \hline
+  Cities that \underline{did not} ban carrying & \multirow{2}{*}{107 cities} & \multirow{2}{*}{21 cities} \\ 
+  concealed handguns in public           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5mm}
+\begin{center}
+ {[}Page Break{]}
+\end{center}
+
+What result does the study support? {[}\textbf{Incentive Treatment:}{]} We will give you a bonus of \$0.10 for the correct answer.
+\begin{itemize}
+  \item Cities that enacted a ban on carrying concealed handguns were more likely to have \uline{a decrease in crime} than cities without bans.
+  \item Cities that enacted a ban on carrying concealed handguns were more likely to have \uline{an increase in crime} than cities without bans.
+\end{itemize}
+
+\begin{center}
+{[}Page Break{]}\\
+\end{center}
+
+On a scale of 0 to 10, where 0 is ``very poorly done'' and 10 is ``very well done,'' how well do you think the study on concealed handguns was done?
+
+\bigskip
+On a scale of 0 to 10, where 0 is ``completely unconvincing'' and 10 is ``completely convincing,'' how convincing is this study as evidence of the effect of banning concealed handguns on crime?
+
+\subsubsection{Minimum Wage Task (Studies 2 and 3 Only)}
+A city government is trying to decide whether to pass a law increasing the minimum wage. Government officials were unsure whether the law would be more likely to decrease jobs or increase jobs.
+ 
+\medskip
+Researchers completed a study of two groups of states to answer that question. The study involved comparing changes in jobs for one group of states that \uline{had} increased the minimum wage with changes in jobs for a second group of states that had \uline{not} increased the minimum wage.
+ 
+\medskip
+In each group, the percentage of states in which jobs \uline{decreased} and the percentage of states in which jobs \uline{increased} are recorded in the table below. The exact number of states in each group is not the same, but this does not prevent assessment of the results.
+ 
+\medskip
+\textbf{We would like to know whether states that increased the minimum wage were more likely to have a \underline{decrease} or \underline{increase} in jobs than states without minimum wage increases.}
+
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to pro-raise condition:{]}} \label{tab:siprowage}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in jobs  & Decrease in jobs \\\hline
+  States that \underline{did not} increase     & \multirow{2}{*}{16\%} & \multirow{2}{*}{84\%} \\ 
+  minimum wage           &               & \\ \hline
+  States that \underline{did} increase & \multirow{2}{*}{37\%} & \multirow{2}{*}{63\%} \\ 
+  minimum wage           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-5mm}
+\begin{table}[h]
+\centering
+\caption*{{[}Display if randomly assigned to anti-raise condition:{]}} \label{tab:siantiwage}
+\begin{tabular}{|l|l|l|}
+\hline 
+  & Increase in jobs  & Decrease in jobs \\\hline
+  States that \underline{did} increase     & \multirow{2}{*}{16\%} & \multirow{2}{*}{84\%} \\ 
+  minimum wage           &               & \\ \hline
+  States that \underline{did not} increase & \multirow{2}{*}{37\%} & \multirow{2}{*}{63\%} \\ 
+  minimum wage           &               &  \\\hline
+\end{tabular}
+\end{table}
+
+\vspace{-2.5mm}
+\begin{center}
+ {[}Page Break{]}
+\end{center}
+
+What result does the study support? {[}\textbf{Incentive Treatment:}{]} We will give you a bonus of \$0.10 for the correct answer.
+\begin{itemize}
+  \item States that increased the minimum wage were more likely to have \uline{a decrease in jobs} than states without minimum wage increases.
+  \item States that increased the minimum wage were more likely to have \uline{an increase in jobs} than states without minimum wage increases.
+\end{itemize}
+
+\bigskip
+\subsection{Numeracy Screener}
+\label{sec:numscreener}
+\doublespacing
+\setlength{\parindent}{1cm} 
+
+We include our numeracy scale below. It is a shortened version of the scale used by \citet{kahan2017} and developed by \citet{weller2012}. We include the five easiest items that \citeauthor{weller2012} find, in order to identify low-numeracy respondents. Two concerns vitiate commensurability of our scores and those of \citeauthor{kahan2017}: guessing and item sampling. Research suggests that lucky guessing is a minor concern on open-ended items \citep{luskin2011}. And if we assume that the items are Guttman scaled, i.e., a person who answers a more difficult item correctly will also answer easier items correctly, our threshold will be exactly the same as the median score in \citeauthor{kahan2017}. We take Guttman scaling on numeracy items to not only be plausible but likely.
+
+\begin{enumerate}
+  \item If we roll a fair, six-sided die 1,000 times, on average, how many times would the die come up as an even number? \\{\bf Answer:} 500
+  \item There is a 1\% chance of winning a \$10 prize in the Megabucks Lottery. On average, how many people would win the \$10 prize if 1,000 people each bought a single ticket? \\{\bf Answer:} 10
+  \item If the chance of getting a disease is 20 out of 100, this would be the same as having a \underline{\hspace{1cm}}\% chance of getting the disease. \\{\bf Answer:} 20
+  \item If there is a 10\% chance of winning a concert ticket, how many people out of 1,000 would be expected to win the ticket? \\{\bf Answer:} 100
+  \item In the PCH Sweepstakes, the chances of winning a car are 1 in a 1,000. What percent of PCH Sweepstakes tickets win a car? \\{\bf Answer:} .1
+\end{enumerate}
+
+\newpage
+\subsection{Respondents Enrolled, Screened, Allocated, and Analyzed by Study}
+\label{sec:flow}
+Figures~\ref{fig:flowchart1},~\ref{fig:flowchart2},~and \ref{fig:flowchart3} are flow diagrams displaying the number of respondents in each phase of Studies 1, 2, and 3, respectively. We display the number of respondents assessed for eligibility, invited to participate, assigned to an experimental condition in the concealed carry task, and included in our main analyses.
+
+\bigskip
+\begin{figure}[h!]
+  \centering
+   \caption{Flow Diagram of Concealed Carry Experiment in Study 1}
+   \label{fig:flowchart1}
+   \includegraphics[scale=.75, trim = {1cm 2.5cm 0 1cm}, clip]{../../figs/flowchart1.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \caption{Flow Diagram of Concealed Carry Experiment in Study 2}
+   \label{fig:flowchart2}
+   \includegraphics[scale=.75, trim = {1cm 2.5cm 0 1cm}, clip]{../../figs/flowchart2.pdf}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \caption{Flow Diagram of Concealed Carry Experiment in Study 3}
+   \label{fig:flowchart3}
+   \includegraphics[scale=.75, trim = {1 6.25cm 6cm 1cm}, clip]{../../figs/flowchart3.pdf}
+\end{figure}
+
+\clearpage
+\subsection{Sample Characteristics}
+\label{sec:sample}
+
+To shed light on the quality of our respondent samples, we compared marginals on key variables to the numbers from better samples in Table~\ref{tab:sample}. We used the 2012 American National Election Study to compare partisanship and ideology, and the U.S. Census 2015 American Community Survey for demographics. Like other MTurk samples, the Study 1 and 2 samples are more young, white, male, and liberal than the general population. Study 3 is more representative in terms of party and ideology, but more educated, female, and white than the general population. In Studies 2 and 3, we can compare high-numeracy respondents with the entire sample (55\% of sample). As before, we define high-numeracy as answering four or more items correctly in the five-item scale. In Study 2, there are no appreciable differences by numeracy. However, high-numeracy respondents in Study 3 are more educated, white, and male than low-numeracy respondents.
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption{Sample Characteristics by Study} \label{tab:sample}
+\begin{tabular}{| l c c c c c c |}
+\hline 
+			& Study 1	& Study 2	& Study 2	& Study 3	& Study 3	& National	\\
+			& 		& 		& High-Num. & 		& High-Num. & Sample	\\ \hline
+Democrat		& 65\%	& 60\% 	& 62\%	& 51\%	&50\%	& 46\%	\\ 
+Republican	& 21\%	& 24\% 	& 22\%	& 35\%	&39\%	& 39\%	\\ \hline
+Liberal		& 51\%	& 50\% 	& 52\%	& 23\%	&22\%	& 27\%	\\ 
+Conservative	& 16\%	& 17\% 	& 16\%	& 29\%	&28\%	& 39\% 	\\ \hline
+HS or Less	& 9\%	& 12\% 	& 10\%	& 25\%	&17\%	& 41\% 	\\ 
+Some College	& 40\%	& 41\% 	& 41\%	& 39\%	&37\%	& 31\% 	\\ 
+College Degree	& 40\%	& 39\% 	& 39\%	& 26\%	&33\%	& 18\% 	\\ 
+Post-Graduate	& 11\%	& 9\% 	& 10\%	& 10\%	&13\%	& 10\% 	\\ \hline
+18-29 years old	& 57\%	& 55\% 	& 55\%	& 10\%	&11\%	& 22\% 	\\ 
+30-44 years old	& 33\%	& 33\% 	& 34\%	& 34\%	&33\%	& 25\% 	\\ 
+45-64 years old	& 9\%	& 11\% 	& 10\%	& 44\%	&47\%	& 34\% 	\\ 
+65+ years old	& 1\%	& 1\% 	& 1\%	& 13\%	&10\%	& 19\% 	\\ \hline
+Female		& 32\%	& 38\% 	& 34\%	& 66\%	&57\%	& 52\% 	\\ \hline
+White		& 75\%	& 73\% 	& 73\%	& 76\%	&84\%	& 62\% 	\\ 
+Black		& 5\%	& 6\% 	& 5\%	& 10\%	&5\%		& 12\% 	\\ 
+Hispanic/Latino	& 5\%	& 7\% 	& 7\%	& 7\%	&4\%		& 18\% 	\\ 
+Asian		& 11\%	& 10\% 	& 11\%	& 3\%	&4\%		& 5\% 	\\ 
+Other/Mixed	& 4\%	& 5\% 	& 5\%	& 3\%	&3\%		& 3\% 	\\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+\clearpage
+\subsection{Covariate Balance}
+\label{sec:balance}
+
+Table~\ref{tab:balance} presents estimates of the extent to which covariates were balanced across conditions in the concealed carry task, separately by study. Each row reports the F-statistic and associated p-value from a linear regression of the indicated covariate on the congeniality treatment, incentive treatment, and interaction between the two treatments. In Study 3, which only contained the uncongenial version of the concealed carry task, the only regressor is the accuracy treatment.
+
+\vspace{-3mm}
+\singlespacing
+\begin{table}[h]
+\centering
+\caption{Covariate Balance across Experimental Conditions in Concealed Carry Task} \label{tab:balance}
+\begin{tabular}{| l c c c |}
+\hline 
+				& Study 1 (N=785)		& Study 2 (N=947)		& Study 3 (N=1,062)	\\ \hline
+Partisanship (7-point)	& $F = .45$, $p = .72$	& $F = .88$, $p = .45$	& $F = .04$, $p = .85$ \\ 
+Ideology (5-point)	& $F = .30$, $p = .83$	& $F = 1.29$, $p = .28$	& $F = .002$, $p = .96$ \\ 
+Education (4-point)	& $F = 2.42$, $p = .07$	& $F = .78$, $p = .50$	& $F = 2.51$, $p = .11$ \\ 
+Age (continuous)	& $F = 1.34$, $p = .26$	& $F = .56$, $p = .64$	& $F = 1.00$, $p = .32$ \\ 
+Gender (binary)		& $F = 1.53$, $p = .20$	& $F = .47$, $p = .71$	& $F = 1.04$, $p = .31$ \\ 
+Non-White (binary)	& $F = .64$, $p = .42$	& $F = 1.40$, $p = .24$	& $F = .06$, $p = .81$ \\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+%\clearpage
+\vspace{-5mm}
+\subsection{Assessing Spillover}
+\label{sec:spillover}
+
+Because the concealed carry task always preceded the minimum wage task in Studies 2 and 3, we assess the extent to which randomization in the former task affected behavior in the latter task. We estimate treatment effects in both tasks simultaneously via logistic regression. The outcome variable indicates correctness in the minimum wage task (1 = correct). The regressors are the congeniality treatment, the incentive treatment, and their interaction, in both tasks. We allow the minimum wage treatments to vary by concealed carry condition.
+
+Table~\ref{tab:spillover} displays the results for supporters of raising the minimum wage in Studies 2 and 3, and opponents in Study 3. In each regression, none of the coefficients reach significance, except for the congeniality treatment in the minimum wage task. Importantly, the concealed carry task treatments all have null effects, confirming that the first task did not spill over into the second task. Moreover, the null interactive effects indicate that the concealed carry treatments did not alter the effects of the minimum wage treatments in any of the samples.
+
+\medskip
+\begin{table}[ht]
+\centering
+\caption{Logistic Regression of Minimum Wage Correctness on Experimental Treatments in Both Tasks} \label{tab:spillover}
+\begin{tabular}{l c c c}
+  \hline
+ & Coefficient (SE) & z value & Pr($>$$|$z$|$) \\ 
+  \hline
+{\bf Study 2: Supporters of Raising Minimum Wage (n=818)}  & & & \\ 
+  Intercept 									& 1.556 (.389) 	& 4.006 	& .000 \\ 
+  Concealed Carry Congeniality					& .611 (.656) 	& .932 	& .352 \\ 
+  Concealed Carry Incentives					& .777 (.719) 	& 1.081 	& .280 \\ 
+  CC Congeniality $\times$ CC Incentives			& .717 (1.350) 	& .532 	& .595 \\ 
+  Minimum Wage Congeniality					& .927 (.716) 	& 1.295 	& .195 \\ 
+  Minimum Wage Incentives						& 1.045 (.830) 	& 1.259 	& .208 \\ 
+  MW Congeniality $\times$ MW Incentives			& -.667 (1.256) 	& -.531 	& .595 \\ 
+
+  CC Congeniality $\times$ MW Congeniality	  		& -1.767 (.965)	& -1.830 	& .067 \\ 
+  CC Incentives $\times$ MW Congeniality			& -1.443 (1.035)	& -1.394 	& .163 \\ 
+  CC Congeniality $\times$ CC Incentives $\times$ MW Congeniality 
+										& -.157 (1.627)	& -.096	& .923 \\ 
+  CC Congeniality $\times$ MW Incentives			& .450 (1.412) 	& .319 	& .750 \\ 
+  CC Incentives $\times$ MW Incentives			& -1.534 (1.117) & -1.374 	& .170 \\ 
+  CC Congeniality $\times$ CC Incentives $\times$ MW Incentives 
+										& -1.545 (1.964)	& -.786	& .432 \\ 
+  CC Congeniality $\times$ MW Congeniality $\times$ MW Incentives 
+										& -.735 (1.789)	& -.411	& .681 \\ 
+  CC Incentives $\times$ MW Congeniality $\times$ MW Incentives 
+										& 1.209 (1.618)	& .747 	& .455 \\ 
+  CC Congen. $\times$ CC Incent. $\times$ MW Congen. $\times$ MW Incent. 
+										& 2.856 (2.458)	& 1.162	& .245 \\ \hline
+
+{\bf Study 3: Supporters of Raising Minimum Wage (n=918)}  & & & \\ 
+  Intercept 									& 1.655 (.303) 	& 5.466 	& .000 \\ 
+  Concealed Carry Incentives					& -.060 (.421) 	& -.141 	& .888 \\ 
+  Minimum Wage Congeniality					& -.961 (.376) 	& -2.56 	& .011 \\ 
+  Minimum Wage Incentives						& -.032 (.414) 	& -.077 	& .939 \\ 
+  MW Congeniality $\times$ MW Incentives			& .452 (.531) 	& .852 	& .394 \\ 
+  CC Incentives $\times$ MW Congeniality			& .155 (.535)	& .290 	& .772 \\ 
+  CC Incentives $\times$ MW Incentives			& -.032 (.577) 	& -.055 	& .956 \\ 
+  CC Incentives $\times$ MW Congeniality $\times$ MW Incentives 
+										& -.348 (.750)	& -.464 	& .643 \\ \hline
+{\bf Study 3: Opponents of Raising Minimum Wage (n=262)}  & & & \\ 
+  Intercept 									& .211 (.326) 	& .648 	& .517 \\ 
+  Concealed Carry Incentives					& .482 (.462) 	& 1.043 	& .297 \\ 
+  Minimum Wage Congeniality					& 2.519 (.679) 	& .679 	& .0002 \\ 
+  Minimum Wage Incentives						& .792 (.480) 	& 1.649 	& .099 \\ 
+  MW Congeniality $\times$ MW Incentives			& -1.443 (.900) 	& -1.602 	& .109 \\ 
+  CC Incentives $\times$ MW Congeniality			& -1.015 (.920)	& -1.103 	& .270 \\ 
+  CC Incentives $\times$ MW Incentives			& -.846 (.647) 	& -1.308 	& .191 \\ 
+  CC Incentives $\times$ MW Congeniality $\times$ MW Incentives 
+										& .889 (1.182)	& .752 	& .452 \\ 
+   \hline
+\end{tabular}
+Note: {\it CC} and {\it MW} indicate concealed carry and minimum wage experiments, respectively.
+\end{table}
+\normalsize
+\doublespacing
+
+\clearpage
+\doublespacing
+\section{Additional Empirical Results}
+
+\subsection{Does Numeracy Condition Treatment Effects?}
+\label{sec:numeracy}
+\doublespacing
+
+We confined Study 1 to high-numeracy respondents based on the theoretical argument and main result of \citet{kahan2017} that polarization only occurs among this group. However, in Studies 2 and 3, we invited all respondents to participate fully, regardless of numeracy, to compare the behavior and background characteristics of high- and low-numeracy respondents. In theory, respondents may differ by numeracy in multiple ways. First, high-numeracy respondents are probably more educated, which we see in Study 3 (see Table~\ref{tab:sample}). Second, they may hold different attitudes. For example, high-numeracy respondents may exhibit greater political sophistication, ideological constraint, party identification, or other traits that predispose them to motivated learning, motivated responding, or both.
+
+Therefore, in Table~\ref{tab:accnum}, we compare the behavior of low- and high-numeracy respondents in the concealed carry experiment. Note that our numeracy scale is truncated, so our ability to fully answer this question is limited. We find that the substantive pattern of results is similar among both groups, though the magnitudes of treatment effects change. Each cell in Table~\ref{tab:accnum} displays the incentive treatment effect in percentage points, which is percent correct in the \texttt{Incentive} condition minus the percent correct in the \texttt{No Incentive} condition (standard errors in parentheses). Each row contains a type of respondent, and each column contains a different study and congeniality condition. Among concealed carry supporters, neither high- nor low-numeracy respondents exhibit significant treatment effects, in either the uncongenial or congenial condition. (The effects are positive among low-numeracy respondents in Study 2, but have large standard errors.) Among concealed carry opponents, we see the familiar pattern of positive treatment effects in the uncongenial, but not the congenial, condition. These effects occur among high-numeracy respondents in Study 2, and both high- and low-numeracy respondents in Study 3 (though they are only statistically significant among the latter group).
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption{Incentive Effects in Concealed Carry Task by Study, Condition, and Respondent Numeracy} \label{tab:accnum}
+\begin{tabular}{| l | c c | c c | c |}
+\hline 
+& \multicolumn{2}{c}{\bf Study 1}	& \multicolumn{2}{|c|}{\bf Study 2} & {\bf Study 3}	\\
+{\bf Respondents} & {\bf Uncongenial} & {\bf Congenial} & {\bf Uncongenial} & {\bf Congenial} & {\bf Uncongenial}	\\ 
+\hline
+{\bf CC Supporters} & & & & & \\
+High-Numeracy	& -1.5 (6.3)& -3.3 (6.9)	& -4.2 (7.3)	& 2.8 (7.1)		& 2.9 (5.8)	\\ 
+			& n=248	& n=207		& n=180		& n=200		& n=261	\\ 
+Low-Numeracy	& -		& -			& 13.3 (11.3)	& 13.3 (11.0)	& -2.4 (4.9)\\ 
+			& 		& 			& n=72		& n=78		& n=378	\\ 
+Combined		& -		& -			& .6 (6.2)		& 5.9 (6.0)		& -0.3 (3.7)\\ 
+			& 		&			& n=252		& n=278		& n=639	\\ 
+\hline
+{\bf CC Opponents} & & & & & \\
+High-Numeracy	& 9.1 (9.1)	& -8.0 (9.5)	& 25.4 (9.4) 	& 3.0 (9.4)		& 4.5 (7.6)	\\ 
+			& n=123	& n=108		& n=108		& n=116		& n=159	\\ 
+Low-Numeracy	& - 		& -			& -10.1 (16.0)	& -11.7 (17.9)	& 8.0 (5.4)	\\ 
+			& 		& 			& n=38		& n=32		& n=257	\\ 
+Combined		& -		& -			& 17.1 (8.1)	& -0.3 (8.2)	& 6.9 (4.4)	\\ 
+			& 		& 			& n=146		& n=148		& n=416	\\ 
+\hline
+\end{tabular}
+\footnotesize{Note: {\it CC Supporters} and {\it CC Opponents} refer to concealed carry supporters and opponents, respectively.}
+\end{table}
+\doublespacing
+
+Since numeracy is not a prerequisite to understand which result is more congenial, in response to a concern raised by a reviewer, we also checked whether low-numeracy respondents tended to pick the congenial answer more often than the uncongenial one. We term this behavior ``response bias'' and operationalize it as the odds of choosing the congenial answer. Low-numeracy respondents indeed exhibit such bias. In Study 2, response bias is 1.25 without incentives, meaning respondents are 25\% more likely to pick the congenial answer. High-numeracy response bias is a very similar 1.22. Where the two groups differ is in their responsiveness to incentives. Low-numeracy respondents continue to exhibit a response bias of 1.13 with incentives, while bias among high-numeracy respondents reverses itself to .82, indicating that as expected, they become more likely to pick the {\it uncongenial} answer.
+
+In Study 3, incentives reduce response bias among both low- and high-numeracy respondents alike, paralleling the results in the last column of Table~\ref{tab:accnum}. Incentives reduce low-numeracy response bias from 3.68 to 2.41 and high-numeracy response bias from 2.04 to 1.68. Interestingly, it is low-numeracy respondents who exhibit more response bias overall in Study 3.
+
+\clearpage
+\subsection{Subsetting Respondents by ``Ideological Worldview''}
+\label{sec:kahan}
+\doublespacing
+
+\citet{kahan2017} operationalize congeniality using respondents' ``ideological worldview'' instead of their position on concealed carry. The authors conceive of ideological worldview as a combination of partisanship and ideology, and measure it by simply multiplying the two. At one end of the scale are ``Conservative Republicans,'' and at the other end, ``Liberal Democrats.'' And while we are skeptical, it is possible that ideological worldview establishes what information is congenial to a respondent, more so than relevant attitudes. To explore this concern, we construct a similar variable, categorizing respondents as either conservative Republicans or liberal Democrats, depending on their self reported party identification (including leaners) and three-point ideology (conservative, moderate, or liberal). Using this variable, we re-analyze the concealed carry task in Studies 1 and 2.  
+
+Before we present the results, a caveat: positions on concealed carry are only weakly related to ideological worldview, especially among low-numeracy respondents. In Study 2, for example, the correlation is .41 among high-numeracy respondents and only .16 among low-numeracy respondents. In fact, this weak relationship may be why \citeauthor{kahan2017} do not observe bias among low-numeracy respondents. We prefer to subset respondents by their issue position, precisely because the overlap between issue positions and ideological worldview is not 100\%.
+
+With the caveats above, we rerun our main analyses using this new variable to subset respondents, presenting the results in Figure~\ref{fig:libdem}. The substantive pattern of results is very similar to our main results. Conservative Republicans exhibit congeniality effects with and without incentives. The magnitudes are substantial, but the effects are marginally significant due to the small size of this group in Studies 1 and 2. Liberal Democrats, on the other hand, exhibit a significant congeniality effect of 10.9 points without incentives, which is reduced to an insignificant 3.8 points with incentives. While we view this conditioning variable as indirectly related to our outcome of interest, it is reassuring that we are able to replicate the main result of \citeauthor{kahan2017}. And again, incentives only work on the analogous subgroup---respondents on the political left.
+
+\begin{figure}[h]
+  \centering
+  \caption{Concealed Carry Task Results using \citet{kahan2017} Conditioning Variable (Studies 1 and 2). Panels on the left display percentage of conservative Republicans (Panel A) and liberal Democrats (Panel C) of raising the minimum wage correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among conservative Republicans (Panel B) and liberal Democrats (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0cm 0 0}, clip]{../../figs/cvd_eff_pooled_libdem.pdf}
+\vspace{-1cm}
+\label{fig:libdem}
+\end{figure}
+
+\clearpage
+\subsection{No Evidence of Selective Recall}
+\label{sec:recall}
+
+One proposed mechanism for why people learn in a motivated manner is that they simply misperceive or misremember the actual data. Thus, we next examine the extent to which errors in cognition are explained by congeniality of the data. Given our hypothesis that motivated responding explains a large portion of what appears to be motivated learning, we also conjectured that most respondents do not perceive data in a selective manner.
+
+To test this hypothesis, we examined how well respondents did across various conditions in recalling the numbers in the contingency table (in Study 1 only). Prior studies using similar tasks suggest that errors are most common in the top-left cell in the contingency table \citep{gilovich1991, dawson2002cella}. We therefore first examine whether the congeniality manipulation changed estimates of the number of cities in this cell. Since the incentive treatment occurred only after respondents saw the contingency table, we do not expect incentives to affect recall. We therefore focus on the effect of congeniality on data recall in the absence of incentives. 
+
+There were always 223 cities in the upper-left cell. If respondents misperceive or misremember this value in a way that makes the study's result more congenial, then we would expect them to overestimate this number in the uncongenial condition, relative to the congenial condition. Overestimating the upper-left cell inflates the crime increase:decrease (decrease:increase) ratio for cities that banned concealed handguns in the anti-gun (pro-gun) version of the table. However, mean estimates are invariant to congeniality. The mean was 213.9 (s.e. = 5.5) in the uncongenial condition and 212.5 (s.e. = 4.9) in the congenial condition (without incentives).
+
+We next checked whether estimates of the 107 cities in the lower-left cell varied by condition. Here we would expect estimates to be {\it lower} in the uncongenial condition than in the congenial condition. However, recall was again fairly consistent across conditions: 103.1 (s.e. = 2.7) and 105.2 (s.e. = 4.7) in the uncongenial and congenial conditions, respectively. Estimates of the other two cells in the table were also unaffected by the congeniality manipulation. In summary, we do not find a congeniality effect on the recall task in the absence of incentives.
+
+Finally, we simultaneously test the effect of congeniality, incentives, and their interaction on recall. We examine recall estimates of the number of cities in the upper-left and lower-left cells of the contingency table. As Tables~\ref{tab:recalla} and ~\ref{tab:recallc} below show, we find no significant effects for either cell. We conclude that respondents do not perceive the data selectively. This analysis also serves as a placebo test, indicating that incentives affect reporting without affecting recall.
+
+\vspace{5mm}
+\begin{table}[ht]
+\centering
+\caption{Linear Regression: Upper-Left Cell Recall Estimates} \label{tab:recalla}
+\begin{tabular}{l c c c}
+  \hline
+ & Coefficient (SE) & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+  Intercept & 213.92 (5.58) & 38.31 & .00 \\ 
+  Congeniality & -1.39 (8.08) & -.17 & .86 \\ 
+  Incentive & -1.92 (7.97) & -.24 & .81 \\ 
+  Congeniality $\times$ Incentives & 2.66 (11.79) & .23 & .82 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Linear Regression: Lower-Left Cell Recall Estimates} \label{tab:recallc}
+\begin{tabular}{l c c c}
+  \hline
+ & Coefficient (SE) & t value & Pr($>$$|$t$|$) \\ 
+  \hline
+  Intercept & 103.09 (3.40) & 30.34 & .00 \\ 
+  Congeniality & 2.10 (4.91) & .43 & .67 \\ 
+  Incentive & 1.08 (4.85) & .22 & .82 \\ 
+  Congeniality $\times$ Incentives & 1.92 (7.17) & .27 & .79 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+%\clearpage
+\subsection{Covariance Detection Task Results  by Study}
+\label{sec:bystudy}
+\doublespacing
+
+We present the concealed carry results separately for Studies 1 and 2 in Figures~\ref{fig:study1} and~\ref{fig:study2}, respectively. Our findings are substantively similar across studies. In both studies, concealed carry supporters exhibit sizable congeniality effects, with and without incentives. And in both studies, concealed carry opponents exhibit a congeniality effect in the control condition that is wiped out by incentives. Due to the reduced power of splitting up studies, the difference-in-differences is marginally significant but substantively large: 17.1 percentage points in Study 1 and 22.4 percentage points in Study 2. Moreover, incentives increase correctness only in the uncongenial condition, which is consistent with our hypothesis, in both studies.
+
+\begin{figure}[h!]
+  \centering
+  \caption{Concealed Carry Task Results from Study 1. Panels on the left display percentage of concealed carry supporters (Panel A) and opponents (Panel C) correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among concealed carry supporters (Panel B) and opponents (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0 0 0}, clip]{../../figs/cvd_eff_study1.pdf}
+\label{fig:study1}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Concealed Carry Task Results from Study 2. Panels on the left display percentage of concealed carry supporters (Panel A) and opponents (Panel C) correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among concealed carry supporters (Panel B) and opponents (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0 0 0}, clip]{../../figs/cvd_eff_study2.pdf}
+\label{fig:study2}
+\end{figure}
+
+\clearpage
+We present the results of the minimum wage task separately for Studies 2 and 3 in Figures~\ref{fig:study2_wage} and~\ref{fig:study3_wage}, respectively. In both studies, supporters of raising the minimum wage exhibit a negative congeniality effect in the absence of incentives, indicating they are more likely to answer correctly in the {\it uncongenial} condition than in the congenial condition. This pattern is inconsistent with motivated learning. Among opponents of raising the minimum wage, whom we can only analyze in Study 3, there is a 31-point congeniality effect without incentives. The incentive treatment reduces this effect by 14 percentage points (or 46\%). This large decrease is consistent with motivated responding.
+
+\bigskip
+\bigskip
+\begin{figure}[h!]
+  \centering
+  \caption{Minimum Wage Task Results (Study 2). Panel A displays percentage of minimum wage raise supporters correctly indicating study result by experimental condition. Panel B displays congeniality effect by incentive condition, as well as difference-in-differences (DiD), among minimum wage raise supporters. Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 10cm 0 0}, clip]{../../figs/cvdwage_eff_study2.pdf}
+\vspace{-1cm}
+\label{fig:study2_wage}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Minimum Wage Task Results (Study 3). Panels on the left display percentage of supporters (Panel A) and opponents (Panel C) of raising the minimum wage correctly indicating study result by experimental condition. Panels on the right display congeniality effect by incentive condition, as well as difference-in-differences (DiD), among supporters (Panel B) and opponents (Panel D). Vertical lines indicate 95 percent confidence intervals.}
+\vspace{5mm}
+   \includegraphics[scale=.9, trim = {7.5mm 0cm 0 0}, clip]{../../figs/cvdwage_eff_study3.pdf}
+\vspace{-1cm}
+\label{fig:study3_wage}
+\end{figure}
+
+
+\clearpage
+\subsection{Concealed Carry Task Results as Logistic Regressions}
+\label{sec:logit}
+\doublespacing
+
+For another succinct way to look at the results, we estimated the effects of the treatments using a logistic regression. The dependent variable is a dummy variable indicating whether or not the respondent correctly identified the result of the concealed carry study. Pooling our data from Studies 1 and 2, we run separate logistic regressions for concealed carry supporters (Table~\ref{tab:logit1}) and opponents (Table~\ref{tab:logit2}). Among concealed carry supporters, there is a significantly positive congeniality effect (odds ratio = 1.62), while the incentive effect is null. Among concealed carry opponents, both the congeniality and incentive treatments are significantly positive. And the interaction between the treatments is large and negative, indicating that the incentives significantly reduce the congeniality effect.
+
+\bigskip
+\begin{table}[ht]
+\centering
+\caption{Logistic Regression on Concealed Carry Supporters (Studies 1 \& 2)} \label{tab:logit1}
+\begin{tabular}{l c c c c}
+  \hline
+ 						& Coefficient (SE) & Odds Ratio 	& z value 	& Pr($>$$|$z$|$) \\ \hline
+  Intercept 					& -.298 (.138) 		& .742 	& -2.169	& .030 \\ 
+  Congeniality Treatment		& .483 (.196) 		& 1.620 	& 2.462 	& .014 \\ 
+  Incentives Treatment		& -.103 (.196) 		& .902 	& -.525 	& .600 \\ 
+  Congeniality $\times$ Incentives & .079 (.280) 		& 1.083 	& .284 	& .777 \\  \hline
+\end{tabular}
+\end{table}
+\normalsize
+\doublespacing
+
+\begin{table}[ht]
+\centering
+\caption{Logistic Regression on Concealed Carry Opponents (Studies 1 \& 2)} \label{tab:logit2}
+\begin{tabular}{l c c c c}
+  \hline
+ 						& Coefficient (SE) & Odds Ratio 	& z value 	& Pr($>$$|$z$|$) \\ \hline
+  Intercept 					& -.363 (.188) 		& .696 	& -1.931	& .054 \\ 
+  Congeniality Treatment		& .583 (.259) 		& 1.791 	& 2.251 	& .024 \\ 
+  Incentives Treatment		& .646 (.267) 		& 1.907 	& 2.420 	& .016 \\ 
+  Congeniality $\times$ Incentives & -.740 (.380) 		& .477 	& -1.946 	& .052 \\  \hline
+\end{tabular}
+\end{table}
+\normalsize
+\doublespacing
+
+
+\clearpage
+\subsection{Assessing Experimenter Demand Effects}
+\label{sec:demand}
+
+To earn a little extra money, do respondents report what they think the experimenter believes is true instead of what they believe to be true? To answer that, we need to conjecture about respondents' beliefs about the experimenter conducting the study. We consider two hypotheses about what respondents may think in this regard. The first is that respondents believe that most social scientists are liberal, and therefore infer that the result favoring gun control will always be treated as correct. Another is that respondents interpret financial incentives as a cue that the uncongenial option is the right one. We investigate both possibilities.
+
+If respondents believe the experimenter is liberal, incentives should encourage respondents to select the anti-gun (i.e., pro-ban) answer, irrespective of the study's congeniality. To investigate this, we pooled opponents of concealed carry from Studies 1 and 2 as they had responded appreciably to the incentive treatment. In Table~\ref{tab:demand_opp} below, we display the percentage of these respondents who give the congenial (i.e., anti-gun/pro-ban) and uncongenial response (i.e., pro-gun/anti-ban) by condition. Without incentives, respondents are more likely to give the congenial response than the uncongenial response (59\% vs. 41\%). As in SI Section~\ref{sec:numeracy}, we quantify this ``response bias'' by computing the odds of selecting the anti-gun response. Response bias is 1.44 in the uncongenial condition and 1.25 in the congenial condition. When respondents are offered incentives, response bias reverses itself in the uncongenial condition. It falls to .75, indicating that respondents are now more likely to select the pro-gun answer. Thus, incentives do not cause respondents to blindly choose the anti-gun answer, or the pro-gun answer, for that matter. Instead, they become less likely to pick the congenial answer and more likely to pick the correct answer.
+
+Among concealed carry supporters, incentives have no discernible effect on response bias. These respondents are always more likely to pick the congenial (i.e., pro-gun) answer than the uncongenial  (i.e., anti-gun) answer. Bias is a bit greater in the uncongenial condition than in the congenial condition, resulting in poorer performance in the uncongenial condition. For example, in the absence of incentives, response bias is 1.35 in the uncongenial condition and 1.20 in the congenial condition. More importantly, incentives hardly change response bias in either the uncongenial or congenial condition. Thus, contrary to the scenario outlined above, incentives do not encourage supporters of concealed carry to select any particular response.
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {``Response Bias'' among Concealed Carry Opponents (Studies 1 and 2)}
+\label{tab:demand_opp}
+\begin{tabular}{| l | c | c | c | c |}
+\hline 
+\multirow{2}{*}{Experimental Condition} & \multirow{2}{*}{N} & \% Selecting & \% Selecting & Odds of \\ 
+					& 		& Anti-Gun Answer & Pro-Gun Answer  & Anti-Gun Answer \\ \hline
+No Incentives, Uncongenial	& 117	& 59.0\% & 41.0\% & 1.44 \\ 
+No Incentives, Congenial	& 128	& 55.5\% & 44.5\% & 1.25 \\ 
+Incentives, Uncongenial	& 114	& 43.0\% & 57.0\% & .75 \\ 
+Incentives, Congenial		& 96		& 53.1\% & 46.9\% & 1.13 \\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {``Response Bias'' among Concealed Carry Supporters (Studies 1 and 2)}
+\label{tab:demand_supp}
+\begin{tabular}{| l | c | c | c | c |}
+\hline 
+\multirow{2}{*}{Experimental Condition} & \multirow{2}{*}{N} & \% Selecting & \% Selecting & Odds of \\ 
+					& 		& Anti-Gun Answer & Pro-Gun Answer  & Pro-Gun Answer \\ \hline
+No Incentives, Uncongenial	& 216	& 42.6\%		& 57.4\%			& 1.35 \\ 
+No Incentives, Congenial	& 207	& 45.4\%		& 54.6\%			& 1.20 \\ 
+Incentives, Uncongenial	& 212	& 40.1\%		& 59.9\%			& 1.49 \\ 
+Incentives, Congenial		& 200	& 46.0\%		& 54.0\%			& 1.17 \\ \hline
+\end{tabular}
+\end{table}
+\doublespacing
+
+Do respondents interpret the incentive as a cue that the uncongenial answer is correct, no matter what version of the table they see? It doesn't appear so. Table~\ref{tab:demand_opp} shows that incentives only change behavior in the uncongenial condition. In the congenial condition, respondents are no more likely to pick the uncongenial (incorrect) answer with incentives than without them.
+And Table~\ref{tab:demand_supp} shows that concealed carry supporters always exhibit a response bias in favor of the congenial answer, and incentives do not significantly reduce this bias.
+All of the considerations above contradict the idea that incentives introduce demand effects whereby respondents falsify their factual beliefs to earn extra money. Instead, the most plausible interpretation of our results is that incentives reduce the prevalence of motivated responding, thereby increasing correctness in the uncongenial condition.
+
+\clearpage
+\subsection{How Confident are Respondents in Their Answers?}
+\label{sec:confidence}
+
+In Study 3, after respondents had marked their answer about the study's result, we asked them, ``How confident are you of your answer to this question?'' Respondents could pick between the following options: ``Not confident at all,'' ``Not very confident,'' ``Moderately confident,'' ``Very confident,'' and ``Certain.'' Table~\ref{tab:confidence} below displays the percentage of incorrect and correct answers by respondents' subjective confidence in their answer. Overall, few respondents are certain of their answers, particularly in the concealed carry task. Only 13\% of respondents report that they are certain of their answer, and the vast majority of these certain answers are incorrect. Still, only 10\% of respondents overall report being certain of an incorrect answer, mitigating the concern that motivated learning leads to being confidently misinformed. Average certainty is substantially higher in the minimum wage task, probably because this task was relatively easier. One in five answers are certain and correct, and only 4\% are certain and incorrect.
+
+\singlespacing
+\begin{table}[h]
+\centering
+\caption {Percentage of Incorrect and Correct Answers by Confidence (Study 3)}
+\label{tab:confidence}
+\begin{tabular}{| l | c  c | c  c | }
+\hline 
+  & \multicolumn{2}{|c|}{Concealed Carry Task} & \multicolumn{2}{c|}{Minimum Wage Task} \\
+Confidence Rating	& Incorrect & Correct  & Incorrect & Correct \\ \hline
+Not at all confident	& 2\%	& 1\%	& 1\% 	& 1\% \\ 
+Not very confident	& 8\%	& 5\%	& 2\% 	& 6\% \\ 
+Moderately confident	& 27\%	& 3\%	& 11\% 	& 24\% \\ 
+Very confident		& 22\%	& 9\%	& 6\% 	& 26\% \\ 
+Certain			& 10\%	& 3\%	& 4\% 	& 20\% \\ \hline
+\end{tabular}
+\\Note: Cells display overall percentages, so cells for a task add up to 100\%.
+\end{table}
+
+\clearpage
+\bibliographystyle{apa}
+\bibliography{../partisanlearning}  
+
+\end{document}
