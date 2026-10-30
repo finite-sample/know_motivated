@@ -37,6 +37,13 @@ repairs <- read_result("rating_standard_error_repair") |>
     Group = position_label, Condition = contrast, Estimate = round(estimate, 4),
     `Archived SE` = round(archived_std_error, 6), `Correct SE` = round(std_error, 6)
   )
+worker_exclusion <- read_result("worker_exclusion_summary") |>
+  dplyr::transmute(
+    Outcome = outcome, Group = position_label,
+    Sample = ifelse(specification == "full_sample", "Full", "Exclude repeated IDs"),
+    `Interaction [95% CI]` = format_interval(estimate, conf_low, conf_high),
+    `Two-sided p` = sprintf("%.4f", p_two_sided), N = n
+  )
 means <- read_result("overall_means") |>
   dplyr::filter(variable == "wage_correct", study %in% 2:3)
 report <- c(
@@ -58,6 +65,17 @@ report <- c(
   "## Do incentives change the congeniality gap in ratings?", "",
   "Direct interactions compare the two effects; separate significance tests cannot answer this question.", "",
   knitr::kable(ratings, format = "pipe"), "",
+  "## Excluding all records from repeated Study 1 workers", "",
+  "The exclusion removes all 70 records from the 34 worker IDs repeated within the 785-record released Study 1 sample.",
+  "It leaves 715 Study 1 records. Identification precedes policy-position and outcome restrictions.",
+  "Study 2 is unchanged and each row is assumed to be a distinct worker.",
+  "Both samples use corrected coding and CR2 t inference, isolating the sample change.", "",
+  knitr::kable(worker_exclusion, format = "pipe"), "",
+  "![Full sample versus excluding repeated worker IDs](../figs/worker_exclusion.png)", "",
+  "Complete cells and contrasts, including Study 1 alone and ideological worldview, are in",
+  "`tabs/worker_exclusion_accuracy_cells.csv`, `tabs/worker_exclusion_accuracy_contrasts.csv`,",
+  "`tabs/worker_exclusion_rating_cells.csv`, and `tabs/worker_exclusion_rating_contrasts.csv`.",
+  "Study 2/3-only results are unaffected. All raw records remain available.", "",
   "## Figure 5 standard-error repair", "",
   "The archived selector recycles incentive labels over respondents. The correction uses one actual treatment cell.",
   "Estimates do not change. These SEs isolate the repair; modern figures additionally use 95% t intervals.", "",

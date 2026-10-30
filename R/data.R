@@ -81,6 +81,15 @@ read_studies <- function(raw_dir, use_survey = TRUE, correct_coding = TRUE) {
   respondents
 }
 
+exclude_repeated_workers <- function(respondents) {
+  repeated <- respondents |>
+    dplyr::filter(study == 1, has_worker_id) |>
+    dplyr::count(participant_key) |>
+    dplyr::filter(n > 1) |>
+    dplyr::pull(participant_key)
+  dplyr::filter(respondents, study != 1 | !participant_key %in% repeated)
+}
+
 build_tasks <- function(respondents) {
   common <- c("study", "respondent_key", "participant_key", "numeracy_count", "is_high_numeracy")
   gun <- respondents |>

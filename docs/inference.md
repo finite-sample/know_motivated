@@ -99,3 +99,10 @@ The exclude-repeated-workers sensitivity removes all records from any Study 1
 worker appearing more than once in the released sample. It retains 715 Study 1
 records, compared with 749 when retaining first participation and 785 in the
 full sample. Neither exclusion rule uses outcomes or treatment assignments.
+Repeated IDs are identified among all 785 released Study 1 records before
+policy-position, numeracy-pool, or outcome restrictions. Full and excluded-sample
+contrasts both use CR2 t inference to isolate the change in sample; after
+exclusion, every retained Study 1 worker cluster contains one record.
+`worker_exclusion_summary.csv` and `figs/worker_exclusion.pdf` compare the main
+correctness and rating interactions. The detailed exclusion outputs also cover
+Study 1 alone and ideological worldview. Study 2/3-only results are unchanged.

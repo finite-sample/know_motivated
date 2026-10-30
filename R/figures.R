@@ -6,6 +6,33 @@ save_figure <- function(plot, name, height = figure_height) {
   }
 }
 
+plot_worker_exclusion <- function(comparison) {
+  display <- comparison |>
+    dplyr::mutate(specification = factor(
+      specification, c("full_sample", "exclude_repeated_workers"),
+      c("Full sample", "Exclude repeated IDs")
+    ))
+  ggplot2::ggplot(display, ggplot2::aes(estimate, position_label, colour = specification)) +
+    ggplot2::geom_vline(xintercept = 0, linetype = 2, colour = "grey60") +
+    ggplot2::geom_pointrange(
+      ggplot2::aes(xmin = conf_low, xmax = conf_high),
+      position = ggplot2::position_dodge(width = .45), orientation = "y"
+    ) +
+    ggplot2::facet_wrap(~outcome, scales = "free", ncol = 1) +
+    ggplot2::scale_colour_manual(values = c("#626262", "#08519c")) +
+    ggplot2::labs(
+      x = "Incentive-by-congeniality interaction", y = NULL, colour = NULL,
+      title = "Excluding all records from repeated Study 1 worker IDs",
+      subtitle = "Study 1 and high-numeracy Study 2; corrected coding in both samples",
+      caption = paste(
+        "Study 1: 785 records in full sample; 715 after excluding 70 records from 34 repeated IDs.",
+        "Study 2 unchanged, each row treated as a distinct worker. 95% CR2 t intervals in both samples.",
+        sep = "\n"
+      )
+    ) +
+    theme_paper()
+}
+
 plot_wage_replication <- function(comparison) {
   panels <- c(
     "figure_si_7" = "Study 2 (SI7)", "figure_si_8" = "Study 3 (SI8)",

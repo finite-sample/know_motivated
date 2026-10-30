@@ -54,3 +54,8 @@ They include the generated SI tables and figures. `paper_numbers.csv` records
 each inline result's key, formatted value, and producing artifact. `make paper`
 builds the combined manuscript and SI; it preserves the original conceptual
 figure as a clipped view of the publisher PDF.
+
+The additional worker-exclusion check is Table SI12 (`worker_exclusion.tex`)
+and Figure SI9 (`figs/worker_exclusion.pdf`). `R/robustness.R` generates the
+full-sample and exclusion comparisons, affected accuracy cells and contrasts,
+rating cells and contrasts, counts, and an anonymized row-exclusion ledger.

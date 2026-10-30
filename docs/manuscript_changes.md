@@ -15,6 +15,8 @@ The original sources and publisher PDFs are unchanged in `data/reference/manuscr
 - State that correctness-conditioned ratings are descriptive and confidence
   percentages are joint shares in the no-incentive arm.
 - Correct the supplement's swapped pro-/anti-gun stimulus display labels.
+- Add the requested repeated-worker exclusion robustness table (SI12) and figure (SI9),
+  comparing the full sample with exclusion of every record from repeated Study 1 IDs.
 
 Literature discussion, survey wording, stimulus values, and hypotheses otherwise
 follow the supplied text. National comparison values are retained in the original

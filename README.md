@@ -26,6 +26,12 @@ wrong treatment denominators, and Figure SI4's ideological congeniality coding.
 The audit also reports direct interaction tests, model-specific sample sizes,
 missingness, and limits on the interpretation of the findings.
 
+The [repeated-worker robustness check](docs/results.md#excluding-all-records-from-repeated-study-1-workers)
+excludes all 70 records from the 34 worker IDs repeated within the released Study 1
+sample, leaving 715 records. It compares correctness and rating effects with the
+full sample and preserves every raw response. Study 2 remains unchanged under the
+distinct-worker assumption.
+
 ## Reproduce
 
 Use R 4.6 and run from this directory:

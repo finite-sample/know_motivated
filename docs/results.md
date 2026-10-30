@@ -49,6 +49,33 @@ Direct interactions compare the two effects; separate significance tests cannot 
 |Carry supporters |0.31 [-0.33, 0.95]          |0.3440      |  830|
 |Pooled           |0.34 [-0.16, 0.85]          |0.1804      | 1283|
 
+## Excluding all records from repeated Study 1 workers
+
+The exclusion removes all 70 records from the 34 worker IDs repeated within the 785-record released Study 1 sample.
+It leaves 715 Study 1 records. Identification precedes policy-position and outcome restrictions.
+Study 2 is unchanged and each row is assumed to be a distinct worker.
+Both samples use corrected coding and CR2 t inference, isolating the sample change.
+
+|Outcome                         |Group            |Sample               |Interaction [95% CI]   |Two-sided p |    N|
+|:-------------------------------|:----------------|:--------------------|:----------------------|:-----------|----:|
+|Correctness (percentage points) |Carry opponents  |Full                 |-17.85 [-36.12, 0.41]  |0.0554      |  456|
+|Correctness (percentage points) |Carry opponents  |Exclude repeated IDs |-20.31 [-39.12, -1.49] |0.0344      |  437|
+|Correctness (percentage points) |Carry supporters |Full                 |1.91 [-11.62, 15.44]   |0.7819      |  835|
+|Correctness (percentage points) |Carry supporters |Exclude repeated IDs |1.95 [-11.88, 15.78]   |0.7816      |  796|
+|Ratings (0-10 points)           |Carry opponents  |Full                 |0.41 [-0.42, 1.23]     |0.3355      |  453|
+|Ratings (0-10 points)           |Carry opponents  |Exclude repeated IDs |0.35 [-0.51, 1.21]     |0.4225      |  435|
+|Ratings (0-10 points)           |Carry supporters |Full                 |0.31 [-0.33, 0.95]     |0.3440      |  830|
+|Ratings (0-10 points)           |Carry supporters |Exclude repeated IDs |0.31 [-0.34, 0.96]     |0.3504      |  793|
+|Ratings (0-10 points)           |Pooled           |Full                 |0.34 [-0.16, 0.85]     |0.1804      | 1283|
+|Ratings (0-10 points)           |Pooled           |Exclude repeated IDs |0.32 [-0.19, 0.84]     |0.2193      | 1228|
+
+![Full sample versus excluding repeated worker IDs](../figs/worker_exclusion.png)
+
+Complete cells and contrasts, including Study 1 alone and ideological worldview, are in
+`tabs/worker_exclusion_accuracy_cells.csv`, `tabs/worker_exclusion_accuracy_contrasts.csv`,
+`tabs/worker_exclusion_rating_cells.csv`, and `tabs/worker_exclusion_rating_contrasts.csv`.
+Study 2/3-only results are unaffected. All raw records remain available.
+
 ## Figure 5 standard-error repair
 
 The archived selector recycles incentive labels over respondents. The correction uses one actual treatment cell.

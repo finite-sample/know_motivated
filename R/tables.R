@@ -6,7 +6,8 @@ write_latex_table <- function(records, name, title, note) {
   labels <- c(
     table_si_1 = "sample", table_si_2 = "balance", table_si_3 = "spillover",
     table_si_4 = "accnum", table_si_5 = "recalla", table_si_6 = "recallc", table_si_7 = "logit1",
-    table_si_8 = "logit2", table_si_9 = "demand_opp", table_si_10 = "demand_supp", table_si_11 = "confidence"
+    table_si_8 = "logit2", table_si_9 = "demand_opp", table_si_10 = "demand_supp", table_si_11 = "confidence",
+    worker_exclusion = "worker_exclusion"
   )
   table <- knitr::kable(records,
     format = "latex", booktabs = TRUE, longtable = TRUE, escape = TRUE, linesep = "",
@@ -172,8 +173,24 @@ write_publication_tables <- function() {
       "Exclude repeated workers removes every record of a repeated Study 1 ID. Ban=1 denotes carry opponents."
     )
   )
-  names <- c("main_contrasts", paste0("table_si_", 1:11), "coding_sensitivity")
-  labels <- c("A1", paste0("SI", 1:11), "A2")
+  worker_exclusion <- read("worker_exclusion_summary") |>
+    dplyr::transmute(
+      Outcome = ifelse(exhibit == "figure_2", "Correctness (pp)", "Ratings (0--10)"),
+      Group = position_label, Sample = ifelse(specification == "full_sample", "Full", "Exclude repeats"),
+      Effect = round(estimate, 2), `95% interval` = sprintf("[%.2f, %.2f]", conf_low, conf_high),
+      p = format_p_value(p_two_sided), N = n
+    )
+  write_latex_table(
+    worker_exclusion, "worker_exclusion", "Excluding all records from repeated Study 1 workers",
+    paste(
+      "Incentive-by-congeniality interactions. Study 1 and high-numeracy Study 2; corrected coding.",
+      "Exclusion removes all 70 records from the 34 IDs repeated within the 785-record Study 1 released sample.",
+      "Study 2 is unchanged and its records are assumed to be distinct workers.",
+      "Both samples use CR2 t inference, isolating the sample change. Raw records are preserved."
+    )
+  )
+  names <- c("main_contrasts", paste0("table_si_", 1:11), "coding_sensitivity", "worker_exclusion")
+  labels <- c("A1", paste0("SI", 1:11), "A2", "SI12")
   preview <- c(
     "\\documentclass[10pt]{article}", "\\usepackage[margin=0.65in]{geometry}",
     "\\usepackage{fontspec,booktabs,longtable}",

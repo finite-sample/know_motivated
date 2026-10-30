@@ -220,11 +220,7 @@ write_source_checks <- function(respondents, replication) {
       n_repeat_records = sum(duplicated(participant_key[has_worker_id])), .groups = "drop"
     )
   write_table(workers, "participant_identity")
-  repeated_workers <- respondents |>
-    dplyr::filter(study == 1) |>
-    dplyr::count(participant_key) |>
-    dplyr::filter(n > 1) |>
-    dplyr::pull(participant_key)
+  retained_keys <- exclude_repeated_workers(respondents)$respondent_key
   sensitivity <- list()
   specifications <- c(
     "published_coding", "corrected_coding", "worker_clusters", "observed_answers",
@@ -236,7 +232,7 @@ write_source_checks <- function(respondents, replication) {
     if (specification == "observed_answers") sample <- dplyr::filter(sample, !is_gun_answer_missing)
     if (specification == "first_participation") sample <- dplyr::filter(sample, worker_attempt == 1)
     if (specification == "exclude_repeated_workers") {
-      sample <- dplyr::filter(sample, !participant_key %in% repeated_workers)
+      sample <- dplyr::filter(sample, respondent_key %in% retained_keys)
     }
     for (outcome in c("gun_correct", "gun_rating")) {
       for (position in 0:1) {

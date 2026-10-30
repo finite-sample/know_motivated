@@ -1,0 +1,7 @@
+specification,study,n_records,n_workers,n_policy_position
+exclude_repeated_workers,1,715,715,628
+exclude_repeated_workers,2,947,947,824
+exclude_repeated_workers,3,1062,1062,1057
+full_sample,1,785,749,686
+full_sample,2,947,947,824
+full_sample,3,1062,1062,1057
